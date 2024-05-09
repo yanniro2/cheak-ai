@@ -14,7 +14,7 @@ function Hero({}: Props) {
             <div className="px-4 py-1 border rounded-full w-fit backdrop-blur backdrop-brightness-50 font-open font-extralight text-[14px] bg-secondry shadow-md shadow-secondry z-[5]">
               Reimagine the World!
             </div>
-            <h1 className="text-[3rem] font-poppins font-medium leading-tight drop-shadow-lg drop-shadow-primary z-[5]">
+            <h1 className="text-[3rem] font-poppins font-bold leading-tight drop-shadow-lg drop-shadow-primary z-[5]">
               How Can Cutting-Edge Technology Help you
             </h1>
             <h2 className="text-primary text-xl font-semibold z-[5]">
@@ -41,6 +41,7 @@ function Hero({}: Props) {
             width="1000"
             height="1000"
             alt="img"
+            className=""
           />
         </div>
       </div>
