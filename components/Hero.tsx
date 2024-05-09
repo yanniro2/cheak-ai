@@ -8,23 +8,24 @@ type Props = {};
 function Hero({}: Props) {
   return (
     <section className="w-screen h-screen flex items-center justify-center drop-shadow shadow">
-      <div className="container mx-auto p-5 flex items-center h-full">
-        <div className="w-1/2 h-full flex items-center flex-col justify-center gap-3">
-          <div className="flex flex-col gap-1">
-            <div className="px-4 py-1 border rounded-full w-fit backdrop-blur backdrop-brightness-50 font-open font-extralight text-[14px] bg-secondry ">
+      <div className="container mx-auto p-5 flex items-center h-full ">
+        <div className="w-1/2 h-full flex items-center flex-col justify-center gap-3 ">
+          <div className="flex flex-col gap-1 relative">
+            <div className="px-4 py-1 border rounded-full w-fit backdrop-blur backdrop-brightness-50 font-open font-extralight text-[14px] bg-secondry shadow-md shadow-secondry z-[5]">
               Reimagine the World!
             </div>
-            <h1 className="text-[3rem] font-poppins font-medium leading-tight">
+            <h1 className="text-[3rem] font-poppins font-medium leading-tight drop-shadow-lg drop-shadow-primary z-[5]">
               How Can Cutting-Edge Technology Help you
             </h1>
-            <h2 className="text-primary text-xl font-semibold ">
+            <h2 className="text-primary text-xl font-semibold z-[5]">
               <Typing />
             </h2>
-            <p className="text-gray font-open font-light">
+            <p className="text-gray font-open font-light z-[5]">
               Check AI a next generation startup, artificial intelligence
               company, leverages advance architecture and distributed computing
               to bring AI to the masses while solving real world problems
             </p>
+            <div className="w-[20rem] h-[20rem]   rounded-full   absolute top-0 -left-[2rem] -z-1  shadow-box bg-primary/5"></div>
           </div>
           <div className="flex items-center gap-3 justify-start w-full">
             <button className="btn btn-1">start Exploring</button>
