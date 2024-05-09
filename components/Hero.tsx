@@ -1,6 +1,8 @@
 import React from 'react'
 import Typing from "./mini/Typing";
 import { IoMdArrowForward } from "react-icons/io";
+import Particles from "@/components/mini/Particles.jsx";
+import Image from "next/image";
 type Props = {};
 
 function Hero({}: Props) {
@@ -15,7 +17,7 @@ function Hero({}: Props) {
             <h1 className="text-[3rem] font-poppins font-medium leading-tight">
               How Can Cutting-Edge Technology Help you
             </h1>
-            <h2 className="text-primary text-xl font-semibold">
+            <h2 className="text-primary text-xl font-semibold ">
               <Typing />
             </h2>
             <p className="text-gray font-open font-light">
@@ -30,6 +32,15 @@ function Hero({}: Props) {
               learn more <IoMdArrowForward className="group-hover:ml-3" />
             </button>
           </div>
+        </div>
+        <div className="w-1/2 h-full flex items-center flex-col justify-center gap-3 overflow-hidden relative object-contain">
+          <div>{/* <Particles /> */}</div>
+          <Image
+            src="/assets/img/hero.png"
+            width="1000"
+            height="1000"
+            alt="img"
+          />
         </div>
       </div>
     </section>

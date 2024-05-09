@@ -41,7 +41,7 @@ const Typing: React.FC = () => {
   return (
     <>
       {currentPhrase}
-      <span className="font-light">|</span>
+      <span className="font-light ">|</span>
     </>
   );
 };

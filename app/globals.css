@@ -3,6 +3,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 .default-layout-1 {
   @apply w-full h-max flex items-center justify-center;
 }
