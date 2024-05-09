@@ -16,7 +16,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="font-promt scroll-smooth">{children}</body>
+      <body className="font-open scroll-smooth bg-dark text-white">
+        {children}
+      </body>
     </html>
   );
 }
