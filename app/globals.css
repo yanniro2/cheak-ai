@@ -42,3 +42,7 @@
 .link-1 {
   @apply font-semibold hover:shadow-primary shadow-text hover:text-primary transition-all;
 }
+
+.text {
+  @apply text-slate-600;
+}

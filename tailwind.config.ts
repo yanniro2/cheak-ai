@@ -17,7 +17,7 @@ const config: Config = {
         secondry: "#33ceff",
         gray: "#e1e1e1",
         dark: "#030014",
-        lighDark: "#0e0c15",
+        lighDark: "#0f172a",
       },
     },
   },

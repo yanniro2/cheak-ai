@@ -11,9 +11,9 @@
       "url": "#about"
     },
     {
-      "id": "service",
-      "label": "Service",
-      "url": "#service"
+      "id": "services",
+      "label": "Services",
+      "url": "#services"
     },
     {
       "id": "feature",
