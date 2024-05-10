@@ -40,5 +40,5 @@
 }
 
 .link-1 {
-  @apply font-light hover:shadow-primary shadow-text hover:text-primary transition-all;
+  @apply font-semibold hover:shadow-primary shadow-text hover:text-primary transition-all;
 }

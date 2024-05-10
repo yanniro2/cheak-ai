@@ -15,14 +15,14 @@ export default function Home() {
     <>
       <Header />
       <Hero />
-      <Howit />
       <About />
+      <Howit />
       <Why />
       <Dedicate />
       <Benifits />
       <Services />
       <Contact />
-      <Footer/>
+      <Footer />
     </>
   );
 }

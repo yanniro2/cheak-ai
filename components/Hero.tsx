@@ -7,7 +7,9 @@ type Props = {};
 
 function Hero({}: Props) {
   return (
-    <section className="w-screen h-screen flex items-center justify-center drop-shadow shadow">
+    <section
+      className="w-screen h-screen flex items-center justify-center drop-shadow shadow"
+      id="home">
       <div className="container mx-auto p-5 flex items-center h-full ">
         <div className="w-1/2 h-full flex items-center flex-col justify-center gap-3 ">
           <div className="flex flex-col gap-1 relative">

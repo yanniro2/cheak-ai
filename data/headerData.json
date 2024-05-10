@@ -1,22 +1,27 @@
 {
   "navigation": [
     {
+      "id": "home",
       "label": "Home",
       "url": "/"
     },
     {
+      "id": "about",
       "label": "About",
       "url": "#about"
     },
     {
+      "id": "service",
       "label": "Service",
       "url": "#service"
     },
     {
+      "id": "feature",
       "label": "Feature",
       "url": "#feature"
     },
     {
+      "id": "contact",
       "label": "Contact",
       "url": "#contact"
     }

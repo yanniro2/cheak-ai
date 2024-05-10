@@ -2,22 +2,24 @@
 import React, { useEffect, useState } from "react";
 import navigationData from "@/data/headerData.json";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import Image from "next/image";
+// import { usePathname } from "next/navigation";
+// import Image from "next/image";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import Logo from "./mini/Logo";
+import Hover from "./mini/Hover";
 
 type NavigationItem = {
+  id: string;
   label: string;
   url: string;
   submenu?: NavigationItem[];
 };
 
 const Header: React.FC = () => {
-  const pathName = usePathname();
   const [isSticky, setIsSticky] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [check, setCheck] = useState(false);
+  let [activeSection, setActiveSection] = useState<string>("home");
+  // let links = navigationData.navigation.map((section) => section.id);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,13 +39,26 @@ const Header: React.FC = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  function isLinkActive(pathName: string, itemUrl: string) {
-    return (
-      (pathName === itemUrl && pathName !== "/") ||
-      (pathName.startsWith(itemUrl) && itemUrl !== "/") ||
-      (pathName === "/" && itemUrl === "/")
-    );
-  }
+  useEffect(() => {
+    const observerOptions = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.2,
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    }, observerOptions);
+
+    navigationData.navigation.forEach((section) => {
+      let target = document.getElementById(section.id);
+      target && observer.observe(target);
+    });
+  }, []);
 
   return (
     <div
@@ -62,15 +77,15 @@ const Header: React.FC = () => {
                 <li key={index}>
                   <Link
                     href={item.url}
-                    className={
-                      isLinkActive(pathName, item.url)
-                        ? "link-active"
-                        : "link-1"
-                    }
+                    className={`px-5 cursor-pointer ${
+                      activeSection == item.id ? "link-active" : "link-1"
+                    }`}
                     aria-label={item.label}>
-                    {isLinkActive(pathName, item.url)
-                      ? `[ ${item.label} ]`
-                      : item.label}
+                    {activeSection == item.id ? (
+                      `[ ${item.label} ]`
+                    ) : (
+                      <Hover name={item.label} />
+                    )}
                   </Link>
                 </li>
               )
@@ -100,13 +115,14 @@ const Header: React.FC = () => {
                 <Link
                   key={index}
                   href={item.url}
-                  className={`${
-                    (pathName === item.url && pathName !== "/") ||
-                    (pathName.startsWith(item.url) && item.url !== "/") ||
-                    (pathName === "/" && item.url === "/")
-                      ? "link-active z-[5005]"
-                      : "link-2 z-[5005]"
-                  }`}
+                  // className={`${
+                  //   (pathName === item.url && pathName !== "/") ||
+                  //   (pathName.startsWith(item.url) && item.url !== "/") ||
+                  //   (pathName === "/" && item.url === "/")
+                  //     ? "link-active z-[5005]"
+                  //     : "link-2 z-[5005]"
+                  // }`}
+
                   aria-label={item.label}
                   onClick={toggleMobileMenu}>
                   {item.label}
