@@ -64,8 +64,8 @@ const Header: React.FC = () => {
     <div
       className={` ${
         isSticky
-          ? "backdrop-blur-lg   bg-darkBlue text-white  shadow-lg   drop-shadow-lg  border-gray-100 bg-opacity-90 border-b border-primary"
-          : "bg-none  "
+          ? "backdrop-blur-lg   bg-darkBlue text-white  shadow-lg   drop-shadow-lg  border-gray-100 bg-opacity-90 border-b border-primary "
+          : "bg-none  backdrop-blur-lg   bg-darkBlue text-white  shadow-lg   drop-shadow-lg  border-gray-100 bg-opacity-90  "
       } w-screen h-min  text-white fixed top-0 left-0 right-0 z-[3000] py-2 `}>
       <div className="container mx-auto flex items-center px-3 justify-between">
         <nav className="w-full flex items-center justify-between">

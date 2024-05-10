@@ -6,9 +6,9 @@ type Props = {};
 const About = (props: Props) => {
   return (
     <section
-      className="w-screen h-screen flex items-center justify-center drop-shadow shadow"
+      className="w-screen h-full flex items-center justify-center drop-shadow shadow"
       id="about">
-      <div className="container mx-auto p-5 flex items-center h-full flex-col gap-[1rem]">
+      <div className="container mx-auto p-5 flex items-center h-full flex-col gap-[1rem] py-[4rem]">
         <Title
           title={"About us"}
           subtitle={"where imagination Meets Infinite Possibilities"}
@@ -36,7 +36,7 @@ const About = (props: Props) => {
               className="object-cover rounded"
             />
           </div>
-          <div className="w-1/2 h-full bg-lighDark rounded flex flex-col p-[3rem]  shadow-lg">
+          <div className="w-1/2 h-[60vh] bg-lighDark rounded flex flex-col p-[3rem]  shadow-lg">
             <h3 className="capitalize text-3xl font-poppins text-primary">
               our story
             </h3>

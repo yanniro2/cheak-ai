@@ -1,0 +1,40 @@
+{
+  "mainServices": [
+    {
+      "title": "Border Watch",
+      "description": "Enhance security camera surveillance with AI and machine learning technologies for improved threat detection and prevention.",
+      "url": "/border-watch",
+      "icon": "RiVideoLine"
+    },
+    {
+      "title": "Fraud Detection",
+      "description": "Detect and prevent fraudulent activities by analyzing customer behavior patterns and identifying anomalies in real-time.",
+      "url": "/fraud-detection",
+      "icon": "RiSearchLine"
+    },
+    {
+      "title": "AI-Based Startups",
+      "description": "Transform your startup idea with AI and ML solutions tailored to your business needs for competitive advantage and success.",
+      "url": "/ai-startups",
+      "icon": "RiLightbulbLine"
+    },
+    {
+      "title": "Private Document AI Assistant (LEO)",
+      "description": "Leverage an on-premises AI assistant to analyze documents, extract insights, and streamline information management processes securely.",
+      "url": "/leo-ai-assistant",
+      "icon": "RiFileTextLine"
+    },
+    {
+      "title": "Custom AI Solutions",
+      "description": "Get personalized AI solutions designed to address your unique challenges and drive innovation across your organization.",
+      "url": "/custom-ai-solutions",
+      "icon": "RiSettings5Line"
+    },
+    {
+      "title": "AI Consulting",
+      "description": "Receive expert guidance and support in implementing AI strategies to maximize your business potential and achieve long-term success.",
+      "url": "/ai-consulting",
+      "icon": "RiUserSettingsLine"
+    }
+  ]
+}

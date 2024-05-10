@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Web Development",
+    "description": "We offer custom web development services tailored to your business needs. Our team utilizes the latest technologies to build responsive and user-friendly websites.",
+    "icon": "web-development-icon.png"
+  },
+  {
+    "id": 2,
+    "title": "Mobile App Development",
+    "description": "Need a mobile app for your business? Our expert developers can create iOS and Android apps that are feature-rich, intuitive, and visually stunning.",
+    "icon": "mobile-app-icon.png"
+  },
+  {
+    "id": 3,
+    "title": "Graphic Design",
+    "description": "Make a lasting impression with our professional graphic design services. From logos and branding to marketing materials, we ensure your visuals stand out.",
+    "icon": "graphic-design-icon.png"
+  },
+  {
+    "id": 4,
+    "title": "Digital Marketing",
+    "description": "Drive traffic and boost conversions with our comprehensive digital marketing solutions. We offer SEO, social media management, PPC advertising, and more.",
+    "icon": "digital-marketing-icon.png"
+  }
+]
