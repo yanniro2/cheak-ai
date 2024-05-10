@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
+import Logo from "./mini/Logo";
 
 type NavigationItem = {
   label: string;
@@ -16,6 +17,7 @@ const Header: React.FC = () => {
   const pathName = usePathname();
   const [isSticky, setIsSticky] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [check, setCheck] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,52 +37,53 @@ const Header: React.FC = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  function isLinkActive(pathName: string, itemUrl: string) {
+    return (
+      (pathName === itemUrl && pathName !== "/") ||
+      (pathName.startsWith(itemUrl) && itemUrl !== "/") ||
+      (pathName === "/" && itemUrl === "/")
+    );
+  }
+
   return (
     <div
       className={` ${
         isSticky
-          ? "backdrop-blur-lg   bg-darkBlue text-white  shadow-lg py-1 drop-shadow-lg border-b border-gray-100 bg-opacity-90 "
-          : "bg-none py-[1rem] "
-      } w-screen h-min  text-white fixed top-0 left-0 right-0 z-[3000] animate__animated animate__fadeInDown`}>
+          ? "backdrop-blur-lg   bg-darkBlue text-white  shadow-lg   drop-shadow-lg  border-gray-100 bg-opacity-90 border-b border-primary"
+          : "bg-none  "
+      } w-screen h-min  text-white fixed top-0 left-0 right-0 z-[3000] py-2 `}>
       <div className="container mx-auto flex items-center px-3 justify-between">
         <nav className="w-full flex items-center justify-between">
-          <Link href="/">
-            {/* <Image
-              src="/assets/img/logo.png"
-              width="250"
-              height="32"
-              alt="logo img"
-              aria-label={"go to logo"}
-              // className="w-full h-full object-contain"
-            /> */}
-            logo
-          </Link>
+          <Logo />
 
-          <ul className="w-1/2 items-center justify-evenly hidden lg:flex md:flex animate__animated animate__fadeInDown">
+          <ul className="w-1/2 items-center justify-evenly hidden lg:flex md:flex ">
             {navigationData.navigation.map(
               (item: NavigationItem, index: number) => (
                 <li key={index}>
                   <Link
                     href={item.url}
-                    className={`${
-                      (pathName === item.url && pathName !== "/") ||
-                      (pathName.startsWith(item.url) && item.url !== "/") ||
-                      (pathName === "/" && item.url === "/")
+                    className={
+                      isLinkActive(pathName, item.url)
                         ? "link-active"
-                        : "link-2"
-                    }`}
+                        : "link-1"
+                    }
                     aria-label={item.label}>
-                    {item.label}
+                    {isLinkActive(pathName, item.url)
+                      ? `[ ${item.label} ]`
+                      : item.label}
                   </Link>
                 </li>
               )
             )}
           </ul>
-          <Link href="/"> get started</Link>
+          <Link href="/" className="btn btn-2">
+            {" "}
+            get started!
+          </Link>
 
           <div className="lg:hidden md:hidden">
             <button
-              className={`   text-[1.5rem] cursor-pointer hover:text-primary transition-all ${
+              className={`text-[1.5rem] cursor-pointer hover:text-primary transition-all ${
                 isMobileMenuOpen ? "text-orange" : "text-gray-200"
               }`}
               onClick={toggleMobileMenu}

@@ -23,10 +23,22 @@
 }
 
 .btn-2 {
-  @apply hover:bg-primary text-white shadow-md hover:shadow-primary;
+  @apply hover:bg-primary text-white shadow-md hover:shadow-primary ;
 }
 
 .shadow-box {
     filter: drop-shadow(35px 6px 10px #6608e1);
     /* background-color: transparent; */
+}
+
+.shadow-text {
+  filter: drop-shadow(5px 5px 10px #6608e1);
+}
+
+.link-active {
+  @apply text-primary font-semibold drop-shadow shadow-primary font-poppins  shadow-text;
+}
+
+.link-1 {
+  @apply font-light hover:shadow-primary shadow-text hover:text-primary transition-all;
 }

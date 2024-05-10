@@ -6,19 +6,19 @@
     },
     {
       "label": "About",
-      "url": "/about"
+      "url": "#about"
     },
     {
       "label": "Service",
-      "url": "/service"
+      "url": "#service"
     },
     {
       "label": "Feature",
-      "url": "/feature"
+      "url": "#feature"
     },
     {
       "label": "Contact",
-      "url": "/contact"
+      "url": "#contact"
     }
   ]
 }

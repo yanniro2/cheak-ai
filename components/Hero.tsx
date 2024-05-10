@@ -17,7 +17,7 @@ function Hero({}: Props) {
             <h1 className="text-[3rem] font-poppins font-bold leading-tight drop-shadow-lg drop-shadow-primary z-[5]">
               How Can Cutting-Edge Technology Help you
             </h1>
-            <h2 className="text-primary text-xl font-semibold z-[5]">
+            <h2 className="text-primary text-xl font-semibold z-[5] shadow-text">
               <Typing />
             </h2>
             <p className="text-gray font-open font-light z-[5]">
@@ -41,7 +41,7 @@ function Hero({}: Props) {
             width="1000"
             height="1000"
             alt="img"
-            className=""
+            className="shadow-box"
           />
         </div>
       </div>
