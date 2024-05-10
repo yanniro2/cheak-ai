@@ -14,7 +14,7 @@ const About = (props: Props) => {
           subtitle={"where imagination Meets Infinite Possibilities"}
         />
         <div className="flex w-full items-center justify-between gap-[3rem] bg-lighDark p-[2rem] rounded shadow-lg">
-          <div className="w-3/4 text-xl font-light font-open text">
+          <div className="w-3/4 text-xl font-light font-open text-white">
             Welcome to Our Company, where we embark on a journey where
             imagination meets innovation, and the possibilities are endless.
             From our humble beginnings to becoming a leader in our industry, our
@@ -40,7 +40,7 @@ const About = (props: Props) => {
             <h3 className="capitalize text-3xl font-poppins text-primary">
               our story
             </h3>
-            <div className=" flex flex-col gap-3 font-open font-light">
+            <div className="flex flex-col gap-3 font-open  text">
               <p className=" pt-[2rem]">
                 Welcome to Our Company, where every success is a chapter in our
                 story of growth and innovation. Our journey began with a shared

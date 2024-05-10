@@ -33,7 +33,7 @@ const Services = (props: Props) => {
               <RiVoiceprintFill />
             </div>
           </div>
-          <div className="w-1/2 h-[60vh] items-start  flex flex-col justify-between ">
+          <div className="w-1/2 h-[60vh] items-start  flex flex-col ">
             <div className="pl-5">
               <Title2
                 title={"explore diverse realms"}
@@ -44,9 +44,9 @@ const Services = (props: Props) => {
             </div>
 
             <div className="grid grid-cols-2 gap-3">
-              {realmData.map((service) => (
+              {realmData.briefServices.map((service, index) => (
                 <div
-                  key={service.id}
+                  key={index}
                   className="service cursor-pointer hover:bg-lighDark p-5 rounded transition-all ease-linear hover:shadow hover:shadow-primary">
                   <h2 className="font-semibold font-poppins pb-[1rem]">
                     {service.title}
