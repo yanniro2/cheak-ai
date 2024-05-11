@@ -36,11 +36,11 @@
 }
 
 .link-active {
-  @apply text-primary font-semibold drop-shadow shadow-primary font-poppins  shadow-text;
+  @apply text-primary font-medium drop-shadow shadow-primary font-poppins  shadow-text ;
 }
 
 .link-1 {
-  @apply font-semibold hover:shadow-primary shadow-text hover:text-primary transition-all;
+  @apply font-medium hover:shadow-primary shadow-text hover:text-primary transition-all;
 }
 
 .text {
@@ -49,4 +49,12 @@
 
 .btn-next {
   @apply rounded-full border-primary border w-[3rem] h-[3rem] flex items-center justify-center text-[1.6rem] cursor-pointer hover:bg-primary hover:shadow-primary hover:shadow-lg;
+}
+
+.icons-1 {
+  @apply text-xl w-[3rem] h-[3rem] flex items-center justify-center bg-white text-primary rounded-full shadow-lg shadow-primary ;
+}
+
+.icons-2 {
+  @apply text-xl w-[3rem] h-[3rem] flex items-center justify-center bg-transparent text-primary rounded-full shadow-lg shadow-primary border border-primary group-hover:bg-white;
 }

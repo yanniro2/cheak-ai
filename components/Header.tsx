@@ -71,13 +71,13 @@ const Header: React.FC = () => {
         <nav className="w-full flex items-center justify-between">
           <Logo />
 
-          <ul className="w-1/2 items-center justify-evenly hidden lg:flex md:flex ">
+          <ul className="w-max items-center justify-evenly hidden lg:flex md:flex gap-5 ">
             {navigationData.navigation.map(
               (item: NavigationItem, index: number) => (
                 <li key={index}>
                   <Link
                     href={item.url}
-                    className={`px-5 cursor-pointer ${
+                    className={`  cursor-pointer text-[14px] ${
                       activeSection == item.id ? "link-active" : "link-1"
                     }`}
                     aria-label={item.label}>

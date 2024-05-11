@@ -1,0 +1,34 @@
+{
+  "howItWorksSteps": [
+    {
+      "stepNumber": 1,
+      "title": "Schedule a Consultation",
+      "description": "Start by scheduling a consultation with us. Use the contact form below to book a time to chat with one of our solution experts.",
+      "icon": "BiCalendarEvent"
+    },
+    {
+      "stepNumber": 2,
+      "title": "Submit Your Business Challenges",
+      "description": "Describe your business challenges in detail. The more information you provide, the better we can understand your needs.",
+      "icon": "BiMessageSquareDetail"
+    },
+    {
+      "stepNumber": 3,
+      "title": "Meet with Our Experts",
+      "description": "Meet with our solution experts at the scheduled time. We'll discuss your challenges and explore potential solutions together.",
+      "icon": "BiGroup"
+    },
+    {
+      "stepNumber": 4,
+      "title": "Collaborate on Solutions",
+      "description": "Collaborate with our team to develop customized solutions tailored to your specific requirements.",
+      "icon": "BiBrain"
+    },
+    {
+      "stepNumber": 5,
+      "title": "Implement and Optimize",
+      "description": "Implement the agreed-upon solutions and work with us to optimize and fine-tune them for maximum effectiveness.",
+      "icon": "BiRocket"
+    }
+  ]
+}

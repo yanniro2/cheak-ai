@@ -7,7 +7,7 @@
     },
     {
       "id": "about",
-      "label": "About",
+      "label": "About Us",
       "url": "#about"
     },
     {
@@ -16,13 +16,28 @@
       "url": "#services"
     },
     {
-      "id": "feature",
-      "label": "Feature",
-      "url": "#feature"
+      "id": "benefits",
+      "label": "Benefits",
+      "url": "#benefits"
+    },
+    {
+      "id": "howItWorks",
+      "label": "How It Works",
+      "url": "#howItWorks"
+    },
+    {
+      "id": "why-choose-us",
+      "label": "Why Choose Us",
+      "url": "#why-choose-us"
+    },
+    {
+      "id": "fun-facts",
+      "label": "Fun Facts",
+      "url": "#fun-facts"
     },
     {
       "id": "contact",
-      "label": "Contact",
+      "label": "Contact Us",
       "url": "#contact"
     }
   ]

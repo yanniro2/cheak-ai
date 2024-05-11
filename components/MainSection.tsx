@@ -73,9 +73,7 @@ const MainSection: React.FC = () => {
             <div
               key={index}
               className="w-[25vw]  h-full bg-lighDark p-[2rem] rounded cursor-pointer hover:bg-white hover:scale-105 m-[1rem] transition-all ease-linear shadow shadow-primary hover:shadow-lg hover:drop-shadow-lg flex flex-col justify-between text-center items-center group overscroll-contain">
-              <div className="text-xl w-[3rem] h-[3rem] flex items-center justify-center bg-white text-primary rounded-full shadow-lg shadow-primary ">
-                {renderIcon(service.icon)}
-              </div>
+              <div className="icons-1">{renderIcon(service.icon)}</div>
               <h3 className="text-xl font-poppins font-semibold group-hover:text-primary">
                 {service.title}
               </h3>
