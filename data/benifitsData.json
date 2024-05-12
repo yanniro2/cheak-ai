@@ -1,0 +1,29 @@
+{
+  "benefits": [
+    {
+      "title": "Dedicated Artificial Intelligence",
+      "description": "Leverage dedicated artificial intelligence capabilities to enhance your business operations and decision-making processes.",
+      "icon": "AiOutlineRobot"
+    },
+    {
+      "title": "Fully Responsive & Mobile Friendly",
+      "description": "Enjoy a fully responsive and mobile-friendly design that ensures your website looks great and functions seamlessly across all devices.",
+      "icon": "AiOutlineMobile"
+    },
+    {
+      "title": "Clean & Modern Design Layout",
+      "description": "Immerse your users in a clean and modern design layout that showcases your brand's professionalism and attention to detail.",
+      "icon": "AiOutlineLayout"
+    },
+    {
+      "title": "Multi-Device Testing System",
+      "description": "Benefit from a multi-device testing system that ensures your website performs optimally across various devices and screen sizes.",
+      "icon": "AiOutlineMobile"
+    },
+    {
+      "title": "Great User Experience",
+      "description": "Deliver a great user experience to your visitors with intuitive navigation, fast loading times, and engaging interactions.",
+      "icon": "AiOutlineSmile"
+    }
+  ]
+}
