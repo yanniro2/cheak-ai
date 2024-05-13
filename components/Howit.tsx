@@ -21,7 +21,6 @@ function Howit({}: Props) {
           title={"How It Works"}
           subtitle={"Book a consulting appoitment with us and let us help you."}
         />
-
         <div className="w-full h-full flex flex-col gap-[1rem]">
           {data.howItWorksSteps.map((step, index) => (
             <div
@@ -30,7 +29,6 @@ function Howit({}: Props) {
               <div className="text-primary text-[3rem] font-poppins font-bold group-hover:text-white">
                 0{step.stepNumber}
               </div>
-
               <h3 className="text-[1.5rem] font-open font-bold w-2/5 uppercase group-hover:text-primary">
                 {step.title}
               </h3>
