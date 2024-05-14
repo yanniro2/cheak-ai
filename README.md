@@ -5,3 +5,4 @@
     - Scroll down animation
     - Responsive
     - SEO
+    - Footer background img added

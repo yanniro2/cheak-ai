@@ -1,0 +1,75 @@
+{
+  "footer": {
+    "copyright": "© 2024 Detection Group. All rights reserved.",
+    "contactInformation": {
+      "email": "info@check-ai.com",
+      "phone": "+1 954 998 1219"
+    },
+    "services": [
+      {
+        "title": "Fraud Detection Solutions",
+        "link": "/services/fraud-detection"
+      },
+      {
+        "title": "Data Analytics",
+        "link": "/services/data-analytics"
+      },
+      {
+        "title": "Cybersecurity Services",
+        "link": "/services/cybersecurity"
+      },
+      {
+        "title": "Ensuring all transactions",
+        "link": "/services/secure-transactions"
+      }
+    ],
+    "socialMedia": {
+      "facebook": {
+        "url": "https://www.facebook.com/#",
+        "icon": "FaFacebook"
+      },
+      "twitter": {
+        "url": "https://twitter.com/#",
+        "icon": "FaTwitter"
+      },
+      "instagram": {
+        "url": "https://www.instagram.com/#",
+        "icon": "FaInstagram"
+      },
+      "linkedin": {
+        "url": "https://www.linkedin.com/#",
+        "icon": "FaLinkedin"
+      }
+    },
+    "additional_links": [
+      {
+        "title": "Home",
+        "url": "/"
+      },
+      {
+        "title": "About Us",
+        "url": "/about"
+      },
+      {
+        "title": "Services",
+        "url": "/services"
+      },
+      {
+        "title": "Features",
+        "url": "/features"
+      },
+      {
+        "title": "Contact",
+        "url": "/contact"
+      },
+      {
+        "title": "Terms and Conditions",
+        "url": "/Terms-and-conditions"
+      },
+      {
+        "title": "Privacy Policy",
+        "url": "/privacy-policy"
+      }
+    ]
+  }
+}

@@ -51,6 +51,10 @@
   @apply text-slate-600;
 }
 
+.link-bottom {
+  @apply text hover:text-primary hover:underline transition-all ease-in-out;
+}
+
 .btn-next {
   @apply rounded-full border-primary border w-[3rem] h-[3rem] flex items-center justify-center text-[1.6rem] cursor-pointer hover:bg-primary hover:shadow-primary hover:shadow-lg;
 }
