@@ -1,0 +1,24 @@
+{
+  "whyChooseUs": [
+    {
+      "step": "step-1",
+      "title": "Why Choose Us",
+      "description": "Simplify your workflows and increase efficiency with streamlined processes."
+    },
+    {
+      "step": "step-2",
+      "title": "Enhanced Security",
+      "description": "Protect your digital assets and sensitive information with robust cybersecurity measures."
+    },
+    {
+      "step": "step-3",
+      "title": "Scalability & Flexibility",
+      "description": "Scale your operations seamlessly and adapt to changing business needs with flexible cloud integration."
+    },
+    {
+      "step": "step-4",
+      "title": "Start Now!",
+      "description": "Experience the benefits of our solutions and start your journey towards success today."
+    }
+  ]
+}

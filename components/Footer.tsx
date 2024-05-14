@@ -163,7 +163,7 @@ const Footer = (props: Props) => {
             <div className="uppercase flex items-start lg:items-center lg:gap-1 flex-col lg:flex-row gap-">
               Copyrights © {currentYear}{" "}
               <span className=" flex flex-col lg:flex-row lg:gap-1">
-                <span className="font-semibold font-xl text-primary">
+                <span className="font-bold font-poppins font-xl text-primary">
                   Check-ai
                 </span>{" "}
                 |<span className="uppercase font-light"></span>
