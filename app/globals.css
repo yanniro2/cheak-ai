@@ -47,6 +47,10 @@
   @apply font-medium hover:shadow-primary shadow-text hover:text-primary transition-all;
 }
 
+.link-2 {
+  @apply underline hover:text-secondry transition-all ease-in-out;
+}
+
 .text {
   @apply text-slate-600;
 }
@@ -109,4 +113,18 @@
   background: linear-gradient(to right, #6608e1, #6608e1);
   border-radius: 0 100% 0 0; /* Creates a quarter circle */
   /* opacity: .5; */
+}
+
+.input {
+  @apply border border-primary placeholder:text-slate-600 outline-none bg-transparent text-white py-4 px-6 rounded font-poppins font-light w-full;
+}
+
+
+
+.box-1 {
+  @apply flex items-center w-full gap-[1rem];
+}
+
+.box-2 {
+  @apply  w-full;
 }
