@@ -8,10 +8,10 @@ type Props = {};
 function Hero({}: Props) {
   return (
     <section
-      className="w-screen h-screen flex items-center justify-center drop-shadow shadow"
+      className="w-screen lg:h-screen flex items-center justify-center drop-shadow shadow h-full pt-[6rem] lg:p-0"
       id="home">
       <div className="container mx-auto p-5 flex items-center h-full ">
-        <div className="w-1/2 h-full flex items-center flex-col justify-center gap-3 ">
+        <div className="lg:w-1/2 h-full flex items-center flex-col justify-center gap-3 w-full">
           <div className="flex flex-col gap-1 relative">
             <div className="px-4 py-1 border rounded-full w-fit backdrop-blur backdrop-brightness-50 font-open font-extralight text-[14px] bg-secondry shadow-md shadow-secondry z-[5]">
               Reimagine the World!
@@ -29,7 +29,7 @@ function Hero({}: Props) {
             </p>
             <div className="w-[20rem] h-[20rem]   rounded-full   absolute top-0 -left-[2rem] -z-1  shadow-box bg-primary/5"></div>
           </div>
-          <div className="flex items-center gap-3 justify-start w-full">
+          <div className="flex lg:items-center gap-3 justify-start w-full flex-col lg:flex-row items-start">
             <button className="btn btn-1">start Exploring</button>
             <button className="btn btn-2 group">
               learn more <IoMdArrowForward className="group-hover:ml-3" />
@@ -43,7 +43,7 @@ function Hero({}: Props) {
             width="1000"
             height="1000"
             alt="img"
-            className="shadow-box"
+            className="shadow-box hidden lg:visible"
           />
         </div>
       </div>
