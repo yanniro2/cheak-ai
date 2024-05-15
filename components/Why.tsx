@@ -5,6 +5,8 @@ import Title2 from "./mini/Title2";
 import Image from "next/image";
 import whyData from "@/data/whyData.json";
 import { BiSolidCircleQuarter } from "react-icons/bi";
+import { FaRegSmile, FaAward, FaTasks, FaUsers } from "react-icons/fa";
+import statsData from "@/data/funData.json";
 type Props = {};
 
 const Why = (props: Props) => {
@@ -12,11 +14,60 @@ const Why = (props: Props) => {
     <section
       className="w-screen h-full flex flex-col items-center justify-center drop-shadow shadow"
       id="why-choose-us">
-      <div className="container mx-auto p-5 flex items-center h-full flex-col gap-[1rem] py-[4rem]">
+      <div className="container mx-auto p-5 flex items-center h-full flex-col gap-[1rem] py-[4rem] ">
         <Title1 title={"Why Choose Us"} subtitle={"Core Features"} />
-        <div className="w-full flex items-center justify-between gap-[1rem] flex-row-reverse">
-          <div className="w-1/2 h-[60vh] flex relative">right</div>
-          <div className="w-1/2 h-[60vh] items-start  flex flex-col ">
+        <div className="w-full h-full flex items-center justify-between gap-[3rem] flex-row-reverse">
+          <div className="w-1/2  flex flex-col  rounded gap-[1rem]">
+            <div className="flex flex-col">
+              <h1 className="text-xl font-open font-semibold uppercase text-primary">
+                Dedicated Artificial Intelligence
+              </h1>
+              <h3 className="text-white font-poppins text-[2rem]  font-medium leading-none ">
+                Reap the Benefits of using the latest Artificial Intelligence
+                Technologies.
+              </h3>
+            </div>
+            <div className="flex flex-col gap-3">
+              <p className="text">
+                Driven by a passion for innovation and excellence, our dedicated
+                team of experts harnesses the power of cutting-edge artificial
+                intelligence technologies to deliver unparalleled solutions
+                tailored to meet your unique needs. With a steadfast commitment
+                to quality and a track record of success, we strive to exceed
+                expectations and drive transformative results for our clients.
+              </p>
+              <p className="text">
+                At the heart of our approach lies a collaborative spirit, where
+                every project is approached with creativity, precision, and a
+                relentless pursuit of excellence. As we continue to push the
+                boundaries of what&apos;s possible in the realm of AI, we invite
+                you to join us on this journey towards a future defined by
+                innovation and possibility
+              </p>
+            </div>
+            <div>
+              <div className="grid grid-cols-2  gap-[1rem]">
+                {statsData.stats.map((stat, index) => (
+                  <div
+                    key={index}
+                    className="flex  items-center justify-between text-center bg-primary p-[1rem] rounded">
+                    <div className="w-1/4">
+                      <div className="icons-1">{renderIcon(stat.icon)}</div>
+                    </div>
+                    <div className="w-3/4">
+                      <div className="text-3xl font-bold font-poppins">
+                        {stat.number}
+                      </div>
+                      <div className="uppercase font-open text-dark font-semibold">
+                        {stat.label}
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+          <div className="w-1/2  items-start  flex flex-col justify-between gap-[1rem]">
             <div className="pl-5">
               <Title2
                 title={"Empower Your Vision with Us"}
@@ -82,6 +133,18 @@ const Why = (props: Props) => {
       </div>
     </section>
   );
+};
+
+const renderIcon = (iconName: string) => {
+  const iconComponents: { [key: string]: React.ElementType } = {
+    FaRegSmile,
+    FaAward,
+    FaTasks,
+    FaUsers,
+  };
+
+  const IconComponent = iconComponents[iconName];
+  return <IconComponent />;
 };
 
 export default Why

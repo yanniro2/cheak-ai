@@ -1,0 +1,28 @@
+{
+  "stats": [
+    {
+      "id": "happyClients",
+      "number": "751",
+      "label": "Happy Clients",
+      "icon": "FaRegSmile"
+    },
+    {
+      "id": "awardsReceived",
+      "number": "56",
+      "label": "Awards Received",
+      "icon": "FaAward"
+    },
+    {
+      "id": "successfulProjects",
+      "number": "48",
+      "label": "Successful Projects",
+      "icon": "FaTasks"
+    },
+    {
+      "id": "teamMembers",
+      "number": "34",
+      "label": "Team Members",
+      "icon": "FaUsers"
+    }
+  ]
+}
