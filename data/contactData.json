@@ -1,0 +1,36 @@
+{
+  "contactDetails": {
+    "phone": {
+      "text": "+1 954 998 1219",
+      "icon": "FaPhone",
+      "href": "tel:+1 954 998 1219"
+    },
+    "email": {
+      "text": "info@check-ai.com",
+      "icon": "FaEnvelope",
+      "href": "mailto:info@check-ai.com"
+    }
+  },
+  "socialMedia": [
+    {
+      "name": "Facebook",
+      "link": "https://www.facebook.com/example",
+      "icon": "FaFacebook"
+    },
+    {
+      "name": "Twitter",
+      "link": "https://www.twitter.com/example",
+      "icon": "FaTwitter"
+    },
+    {
+      "name": "Instagram",
+      "link": "https://www.instagram.com/example",
+      "icon": "FaInstagram"
+    },
+    {
+      "name": "LinkedIn",
+      "link": "https://www.linkedin.com/example",
+      "icon": "FaLinkedin"
+    }
+  ]
+}

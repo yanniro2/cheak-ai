@@ -71,6 +71,10 @@
   @apply text-xl w-[3rem] h-[3rem] flex items-center justify-center bg-transparent text-white rounded-full group-hover:shadow-lg group-hover:shadow-primary border border-white group-hover:bg-white group-hover:text-primary group-hover:border-primary;
 }
 
+.icons-3 {
+   @apply text-xl w-[3rem] h-[3rem] flex items-center justify-center bg-transparent text-primary rounded-full group-hover:shadow-lg group-hover:shadow-primary border border-primary hover:text-white hover:border-white transition-all ease-in-out shadow-text ;
+}
+
 .step-h1 {
   @apply font-semibold font-poppins ;
 }
@@ -127,4 +131,8 @@
 
 .box-2 {
   @apply  w-full;
+}
+
+.h1 {
+  @apply text-[2rem] font-poppins font-semibold uppercase;
 }

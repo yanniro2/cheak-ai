@@ -1,10 +1,46 @@
 import React from "react";
 import Title1 from "./mini/Title";
 import Link from "next/link";
+import contactData from "@/data/contactData.json";
+import {
+  FaPhone,
+  FaEnvelope,
+  FaFacebook,
+  FaTwitter,
+  FaInstagram,
+  FaLinkedin,
+} from "react-icons/fa";
+
+// Define a type for the contact details object
+interface ContactDetails {
+  phone: {
+    text: string;
+    icon: string;
+    href: string;
+  };
+  email: {
+    text: string;
+    icon: string;
+    href: string;
+  };
+}
+
+// Define a type for the social media object
+interface SocialMedia {
+  name: string;
+  link: string;
+  icon: string;
+}
+
+// Define a type for the entire contact data object
+interface ContactData {
+  contactDetails: ContactDetails;
+  socialMedia: SocialMedia[];
+}
 
 type Props = {};
 
-const Contact = (props: Props) => {
+const Contact: React.FC<Props> = (props) => {
   return (
     <section
       className="w-screen h-full flex flex-col items-center justify-center drop-shadow shadow"
@@ -13,10 +49,61 @@ const Contact = (props: Props) => {
         <Title1 title={"Contact Us"} subtitle={"Get in Touch"} />
         <div className="w-full h-full flex items-center justify-between gap-[3rem] ">
           <div className="w-1/2  flex flex-col  rounded gap-[1rem]">
-            <h2>Contact Details</h2>
-            <p>Address: 123 Main Street, City, Country</p>
-            <p>Phone: +1234567890</p>
-            <p>Email: example@example.com</p>
+            <h2 className="h1 text-primary">Contact Details</h2>
+            <p className="text">
+              Feel free to reach out to us using the contact details below. We
+              are here to assist you with any inquiries or assistance you may
+              need. Whether it&rsquo;s a question, feedback, or collaboration
+              opportunity, we&rsquo;re just a message away!
+            </p>
+
+            <div className="w-1/2 flex flex-col gap-[1rem] items-start">
+              {Object.keys(contactData.contactDetails).map((key, index) => (
+                <div
+                  key={index}
+                  className="flex justify-between bg-lighDark w-full p-[1rem] rounded items-center text-left">
+                  <Link
+                    className="icons-1 w-1/4"
+                    href={
+                      contactData.contactDetails[key as keyof ContactDetails]
+                        .href
+                    }>
+                    {renderIcon(
+                      contactData.contactDetails[key as keyof ContactDetails]
+                        .icon
+                    )}
+                  </Link>
+                  <div className="flex items-start flex-col text-left w-3/4">
+                    <p className="font-light font-poppins text-primary">
+                      {key.charAt(0).toUpperCase() + key.slice(1)}
+                    </p>
+                    <p className="font-open font-semibold">
+                      {
+                        contactData.contactDetails[key as keyof ContactDetails]
+                          .text
+                      }
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="pt-[2rem]">
+              <h4 className="text-xl font-poppins font-semibold">
+                Social Media
+              </h4>
+              <div className="flex gap-[1rem] mt-4 items-center">
+                {contactData.socialMedia.map((social, index) => (
+                  <Link
+                    key={index}
+                    href={social.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="icons-3 ">
+                    {renderIcon(social.icon)}
+                  </Link>
+                ))}
+              </div>
+            </div>
           </div>
           <div className="w-1/2  items-start  flex flex-col justify-between gap-[1rem]">
             <h2 className="text-[2rem] font-poppins font-semibold uppercase">
@@ -78,15 +165,15 @@ const Contact = (props: Props) => {
                   I agree to the{" "}
                   <Link href="/" className="link-2">
                     terms of use
-                  </Link>
-                  and
+                  </Link>{" "}
+                  and{" "}
                   <Link href="/" className="link-2">
                     privacy policy
                   </Link>
                 </label>
               </div>
 
-              <div className="box-2 input">I&rsquo;m not robot</div>
+              <div className="box-2 input">I’m not robot</div>
 
               <button type="submit" className="btn btn-1">
                 Submit
@@ -97,6 +184,20 @@ const Contact = (props: Props) => {
       </div>
     </section>
   );
+};
+
+const renderIcon = (iconName: string) => {
+  const iconComponents: { [key: string]: React.ElementType } = {
+    FaPhone,
+    FaEnvelope,
+    FaFacebook,
+    FaTwitter,
+    FaInstagram,
+    FaLinkedin,
+  };
+
+  const IconComponent = iconComponents[iconName];
+  return <IconComponent />;
 };
 
 export default Contact;
