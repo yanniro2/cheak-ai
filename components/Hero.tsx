@@ -13,10 +13,10 @@ function Hero({}: Props) {
       <div className="container mx-auto p-5 flex items-center h-full ">
         <div className="lg:w-1/2 h-full flex items-center flex-col justify-center gap-3 w-full">
           <div className="flex flex-col gap-1 relative">
-            <div className="px-4 py-1 border rounded-full w-fit backdrop-blur backdrop-brightness-50 font-open font-extralight text-[14px] bg-secondry shadow-md shadow-secondry z-[5]">
+            <div className="px-4 py-1 border rounded-full lg:w-fit backdrop-blur backdrop-brightness-50 font-open font-extralight text-[14px] bg-secondry shadow-md shadow-secondry z-[5]">
               Reimagine the World!
             </div>
-            <h1 className="text-[3rem] font-poppins font-bold leading-tight drop-shadow-lg drop-shadow-primary z-[5]">
+            <h1 className="lg:text-[3rem] font-poppins font-bold leading-tight drop-shadow-lg drop-shadow-primary z-[5] text-3xl">
               How Can Cutting-Edge Technology Help you
             </h1>
             <h2 className="text-primary text-xl font-semibold z-[5] shadow-text">
