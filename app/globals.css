@@ -78,11 +78,35 @@
 .step-box {
   @apply  cursor-pointer hover:bg-lighDark  rounded transition-all ease-linear hover:shadow hover:shadow-primary bg-lighDark relative flex justify-between flex-col p-5 ;
 }
-.quarter-circle-div {
-  width: 4rem; /* Adjust width as needed */
-  height: 4rem; /* Adjust height as needed */
-  background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
+.quarter-circle-div-1 {
+  width: 4.5rem; /* Adjust width as needed */
+  height: 4.5rem; /* Adjust height as needed */
+ background: linear-gradient(to right, #6608e1, #6608e1);
+ opacity: .5;
   border-radius: 0 100% 0 0; /* Creates a quarter circle */
 
+}
 
+.quarter-circle-div-2 {
+  width: 4.5rem; /* Adjust width as needed */
+  height: 4.5rem; /* Adjust height as needed */
+ background: linear-gradient(to top, #6608e1, #6608e1);
+ opacity: .5;
+  border-radius: 0 100% 0 0; /* Creates a quarter circle */
+}
+
+.quarter-circle-div-3 {
+  width: 4.5rem; /* Adjust width as needed */
+  height: 4.5rem; /* Adjust height as needed */
+ background: linear-gradient(to top, #6608e1, #6608e1);
+ opacity: .5;
+  border-radius: 0 100% 0 0; /* Creates a quarter circle */
+}
+
+.quarter-circle-div-4 {
+  width: 4.5rem; /* Adjust width as needed */
+  height: 4.5rem; /* Adjust height as needed */
+  background: linear-gradient(to right, #6608e1, #6608e1);
+  border-radius: 0 100% 0 0; /* Creates a quarter circle */
+  /* opacity: .5; */
 }

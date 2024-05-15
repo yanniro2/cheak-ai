@@ -30,32 +30,28 @@ const Why = (props: Props) => {
                 <div className="flex flex-col">
                   <h2 className="step-h1 ">Why Choose Us</h2>
                   <h3 className="step-h3">step 1</h3>
-                  <p className="text pt-3">
+                  <p className="text pt-3 w-3/4">
                     {/* {service.description} */}
                     Simplify your workflows and increase efficiency with
                     streamlined processes.
                   </p>
                 </div>
 
-                <div className="w-full h-[4rem] relative ">
-                  <BiSolidCircleQuarter className="absolute right-0 bottom-0 object-contain translate-x-1/2 translate-y-1/2 text-[8rem] -rotate-90 text-dark" />
-                </div>
+                <div className="absolute bottom-0 right-0 object-contain  text-[8rem] text-dark quarter-circle-div-1 -rotate-90"></div>
               </div>
 
               {/* 2 */}
               <div className="service cursor-pointer hover:bg-lighDark  rounded transition-all ease-linear hover:shadow hover:shadow-primary bg-lighDark relative flex  flex-col p-5 items-end justify-end text-right">
-                <div className="flex flex-col">
+                <div className="flex flex-col items-end">
                   <h2 className="step-h1">Enhanced Security</h2>
                   <h3 className="step-h3">step 2</h3>
-                  <p className="text pt-3">
+                  <p className="text pt-3 w-3/4">
                     Protect your digital assets and sensitive information with
                     robust cybersecurity measures.
                   </p>
                 </div>
 
-                <div className="w-[4rem] h-[4rem] relative">
-                  <div className="quarter-circle-div absolute left-0 bottom-0 object-contain -translate-x-1/2 translate-y-1/2 text-[8rem] bg-gradient-to-r from-primary to-danger bg-clip-text text-transparent fill-transparent"></div>
-                </div>
+                <div className="absolute bottom-0 left-0 object-contain  text-[8rem] text-dark quarter-circle-div-2"></div>
               </div>
 
               {/* 3 */}
@@ -63,22 +59,22 @@ const Why = (props: Props) => {
                 <div className="flex flex-col">
                   <h2 className="step-h1">Scalability & Flexibility</h2>
                   <h3 className="step-h3">step 3</h3>
-                  <p className="text pt-3">
+                  <p className="text pt-3 w-3/4">
                     Scale your operations seamlessly and adapt to changing
                     business needs with flexible cloud integration.
                   </p>
                 </div>
 
-                <BiSolidCircleQuarter className="absolute right-5 top-5 object-contain  translate-x-1/2 text-[8rem]  text-dark -rotate-180 -translate-y-1/2" />
+                <div className="absolute top-0 right-0 object-contain  text-[8rem] text-dark quarter-circle-div-3 -rotate-180"></div>
               </div>
 
               {/* 4 */}
-              <div className="service cursor-pointer hover:bg-lighDark  rounded transition-all ease-linear hover:shadow hover:shadow-primary relative    p-5 bg-primary text-right flex items-end ">
-                <h3 className="text-4xl text-white font-poppins text-right w-full">
+              <div className="service cursor-pointer   rounded transition-all ease-linear hover:shadow hover:shadow-primary relative    p-5 text-right flex items-end  group bg-gradient-to-l from-primary to-lighDark">
+                <h3 className="text-4xl  font-poppins text-right w-full text-white">
                   Start Now!
                 </h3>
 
-                <BiSolidCircleQuarter className="absolute top-5 left-5 object-contain -translate-x-1/2 -translate-y-1/2 text-[8rem] rotate-90 text-dark" />
+                <div className="absolute top-0 left-0 object-contain  text-[8rem] text-dark quarter-circle-div-4 rotate-90 shadow-xl "></div>
               </div>
             </div>
           </div>
