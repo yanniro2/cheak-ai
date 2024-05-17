@@ -15,15 +15,15 @@
 
 
 .btn {
-  @apply py-3 px-6 border  rounded-full capitalize font-poppins font-normal transition-all drop-shadow shadow-lg cursor-pointer flex items-center justify-center gap-3 ease-linear;
+  @apply py-3 px-6 border  rounded-full capitalize font-poppins font-normal transition-all drop-shadow shadow-lg cursor-pointer flex items-center justify-center gap-3 ease-linear w-full md:w-fit;
 }
 
 .btn-1 {
-  @apply bg-primary text-white hover:bg-white hover:text-primary shadow-md shadow-primary hover:shadow-white;
+  @apply bg-primary text-white hover:bg-white hover:text-primary shadow-md shadow-primary hover:shadow-white w-full md:w-fit;
 }
 
 .btn-2 {
-  @apply hover:bg-primary text-white shadow-md hover:shadow-primary ;
+  @apply hover:bg-primary text-white shadow-md hover:shadow-primary w-full md:w-fit;
 }
 
 .shadow-box {
