@@ -47,8 +47,8 @@ const Contact: React.FC<Props> = (props) => {
       id="contact">
       <div className="container mx-auto p-5 flex items-center h-full flex-col gap-[1rem] py-[4rem] ">
         <Title1 title={"Contact Us"} subtitle={"Get in Touch"} />
-        <div className="w-full h-full flex items-center justify-between gap-[3rem] ">
-          <div className="w-1/2  flex flex-col  rounded gap-[1rem]">
+        <div className="w-full h-full md:flex items-center justify-between gap-[3rem] flex-col">
+          <div className="md:w-1/2  flex flex-col  rounded gap-[1rem]">
             <h2 className="h1 text-primary">Contact Details</h2>
             <p className="text">
               Feel free to reach out to us using the contact details below. We
@@ -57,7 +57,7 @@ const Contact: React.FC<Props> = (props) => {
               opportunity, we&rsquo;re just a message away!
             </p>
 
-            <div className="w-1/2 flex flex-col gap-[1rem] items-start">
+            <div className="md:w-1/2 flex flex-col gap-[1rem] items-start">
               {Object.keys(contactData.contactDetails).map((key, index) => (
                 <div
                   key={index}
@@ -105,7 +105,7 @@ const Contact: React.FC<Props> = (props) => {
               </div>
             </div>
           </div>
-          <div className="w-1/2  items-start  flex flex-col justify-between gap-[1rem]">
+          <div className="md:w-1/2  items-start  flex flex-col justify-between gap-[1rem]">
             <h2 className="text-[2rem] font-poppins font-semibold uppercase">
               Add your details
             </h2>

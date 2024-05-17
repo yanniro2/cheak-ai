@@ -21,7 +21,7 @@ const Benifits = (props: Props) => {
           subtitle={"Some Benefits of using the Check-AI."}
         />
 
-        <div className="grid grid-cols-3 gap-[1.5rem]">
+        <div className="grid md:grid-cols-3 gap-[1.5rem]">
           {data.benefits.slice(0, 3).map((step, index) => (
             <div
               key={index}
@@ -34,7 +34,7 @@ const Benifits = (props: Props) => {
             </div>
           ))}
         </div>
-        <div className="grid grid-cols-2 gap-[1.5rem] mt-[.5rem]">
+        <div className="grid md:grid-cols-2 gap-[1.5rem] mt-[.5rem]">
           {data.benefits.slice(3, 5).map((step, index) => (
             <div
               key={index}

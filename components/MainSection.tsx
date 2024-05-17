@@ -68,11 +68,11 @@ const MainSection: React.FC = () => {
       <div className="w-full h-full flex items-center justify-between overflow-hidden gap-[1rem] ">
         <div
           ref={containerRef}
-          className="w-screen overflow-y-auto grid grid-flow-col justify-start items-center gap-[1rem] transition-all h-full py-[1rem]">
+          className="w-screen overflow-y-auto grid md:grid-flow-col justify-start items-center gap-[1rem] transition-all h-full py-[1rem]">
           {mainServicesData.mainServices.map((service, index) => (
             <div
               key={index}
-              className="md:w-[25vw] w-[90vw]  h-full bg-lighDark p-[2rem] rounded cursor-pointer hover:bg-white hover:scale-105 md:m-[1rem] transition-all ease-linear shadow shadow-primary hover:shadow-lg hover:drop-shadow-lg flex flex-col justify-between text-center items-center group overscroll-contain">
+              className="md:w-[25vw] w-full  h-full bg-lighDark p-[2rem] rounded cursor-pointer hover:bg-white hover:scale-105 md:m-[1rem] transition-all ease-linear shadow shadow-primary hover:shadow-lg hover:drop-shadow-lg flex flex-col justify-between text-center items-center group overscroll-contain">
               <div className="icons-1">{renderIcon(service.icon)}</div>
               <h3 className="text-xl font-poppins font-semibold group-hover:text-primary">
                 {service.title}
@@ -85,7 +85,7 @@ const MainSection: React.FC = () => {
           ))}
         </div>
       </div>
-      <div className="flex items-center justify-center gap-3 ">
+      <div className="md:flex items-center justify-center gap-3 hidden">
         <button className="btn-next" onClick={scrollBackward}>
           <MdNavigateBefore />
         </button>

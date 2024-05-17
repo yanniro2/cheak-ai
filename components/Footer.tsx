@@ -88,7 +88,7 @@ const Footer = (props: Props) => {
       id="footer">
       <div className="container mx-auto p-3 lg:p-0 z-20 flex flex-col justify-between h-full ">
         <div className="flex   z-20 flex-col lg:flex-row w-full justify-between gap-8">
-          <div className="flex flex-col w-1/2">
+          <div className="flex flex-col md:w-1/2">
             <Logo />
             <p className="text">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit
@@ -139,7 +139,7 @@ const Footer = (props: Props) => {
             </div>
           </div>
           {/* Contact Information */}
-          <div className="w-1/4">
+          <div className="md:w-1/4">
             <h1 className="text-xl font-bold mb-4 z-20">Contact Information</h1>
             <Link
               href={`mailto:${contactInformation.email}`}
@@ -155,18 +155,19 @@ const Footer = (props: Props) => {
           </div>
         </div>
 
-        <hr className="my-6 border-primary shadow-primary z-20 shadow-text" />
+        <hr className="my-3 border-primary shadow-primary z-20 shadow-text" />
 
         {/* Copyrights */}
-        <div className="z-20 flex items-start lg:items-center justify-between flex-col lg:flex-row">
+        <div className="z-20 flex items-start lg:items-center justify-between flex-col-reverse lg:flex-row">
           <div className="flex gap-3 flex-col">
-            <div className="uppercase flex items-start lg:items-center lg:gap-1 flex-col lg:flex-row gap-">
+            <div className="uppercase flex items-start lg:items-center lg:gap-1 flex-col md:flex-row gap-">
               Copyrights © {currentYear}{" "}
-              <span className=" flex flex-col lg:flex-row lg:gap-1">
+              <span className=" flex  flex-row lg:gap-1">
                 <span className="font-bold font-poppins font-xl text-primary">
                   Check-ai
                 </span>{" "}
-                |<span className="uppercase font-light"></span>
+                <span className="hidden md:block">|</span>
+                <span className="uppercase font-light"></span>
               </span>
               All rights reserved
             </div>
@@ -181,21 +182,21 @@ const Footer = (props: Props) => {
             </div>
           </div>
 
-          <div className="flex items-center gap-3 text">
+          <div className="flex md:items-center md:gap-3 text flex-col md:flex-row pb-[1rem] md:p-0">
             <Link
               href="/Terms-and-conditions"
               className="link-bottom"
               aria-label={"Terms and Conditions"}>
               Terms and Conditions
             </Link>
-            |
+            <span className="hidden md:block">|</span>
             <Link
               href="/privacy-policy"
               className="link-bottom"
               aria-label={"Privacy Policy"}>
               Privacy Policy
             </Link>
-            |
+            <span className="hidden md:block">|</span>
             <Link
               href="/privacy-policy"
               className="link-bottom"

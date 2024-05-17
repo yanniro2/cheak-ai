@@ -16,8 +16,8 @@ const Why = (props: Props) => {
       id="why-choose-us">
       <div className="container mx-auto p-5 flex items-center h-full flex-col gap-[1rem] py-[4rem] ">
         <Title1 title={"Why Choose Us"} subtitle={"Core Features"} />
-        <div className="w-full h-full flex items-center justify-between gap-[3rem] flex-row-reverse">
-          <div className="w-1/2  flex flex-col  rounded gap-[1rem]">
+        <div className="w-full h-full flex items-center justify-between gap-[3rem] md:flex-row-reverse flex-col">
+          <div className="md:w-1/2  flex flex-col  rounded gap-[1rem]">
             <div className="flex flex-col">
               <h1 className="text-xl font-open font-semibold uppercase text-primary">
                 Dedicated Artificial Intelligence
@@ -46,7 +46,7 @@ const Why = (props: Props) => {
               </p>
             </div>
             <div>
-              <div className="grid grid-cols-2  gap-[1rem]">
+              <div className="grid md:grid-cols-2  gap-[1rem]">
                 {statsData.stats.map((stat, index) => (
                   <div
                     key={index}
@@ -67,15 +67,15 @@ const Why = (props: Props) => {
               </div>
             </div>
           </div>
-          <div className="w-1/2  items-start  flex flex-col justify-between gap-[1rem]">
-            <div className="pl-5">
+          <div className="md:w-1/2  items-start  flex flex-col justify-between gap-[1rem]">
+            <div className="md:pl-5">
               <Title2
                 title={"Empower Your Vision with Us"}
                 subtitle={"Where Innovation Meets Implementation"}
               />
             </div>
 
-            <div className="grid grid-cols-2 gap-3 pl-5">
+            <div className="grid md:grid-cols-2 gap-3 md:pl-5">
               {/* 1 */}
               <div className="service cursor-pointer hover:bg-lighDark  rounded transition-all ease-linear hover:shadow hover:shadow-primary bg-lighDark relative flex justify-between flex-col p-5 ">
                 <div className="flex flex-col">
