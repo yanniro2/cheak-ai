@@ -2,8 +2,6 @@
 import React, { useEffect, useState } from "react";
 import navigationData from "@/data/headerData.json";
 import Link from "next/link";
-// import { usePathname } from "next/navigation";
-// import Image from "next/image";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import Logo from "./mini/Logo";
 import Hover from "./mini/Hover";
@@ -115,7 +113,6 @@ const Header: React.FC = () => {
               }`}
               onClick={toggleMobileMenu}
               aria-label="button">
-              {/* Hamburger icon */}
               <HiOutlineMenuAlt3 />
             </button>
           </div>
@@ -127,10 +124,10 @@ const Header: React.FC = () => {
                 <Link
                   key={index}
                   href={item.url}
-                  className={` w-full bg-lighDark p-3   cursor-pointer text-[1.5rem] transition-all ease-in-out flex items-center justify-center gap-3 ${
+                  className={` w-full bg-lighDark p-3   cursor-pointer text-[1.4rem] transition-all ease-in-out flex items-center justify-center gap-3 ${
                     activeSection == item.id
-                      ? "bg-white text-primary"
-                      : "hover:bg-white hover:text-primary"
+                      ? "bg-white text-primary font-semibold"
+                      : "hover:bg-white hover:text-primary "
                   }`}
                   aria-label={item.label}
                   onClick={toggleMobileMenu}>
