@@ -159,14 +159,14 @@ const Contact: React.FC<Props> = (props) => {
                 className="input"
                 placeholder="Message"></textarea>
 
-              <div className="box-1">
+              <div className="box-3">
                 <input type="checkbox" id="terms" name="terms" />
-                <label htmlFor="terms" className="text-primary flex gap-1">
-                  I agree to the{" "}
+                <label htmlFor="terms" className="text-primary flex gap-1 ">
+                  I agree to the
                   <Link href="/" className="link-2">
                     terms of use
-                  </Link>{" "}
-                  and{" "}
+                  </Link>
+                  and
                   <Link href="/" className="link-2">
                     privacy policy
                   </Link>

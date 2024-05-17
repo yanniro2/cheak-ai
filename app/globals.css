@@ -116,11 +116,14 @@
 
 
 .box-1 {
-  @apply flex items-center w-full gap-[1rem];
+  @apply flex items-center w-full gap-[1rem] flex-col md:flex-row;
 }
 
 .box-2 {
   @apply  w-full;
+}
+.box-3 {
+  @apply flex  w-full gap-[1rem] items-center ;
 }
 
 .h1 {

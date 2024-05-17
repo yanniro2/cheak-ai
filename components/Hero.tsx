@@ -42,7 +42,7 @@ function Hero({}: Props) {
             width="1000"
             height="1000"
             alt="img"
-            className="md:shadow-box  "
+            className="md:shadow-box"
           />
         </div>
         <div className="md:hidden flex md:items-center gap-3 justify-start w-full flex-col md:flex-row items-start">

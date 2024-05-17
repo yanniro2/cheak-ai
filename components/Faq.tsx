@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import Title1 from "@/components/mini/Title";
 import data from "@/data/faqData.json";
-// import Image from "next/image";
 import {
   MdKeyboardDoubleArrowUp,
   MdKeyboardDoubleArrowDown,
