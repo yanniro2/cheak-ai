@@ -20,33 +20,64 @@ const Benifits = (props: Props) => {
           title={"Dedicated Artificial Intelligence"}
           subtitle={"Some Benefits of using the Check-AI."}
         />
-
-        <div className="grid md:grid-cols-3 gap-[1.5rem]">
-          {data.benefits.slice(0, 3).map((step, index) => (
-            <div
-              key={index}
-              className="bg-lighDark p-[2rem] rounded flex flex-col items-center justify-center gap-3 text-center cursor-pointer hover:scale-105 transition-all ease-linear group hover:shadow-md hover:shadow-primary border border-primary">
-              <div className="icons-1">{renderIcon(step.icon)}</div>
-              <h3 className="text-xl font-semibold font-poppins">
-                {step.title}
-              </h3>
-              <p className="text font-open">{step.description}</p>
-            </div>
-          ))}
+        {/* Tab */}
+        <div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-[1.5rem]">
+            {data.benefits.slice(0, 4).map((step, index) => (
+              <div
+                key={index}
+                className="bg-lighDark p-[2rem] rounded flex flex-col items-center justify-center gap-3 text-center cursor-pointer hover:scale-105 transition-all ease-linear group hover:shadow-md hover:shadow-primary border border-primary">
+                <div className="icons-1">{renderIcon(step.icon)}</div>
+                <h3 className="text-xl font-semibold font-poppins">
+                  {step.title}
+                </h3>
+                <p className="text font-open">{step.description}</p>
+              </div>
+            ))}
+          </div>
+          <div className="grid  gap-[1.5rem] mt-[1.5rem]">
+            {data.benefits.slice(4, 5).map((step, index) => (
+              <div
+                key={index}
+                className="bg-lighDark p-[2rem] rounded flex flex-col items-center justify-center gap-3 text-center cursor-pointer hover:scale-105 transition-all ease-linear group hover:shadow-md hover:shadow-primary border border-primary">
+                <div className="icons-1">{renderIcon(step.icon)}</div>
+                <h3 className="text-xl font-semibold font-poppins">
+                  {step.title}
+                </h3>
+                <p className="text font-open">{step.description}</p>
+              </div>
+            ))}
+          </div>
         </div>
-        <div className="grid md:grid-cols-2 gap-[1.5rem] mt-[.5rem]">
-          {data.benefits.slice(3, 5).map((step, index) => (
-            <div
-              key={index}
-              className="bg-lighDark p-[2rem] rounded flex flex-col items-center justify-center gap-3 text-center cursor-pointer hover:scale-105 transition-all ease-linear group hover:shadow-md hover:shadow-primary border border-primary">
-              <div className="icons-1">{renderIcon(step.icon)}</div>
-              <h3 className="text-xl font-semibold font-poppins">
-                {step.title}
-              </h3>
-              <p className="text font-open">{step.description}</p>
-            </div>
-          ))}
-        </div>
+        {/* default */}
+        {/* <div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-[1.5rem]">
+            {data.benefits.slice(0, 4).map((step, index) => (
+              <div
+                key={index}
+                className="bg-lighDark p-[2rem] rounded flex flex-col items-center justify-center gap-3 text-center cursor-pointer hover:scale-105 transition-all ease-linear group hover:shadow-md hover:shadow-primary border border-primary">
+                <div className="icons-1">{renderIcon(step.icon)}</div>
+                <h3 className="text-xl font-semibold font-poppins">
+                  {step.title}
+                </h3>
+                <p className="text font-open">{step.description}</p>
+              </div>
+            ))}
+          </div>
+          <div className="grid md:grid-cols-2 gap-[1.5rem] mt-[.5rem]">
+            {data.benefits.slice(3, 5).map((step, index) => (
+              <div
+                key={index}
+                className="bg-lighDark p-[2rem] rounded flex flex-col items-center justify-center gap-3 text-center cursor-pointer hover:scale-105 transition-all ease-linear group hover:shadow-md hover:shadow-primary border border-primary">
+                <div className="icons-1">{renderIcon(step.icon)}</div>
+                <h3 className="text-xl font-semibold font-poppins">
+                  {step.title}
+                </h3>
+                <p className="text font-open">{step.description}</p>
+              </div>
+            ))}
+          </div>
+        </div> */}
       </div>
     </section>
   );

@@ -26,7 +26,7 @@ const Faq = () => {
         />
 
         <div className="w-full flex items-center justify-center flex-col md:flex-row">
-          <div className="md:w-1/2 h-full flex flex-col gap-[1rem]">
+          <div className="lg:w-1/2 h-full flex flex-col gap-[1rem]">
             {data.faqs.map((step, index) => (
               <div
                 key={index}
@@ -61,7 +61,7 @@ const Faq = () => {
               </div>
             ))}
           </div>
-          <div className="md:w-1/2 h-full md:flex items-center justify-center hidden">
+          <div className="lg:w-1/2 h-full lg:flex items-center justify-center hidden">
             <FaQuestion className="text-[30rem] text-secondry  shadow-text-secound" />
           </div>
         </div>

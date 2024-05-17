@@ -36,7 +36,7 @@ const About = (props: Props) => {
               className="object-cover rounded"
             />
           </div>
-          <div className="md:w-1/2 md:h-[60vh] h-full bg-lighDark rounded flex flex-col md:p-[3rem]  shadow-lg w-full p-[1.5rem]">
+          <div className="md:w-1/2  lg:h-full md:h-[60vh] bg-lighDark rounded flex flex-col lg:p-[3rem]  shadow-lg w-full p-[1.5rem]">
             <h3 className="capitalize text-3xl font-poppins text-primary">
               our story
             </h3>

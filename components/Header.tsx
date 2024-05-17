@@ -74,13 +74,13 @@ const Header: React.FC = () => {
       className={` ${
         isSticky
           ? "backdrop-blur-lg   bg-darkBlue text-white  shadow-lg   drop-shadow-lg  border-gray-100 bg-opacity-90 border-b border-primary "
-          : "bg-none  backdrop-blur-lg   bg-darkBlue text-white  shadow-lg   drop-shadow-lg  border-gray-100 bg-opacity-90 border-b border-primary  md:border-none"
+          : "bg-none  backdrop-blur-lg   bg-darkBlue text-white  shadow-lg   drop-shadow-lg  border-gray-100 bg-opacity-90 border-b border-primary  lg:border-none"
       } w-screen h-min  text-white fixed top-0 left-0 right-0 z-[3000] py-2 `}>
       <div className="container mx-auto flex items-center px-3 justify-between">
         <nav className="w-full flex items-center justify-between">
           <Logo />
 
-          <ul className="w-max items-center justify-evenly hidden md:flex md:flex gap-5 ">
+          <ul className="w-max items-center justify-evenly hidden lg:flex  gap-5 ">
             {navigationData.navigation.map(
               (item: NavigationItem, index: number) => (
                 <li key={index}>
@@ -100,13 +100,13 @@ const Header: React.FC = () => {
               )
             )}
           </ul>
-          <div className="hidden md:flex">
+          <div className="hidden lg:flex">
             <Link href="/" className="btn btn-2">
               get started!
             </Link>
           </div>
 
-          <div className="md:hidden md:hidden">
+          <div className="lg:hidden ">
             <button
               className={`text-[1.5rem] cursor-pointer hover:text-primary transition-all ${
                 isMobileMenuOpen ? "text-orange" : "text-gray-200"
@@ -118,7 +118,7 @@ const Header: React.FC = () => {
           </div>
         </nav>
         {isMobileMenuOpen && (
-          <div className="md:hidden fixed top-[4rem] left-0 right-0 w-screen h-screen z-[5000] flex flex-col   p-3  bg-dark justify-around text-center  items-center pb-[4rem] ">
+          <div className="lg:hidden fixed top-[4rem] left-0 right-0 w-screen h-screen z-[5000] flex flex-col   p-3  bg-dark justify-around text-center  items-center pb-[4rem] ">
             {navigationData.navigation.map(
               (item: NavigationItem, index: number) => (
                 <Link
@@ -138,7 +138,7 @@ const Header: React.FC = () => {
             )}
 
             <hr className="border-lighDark border w-full" />
-            <div className="flex md:hidden w-full">
+            <div className="flex lg:hidden w-full">
               <Link
                 href="/"
                 className="text-white w-full bg-primary p-3   cursor-pointer text-[1.5rem] transition-all ease-in-out uppercase font-semibold">

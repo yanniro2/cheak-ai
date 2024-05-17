@@ -16,8 +16,8 @@ const Why = (props: Props) => {
       id="why-choose-us">
       <div className="container mx-auto p-5 flex items-center h-full flex-col gap-[1rem] md:py-[4rem] ">
         <Title1 title={"Why Choose Us"} subtitle={"Core Features"} />
-        <div className="w-full h-full flex items-center justify-between gap-[3rem] md:flex-row-reverse flex-col">
-          <div className="md:w-1/2  flex flex-col  rounded gap-[1rem]">
+        <div className="w-full h-full flex items-center justify-between gap-[3rem] lg:flex-row-reverse flex-col">
+          <div className="lg:w-1/2  flex flex-col  rounded gap-[1rem]">
             <div className="flex flex-col">
               <h1 className="text-xl font-open font-semibold uppercase text-primary">
                 Dedicated Artificial Intelligence
@@ -67,7 +67,7 @@ const Why = (props: Props) => {
               </div>
             </div>
           </div>
-          <div className="md:w-1/2  items-start  flex flex-col justify-between gap-[1rem]">
+          <div className="lg:w-1/2  items-start  flex flex-col justify-between gap-[1rem]">
             <div className="md:pl-5">
               <Title2
                 title={"Empower Your Vision with Us"}

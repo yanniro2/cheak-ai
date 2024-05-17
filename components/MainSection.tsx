@@ -72,7 +72,7 @@ const MainSection: React.FC = () => {
           {mainServicesData.mainServices.map((service, index) => (
             <div
               key={index}
-              className="md:w-[25vw] w-full  h-full bg-lighDark p-[2rem] rounded cursor-pointer hover:bg-white hover:scale-105 md:m-[1rem] transition-all ease-linear shadow shadow-primary hover:shadow-lg hover:drop-shadow-lg flex flex-col justify-between text-center items-center group overscroll-contain gap-[1rem] md:gap-0">
+              className="lg:w-[30vw] md:w-[30vw]  w-full  h-full bg-lighDark lg:p-[2rem] rounded cursor-pointer hover:bg-white hover:scale-105 lg:m-[1rem] transition-all ease-linear shadow shadow-primary hover:shadow-lg hover:drop-shadow-lg flex flex-col justify-between text-center items-center group overscroll-contain gap-[1rem] lg:gap-0 p-[1rem]">
               <div className="icons-1">{renderIcon(service.icon)}</div>
               <h3 className="text-xl font-poppins font-semibold group-hover:text-primary">
                 {service.title}
