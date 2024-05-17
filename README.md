@@ -8,3 +8,4 @@
     - Footer background img added
     - Hero Mobile responsive make diffrent hero page
     - Mobile navbar change
+    - Sub pages
