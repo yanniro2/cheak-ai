@@ -60,7 +60,7 @@ const MainSection: React.FC = () => {
   };
 
   return (
-    <div className="container mx-auto p-5 flex items-center h-full flex-col gap-[1rem] py-[4rem] relative">
+    <div className="container mx-auto p-5 flex items-center h-full flex-col gap-[1rem] md:py-[4rem] relative">
       <Title1
         title={"Our Main Services"}
         subtitle={"Comprehensive Solutions Tailored to Your Needs"}
@@ -72,7 +72,7 @@ const MainSection: React.FC = () => {
           {mainServicesData.mainServices.map((service, index) => (
             <div
               key={index}
-              className="md:w-[25vw] w-full  h-full bg-lighDark p-[2rem] rounded cursor-pointer hover:bg-white hover:scale-105 md:m-[1rem] transition-all ease-linear shadow shadow-primary hover:shadow-lg hover:drop-shadow-lg flex flex-col justify-between text-center items-center group overscroll-contain">
+              className="md:w-[25vw] w-full  h-full bg-lighDark p-[2rem] rounded cursor-pointer hover:bg-white hover:scale-105 md:m-[1rem] transition-all ease-linear shadow shadow-primary hover:shadow-lg hover:drop-shadow-lg flex flex-col justify-between text-center items-center group overscroll-contain gap-[1rem] md:gap-0">
               <div className="icons-1">{renderIcon(service.icon)}</div>
               <h3 className="text-xl font-poppins font-semibold group-hover:text-primary">
                 {service.title}

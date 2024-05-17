@@ -11,9 +11,9 @@ type Props = {};
 const Services = (props: Props) => {
   return (
     <section
-      className="w-screen h-full flex flex-col items-center justify-center drop-shadow shadow"
+      className="w-screen h-full flex flex-col items-center justify-center"
       id="services">
-      <div className="container mx-auto p-5 flex items-center h-full flex-col gap-[1rem] py-[4rem]">
+      <div className="container mx-auto p-5 flex items-center h-full flex-col gap-[1rem] md:py-[4rem]">
         <Title1
           title={"Our Services"}
           subtitle={"Quick Solutions for Immediate Needs"}

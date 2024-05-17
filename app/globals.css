@@ -4,16 +4,6 @@
 @tailwind utilities;
 
 
-
-.default-layout-1 {
-  @apply w-full h-max flex items-center justify-center;
-}
-
-.default-layout-2 {
-  @apply w-screen h-screen flex items-center justify-center;
-}
-
-
 .btn {
   @apply py-3 px-6 border  rounded-full capitalize font-poppins font-normal transition-all drop-shadow shadow-lg cursor-pointer flex items-center justify-center gap-3 ease-linear w-full md:w-fit;
 }

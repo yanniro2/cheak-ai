@@ -14,7 +14,7 @@ const Why = (props: Props) => {
     <section
       className="w-screen h-full flex flex-col items-center justify-center drop-shadow shadow"
       id="why-choose-us">
-      <div className="container mx-auto p-5 flex items-center h-full flex-col gap-[1rem] py-[4rem] ">
+      <div className="container mx-auto p-5 flex items-center h-full flex-col gap-[1rem] md:py-[4rem] ">
         <Title1 title={"Why Choose Us"} subtitle={"Core Features"} />
         <div className="w-full h-full flex items-center justify-between gap-[3rem] md:flex-row-reverse flex-col">
           <div className="md:w-1/2  flex flex-col  rounded gap-[1rem]">
