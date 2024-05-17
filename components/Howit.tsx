@@ -25,7 +25,7 @@ function Howit({}: Props) {
           {data.howItWorksSteps.map((step, index) => (
             <div
               key={index}
-              className="w-full flex md:flex-row flex-col items-center md:p-[3rem] bg-lighDark rounded cursor-pointer gap-[1rem] justify-between hover:scale-105 transition-all ease-linear hover:border-primary border-transparent border hover:shadow-md hover:shadow-primary group text-center md:text-left p-[1rem]">
+              className="w-full flex md:flex-row flex-col items-center md:p-[3rem] bg-lighDark rounded cursor-pointer md:gap-[1rem] gap-[.5rem] justify-between hover:scale-105 transition-all ease-linear hover:border-primary border-transparent border hover:shadow-md hover:shadow-primary group text-center md:text-left p-[1rem]">
               <div className="text-primary text-[3rem] font-poppins font-bold group-hover:text-white">
                 0{step.stepNumber}
               </div>
