@@ -20,7 +20,7 @@ const Services = (props: Props) => {
         />
 
         <div className="w-full flex items-center justify-between gap-[1rem] flex-row-reverse">
-          <div className="w-1/2 h-[60vh] lg:flex relative hidden">
+          <div className="w-1/2 h-[60vh] md:flex relative hidden">
             <Image
               src="/assets/img/service.png"
               width="1000"
@@ -33,7 +33,7 @@ const Services = (props: Props) => {
               <RiVoiceprintFill />
             </div>
           </div>
-          <div className="lg:w-1/2 lg:h-[60vh] items-start  flex flex-col w-full h-full">
+          <div className="md:w-1/2 md:h-[60vh] items-start  flex flex-col w-full h-full">
             <div className="pl-5">
               <Title2
                 title={"explore diverse realms"}
@@ -43,7 +43,7 @@ const Services = (props: Props) => {
               />
             </div>
 
-            <div className="grid lg:grid-cols-2 gap-3">
+            <div className="grid md:grid-cols-2 gap-3">
               {realmData.briefServices.map((service, index) => (
                 <div
                   key={index}

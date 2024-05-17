@@ -7,7 +7,7 @@ type Props = {
 
 const Title = (props: Props) => {
   return (
-    <div className="flex w-full  flex-col items-center lg:text-left text-center md:py-[3rem]">
+    <div className="flex w-full  flex-col items-center md:text-left text-center md:py-[3rem]">
       <h1 className="uppercase text-orange  text-4xl font-popins font-bold font-poppins">
         {props.title}
       </h1>

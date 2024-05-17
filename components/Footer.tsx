@@ -84,17 +84,17 @@ const Footer = (props: Props) => {
   };
   return (
     <div
-      className="w-screen bg-[#020513]  text-white font-lato lg:py-[3rem]  px-3 relative md:px-6 flex flex-col items-end justify-end "
+      className="w-screen bg-[#020513]  text-white font-lato md:py-[3rem]  px-3 relative md:px-6 flex flex-col items-end justify-end "
       id="footer">
-      <div className="container mx-auto p-3 lg:p-0 z-20 flex flex-col justify-between h-full ">
-        <div className="flex   z-20 flex-col lg:flex-row w-full justify-between gap-8">
+      <div className="container mx-auto p-3 md:p-0 z-20 flex flex-col justify-between h-full ">
+        <div className="flex   z-20 flex-col md:flex-row w-full justify-between gap-8">
           <div className="flex flex-col md:w-1/2">
             <Logo />
             <p className="text">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit
               nobis odio sed ipsum. Odit esse quos deserunt iusto ducimus rerum?
             </p>
-            <div className="mt-[2rem] lg:pr-[1rem]">
+            <div className="mt-[2rem] md:pr-[1rem]">
               <h1 className="text-xl font-bold mb-2">Connect with Us</h1>
               <div className="flex items-center space-x-4">
                 {Object.entries(socialMedia).map(
@@ -117,9 +117,9 @@ const Footer = (props: Props) => {
             </div>
           </div>
 
-          <div className="flex items-start  md:justify-between flex-col md:flex-row lg:flex-row ">
+          <div className="flex items-start  md:justify-between flex-col md:flex-row md:flex-row ">
             <div>
-              <h1 className="text-xl font-bold lg:mb-4 mt-4 lg:mt-0">
+              <h1 className="text-xl font-bold md:mb-4 mt-4 md:mt-0">
                 Primary Links
               </h1>
               <ul>
@@ -158,11 +158,11 @@ const Footer = (props: Props) => {
         <hr className="my-3 border-primary shadow-primary z-20 shadow-text" />
 
         {/* Copyrights */}
-        <div className="z-20 flex items-start lg:items-center justify-between flex-col-reverse lg:flex-row">
+        <div className="z-20 flex items-start md:items-center justify-between flex-col-reverse md:flex-row">
           <div className="flex gap-3 flex-col">
-            <div className="uppercase flex items-start lg:items-center lg:gap-1 flex-col md:flex-row gap-">
+            <div className="uppercase flex items-start md:items-center md:gap-1 flex-col md:flex-row gap-">
               Copyrights © {currentYear}{" "}
-              <span className=" flex  flex-row lg:gap-1">
+              <span className=" flex  flex-row md:gap-1">
                 <span className="font-bold font-poppins font-xl text-primary">
                   Check-ai
                 </span>{" "}
