@@ -92,8 +92,8 @@ const Why = (props: Props) => {
               </div>
 
               {/* 2 */}
-              <div className="service cursor-pointer hover:bg-lighDark  rounded transition-all ease-linear hover:shadow hover:shadow-primary bg-lighDark relative flex  flex-col p-5 items-end justify-end text-right">
-                <div className="flex flex-col items-end">
+              <div className="service cursor-pointer hover:bg-lighDark  rounded transition-all ease-linear hover:shadow hover:shadow-primary bg-lighDark relative flex  flex-col p-5 md:items-end md:justify-end md:text-right text-left">
+                <div className="flex flex-col md:items-end">
                   <h2 className="step-h1">Enhanced Security</h2>
                   <h3 className="step-h3">step 2</h3>
                   <p className="text pt-3 w-3/4">
@@ -102,7 +102,7 @@ const Why = (props: Props) => {
                   </p>
                 </div>
 
-                <div className="absolute bottom-0 left-0 object-contain  text-[8rem] text-dark quarter-circle-div-2"></div>
+                <div className="absolute md:bottom-0 md:left-0 object-contain  text-[8rem] text-dark md:quarter-circle-div-2 quarter-circle-div-3 right-0 top-0 md:top-auto -rotate-180 md:rotate-0"></div>
               </div>
 
               {/* 3 */}
@@ -116,16 +116,16 @@ const Why = (props: Props) => {
                   </p>
                 </div>
 
-                <div className="absolute top-0 right-0 object-contain  text-[8rem] text-dark quarter-circle-div-3 -rotate-180"></div>
+                <div className="absolute md:top-0 right-0 object-contain  text-[8rem] text-dark md:quarter-circle-div-3 quarter-circle-div-1 md:-rotate-180 -rotate-90 bottom-0 top-auto"></div>
               </div>
 
               {/* 4 */}
-              <div className="service cursor-pointer   rounded transition-all ease-linear hover:shadow hover:shadow-primary relative    p-5 text-right flex items-end  group bg-gradient-to-l from-primary to-lighDark">
-                <h3 className="text-4xl  font-poppins text-right w-full text-white">
+              <div className="service cursor-pointer   rounded transition-all ease-linear hover:shadow hover:shadow-primary relative    p-5 text-right flex items-end  group md:bg-gradient-to-l from-primary to-lighDark bg-gradient-to-r">
+                <h3 className="text-4xl  font-poppins md:text-right w-full text-white text-left">
                   Start Now!
                 </h3>
 
-                <div className="absolute top-0 left-0 object-contain  text-[8rem] text-dark quarter-circle-div-4 rotate-90 shadow-xl "></div>
+                <div className="absolute top-0 md:left-0 object-contain  text-[8rem] text-dark  quarter-circle-div-4 md:rotate-90 shadow-xl right-0 -rotate-180"></div>
               </div>
             </div>
           </div>
