@@ -45,7 +45,7 @@ const Contact: React.FC<Props> = (props) => {
     <section
       className="w-screen h-full flex flex-col items-center justify-center drop-shadow shadow"
       id="contact">
-      <div className="container mx-auto p-5 flex items-center h-full flex-col gap-[1rem] py-[4rem] ">
+      <div className="container mx-auto p-5 flex items-center h-full flex-col gap-[1rem] md:py-[4rem] ">
         <Title1 title={"Contact Us"} subtitle={"Get in Touch"} />
         <div className="w-full h-full flex md:flex-row flex-col items-center justify-between gap-[3rem] ">
           <div className="md:w-1/2  flex flex-col  rounded gap-[1rem]">

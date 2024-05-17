@@ -20,7 +20,7 @@ const Faq = () => {
     <section
       className="w-screen h-full flex flex-col items-center justify-center drop-shadow shadow"
       id="faq">
-      <div className="container mx-auto p-5 flex items-center h-full flex-col gap-[1rem] py-[4rem]">
+      <div className="container mx-auto p-5 flex items-center h-full flex-col gap-[1rem] md:py-[4rem]">
         <Title1
           title={"Frequently Asked Questions"}
           subtitle={"Explore Answers to Common Queries about Check AI"}
