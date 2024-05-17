@@ -7,11 +7,22 @@ import Link from "next/link";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import Logo from "./mini/Logo";
 import Hover from "./mini/Hover";
+import {
+  FaHome,
+  FaInfoCircle,
+  FaConciergeBell,
+  FaGift,
+  FaCog,
+  FaThumbsUp,
+  FaQuestionCircle,
+  FaEnvelope,
+} from "react-icons/fa";
 
 type NavigationItem = {
   id: string;
   label: string;
   url: string;
+  icon: string;
   submenu?: NavigationItem[];
 };
 
@@ -91,7 +102,7 @@ const Header: React.FC = () => {
               )
             )}
           </ul>
-          <div className="hidden lg:visible">
+          <div className="hidden md:flex">
             <Link href="/" className="btn btn-2">
               get started!
             </Link>
@@ -110,31 +121,54 @@ const Header: React.FC = () => {
           </div>
         </nav>
         {isMobileMenuOpen && (
-          <div className="lg:hidden fixed top-[4rem] left-0 right-0 w-screen h-max z-[5000] flex flex-col gap-3  p-3 backdrop-blur-md backdrop-brightness-50 bg-darkBlue shadow-lg ">
+          <div className="lg:hidden fixed top-[4rem] left-0 right-0 w-screen h-screen z-[5000] flex flex-col   p-3  bg-dark justify-around text-center  items-center pb-[4rem] ">
             {navigationData.navigation.map(
               (item: NavigationItem, index: number) => (
                 <Link
                   key={index}
                   href={item.url}
-                  // className={`${
-                  //   (pathName === item.url && pathName !== "/") ||
-                  //   (pathName.startsWith(item.url) && item.url !== "/") ||
-                  //   (pathName === "/" && item.url === "/")
-                  //     ? "link-active z-[5005]"
-                  //     : "link-2 z-[5005]"
-                  // }`}
-
+                  className={` w-full bg-lighDark p-3   cursor-pointer text-[1.5rem] transition-all ease-in-out flex items-center justify-center gap-3 ${
+                    activeSection == item.id
+                      ? "bg-white text-primary"
+                      : "hover:bg-white hover:text-primary"
+                  }`}
                   aria-label={item.label}
                   onClick={toggleMobileMenu}>
+                  {renderIcon(item.icon)}
                   {item.label}
                 </Link>
               )
             )}
+
+            <hr className="border-lighDark border w-full" />
+            <div className="flex md:hidden w-full">
+              <Link
+                href="/"
+                className="text-white w-full bg-primary p-3   cursor-pointer text-[1.5rem] transition-all ease-in-out uppercase font-semibold">
+                get started
+              </Link>
+            </div>
           </div>
         )}
       </div>
     </div>
   );
+};
+
+const renderIcon = (iconName: string) => {
+  const iconComponents: { [key: string]: React.ElementType } = {
+    FaHome,
+    FaInfoCircle,
+    FaConciergeBell,
+    FaGift,
+    FaCog,
+    FaThumbsUp,
+    FaQuestionCircle,
+    FaEnvelope,
+  };
+
+  const IconComponent = iconComponents[iconName];
+  return <IconComponent />;
 };
 
 export default Header;

@@ -3,42 +3,50 @@
     {
       "id": "home",
       "label": "Home",
-      "url": "/"
+      "url": "/",
+      "icon": "FaHome"
     },
     {
       "id": "about",
       "label": "About Us",
-      "url": "#about"
+      "url": "#about",
+      "icon": "FaInfoCircle"
     },
     {
       "id": "services",
       "label": "Services",
-      "url": "#services"
+      "url": "#services",
+      "icon": "FaConciergeBell"
     },
     {
       "id": "benefits",
       "label": "Benefits",
-      "url": "#benefits"
+      "url": "#benefits",
+      "icon": "FaGift"
     },
     {
       "id": "howItWorks",
       "label": "How It Works",
-      "url": "#howItWorks"
+      "url": "#howItWorks",
+      "icon": "FaCog"
     },
     {
       "id": "why-choose-us",
       "label": "Why Choose Us",
-      "url": "#why-choose-us"
+      "url": "#why-choose-us",
+      "icon": "FaThumbsUp"
     },
     {
       "id": "faq",
       "label": "FAQ",
-      "url": "#faq"
+      "url": "#faq",
+      "icon": "FaQuestionCircle"
     },
     {
       "id": "contact",
       "label": "Contact Us",
-      "url": "#contact"
+      "url": "#contact",
+      "icon": "FaEnvelope"
     }
   ]
 }

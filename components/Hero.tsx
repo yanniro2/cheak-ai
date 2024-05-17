@@ -43,7 +43,7 @@ function Hero({}: Props) {
             width="1000"
             height="1000"
             alt="img"
-            className="shadow-box hidden lg:visible"
+            className="shadow-box hidden md:block"
           />
         </div>
       </div>
