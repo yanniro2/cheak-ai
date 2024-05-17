@@ -8,13 +8,13 @@ const About = (props: Props) => {
     <section
       className="w-screen h-full flex items-center justify-center drop-shadow shadow"
       id="about">
-      <div className="container mx-auto p-5 flex items-center h-full flex-col gap-[1rem] py-[4rem]">
+      <div className="container mx-auto p-5 flex items-center h-full flex-col gap-[1rem] md:py-[4rem]">
         <Title
           title={"About us"}
           subtitle={"where imagination Meets Infinite Possibilities"}
         />
         <div className="flex w-full items-center justify-between lg:gap-[3rem] bg-lighDark lg:p-[2rem] rounded shadow-lg  lg:flex-row flex-col-reverse text-center lg:text-left p-3 gap-3 ">
-          <div className="lg:w-3/4 text-xl font-light font-open text-white w-full">
+          <div className="lg:w-3/4 md:text-xl font-light font-open text-white w-full">
             Welcome to Our Company, where we embark on a journey where
             imagination meets innovation, and the possibilities are endless.
             From our humble beginnings to becoming a leader in our industry, our
