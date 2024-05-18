@@ -21,7 +21,7 @@ const Benifits = (props: Props) => {
           subtitle={"Some Benefits of using the Check-AI."}
         />
         {/* Tab */}
-        <div>
+        <div className="lg:hidden">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-[1.5rem]">
             {data.benefits.slice(0, 4).map((step, index) => (
               <div
@@ -50,8 +50,8 @@ const Benifits = (props: Props) => {
           </div>
         </div>
         {/* default */}
-        {/* <div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-[1.5rem]">
+        <div className="hidden lg:block">
+          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-[1.5rem]">
             {data.benefits.slice(0, 4).map((step, index) => (
               <div
                 key={index}
@@ -64,8 +64,8 @@ const Benifits = (props: Props) => {
               </div>
             ))}
           </div>
-          <div className="grid md:grid-cols-2 gap-[1.5rem] mt-[.5rem]">
-            {data.benefits.slice(3, 5).map((step, index) => (
+          <div className="grid grid-cols-1 gap-[1.5rem] mt-[1.5rem]">
+            {data.benefits.slice(4, 5).map((step, index) => (
               <div
                 key={index}
                 className="bg-lighDark p-[2rem] rounded flex flex-col items-center justify-center gap-3 text-center cursor-pointer hover:scale-105 transition-all ease-linear group hover:shadow-md hover:shadow-primary border border-primary">
@@ -77,7 +77,7 @@ const Benifits = (props: Props) => {
               </div>
             ))}
           </div>
-        </div> */}
+        </div>
       </div>
     </section>
   );
