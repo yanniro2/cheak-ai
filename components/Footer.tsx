@@ -139,19 +139,36 @@ const Footer = (props: Props) => {
             </div>
           </div>
           {/* Contact Information */}
-          <div className="md:w-1/4">
-            <h1 className="text-xl font-bold mb-4 z-20">Contact Information</h1>
-            <Link
-              href={`mailto:${contactInformation.email}`}
-              className="flex items-center gap-3 ">
-              <FaEnvelope className="link-active" /> {contactInformation.email}
-            </Link>
-            <Link
-              href={`tel:${contactInformation.phone}`}
-              className="flex items-center gap-3">
-              <FaPhoneAlt className="link-active" />
-              {contactInformation.phone}
-            </Link>
+          <div className="flex flex-col md:w-1/4 justify-between">
+            <div className="">
+              <h1 className="text-xl font-bold mb-4 z-20">
+                Contact Information
+              </h1>
+              <Link
+                href={`mailto:${contactInformation.email}`}
+                className="flex items-center gap-3 ">
+                <FaEnvelope className="link-active" />{" "}
+                {contactInformation.email}
+              </Link>
+              <Link
+                href={`tel:${contactInformation.phone}`}
+                className="flex items-center gap-3">
+                <FaPhoneAlt className="link-active" />
+                {contactInformation.phone}
+              </Link>
+            </div>
+
+            <div className="flex py-2 flex-col gap-3">
+              <label htmlFor="nemail" className="text-xl font-bold  z-20">
+                Subscribe to our Newsletter
+              </label>
+              <input
+                type="email"
+                placeholder="Email Address"
+                className="input"
+                id="nemail"
+              />
+            </div>
           </div>
         </div>
 

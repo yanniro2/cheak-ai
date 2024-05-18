@@ -1,7 +1,5 @@
 # Pending
 
-    - Hero img hover effects
-    - Pendding sections [newsletter]
     - Scroll down animation
     - Responsive - sub
     - SEO
@@ -15,3 +13,5 @@
         - How it works [05 steps]
         - Why choose us [4 steps]
         - Footer [terms, privay , cookies]
+    - Contact us form Working
+    - NewsLetter form Working
