@@ -1,7 +1,6 @@
 # Pending
 
     - Scroll down animation
-    - Footer background img added
     - Sub pages
         - Header [get started]
         - Hero [start explore , learn more]
@@ -12,6 +11,7 @@
         - Why choose us [4 steps]
         - Footer [terms, privay , cookies]
     - Responsive - sub
+    - Mobile Responsive check on Mobile
     - SEO
     - Contact us form Working
     - NewsLetter form Working
