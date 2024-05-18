@@ -1,7 +1,6 @@
 import About from "@/components/About";
 import Benifits from "@/components/Benifits";
 import Contact from "@/components/Contact";
-import Dedicate from "@/components/Dedicate";
 import Faq from "@/components/Faq";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";

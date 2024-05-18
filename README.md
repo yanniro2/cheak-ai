@@ -1,9 +1,9 @@
 # Pending
 
     - Hero img hover effects
-    - Pendding sections [newsletter ]
+    - Pendding sections [newsletter]
     - Scroll down animation
-    - Responsive
+    - Responsive - sub
     - SEO
     - Footer background img added
     - Hero Mobile responsive make diffrent hero page
