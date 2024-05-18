@@ -1,7 +1,8 @@
-import React from 'react'
+"use client";
+import React from "react";
 import Typing from "./mini/Typing";
 import { IoMdArrowForward } from "react-icons/io";
-import Particles from "@/components/mini/Particles.jsx";
+import Tilty from "react-tilty";
 import Image from "next/image";
 type Props = {};
 function Hero({}: Props) {
@@ -35,15 +36,21 @@ function Hero({}: Props) {
             </button>
           </div>
         </div>
-        <div className="lg:w-1/2  w-full h-full flex lg:items-center flex-col justify-center gap-3 overflow-hidden relative object-contain">
+        <Tilty
+          className="lg:w-1/2  w-full h-full flex lg:items-center flex-col justify-center gap-3 overflow-hidden relative object-contain shadow-box"
+          scale={1.2}
+          reverse
+          axis="X"
+          easing="cubic-bezier(0.03,0.98,0.52,0.99)">
           <Image
             src="/assets/img/hero.png"
             width="1000"
             height="1000"
             alt="img"
-            className="object-contain shadow-box  lg:flex md:w-[500px] md:h-[500px]"
+            className="object-contain  lg:block w-full h-full"
           />
-        </div>
+        </Tilty>
+
         <div className="lg:hidden flex lg:items-center gap-3 justify-start w-full flex-col md:flex-row items-start">
           <button className="btn btn-1">start Exploring</button>
           <button className="btn btn-2 group">
@@ -55,4 +62,4 @@ function Hero({}: Props) {
   );
 }
 
-export default Hero
+export default Hero;
