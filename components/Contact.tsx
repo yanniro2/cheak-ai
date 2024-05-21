@@ -161,7 +161,9 @@ const Contact: React.FC<Props> = (props) => {
 
               <div className="box-3">
                 <input type="checkbox" id="terms" name="terms" />
-                <label htmlFor="terms" className="text-primary flex gap-1 ">
+                <label
+                  htmlFor="terms"
+                  className="text-primary flex gap-1 flex-wrap ">
                   I agree to the
                   <Link href="/" className="link-2">
                     terms of use

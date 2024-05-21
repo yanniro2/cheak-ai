@@ -36,8 +36,9 @@ function Hero({}: Props) {
             </button>
           </div>
         </div>
+
         <Tilty
-          className="lg:w-1/2  w-full h-full flex lg:items-center flex-col justify-center gap-3 overflow-hidden relative object-contain shadow-box"
+          className="lg:w-1/2  w-full h-full  lg:items-center flex-col justify-center gap-3 overflow-hidden relative object-contain shadow-box hidden md:flex lg:flex"
           scale={1.2}
           reverse
           axis="X"
@@ -50,6 +51,13 @@ function Hero({}: Props) {
             className="object-contain  lg:block w-full h-full"
           />
         </Tilty>
+        <Image
+          src="/assets/img/hero.png"
+          width="1000"
+          height="1000"
+          alt="img"
+          className="object-contain   md:hidden lg:hidden  w-full h-full"
+        />
 
         <div className="lg:hidden flex lg:items-center gap-3 justify-start w-full flex-col md:flex-row items-start">
           <button className="btn btn-1">start Exploring</button>
