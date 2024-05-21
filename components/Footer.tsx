@@ -90,10 +90,20 @@ const Footer = (props: Props) => {
         <div className="flex   z-20 flex-col lg:flex-row w-full justify-between gap-8">
           <div className="flex flex-col lg:w-1/2">
             <Logo />
-            <p className="text">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit
-              nobis odio sed ipsum. Odit esse quos deserunt iusto ducimus rerum?
-            </p>
+            <div className="flex flex-col gap-3">
+              <p className="text">
+                Reap the Benefits of using the latest Artificial Intelligence
+                Technologies. Our solutions are designed to help you streamline
+                operations, enhance decision-making, and drive innovation.
+              </p>
+              <p className="text">
+                With a dedicated team of experts, we deliver tailored AI
+                solutions that cater to your unique business needs. Join the
+                ranks of our happy clients and award-winning projects, and
+                experience the future of technology today.
+              </p>
+            </div>
+
             <div className="mt-[2rem] md:pr-[1rem]">
               <h1 className="text-xl font-bold mb-2">Connect with Us</h1>
               <div className="flex items-center space-x-4">
