@@ -15,3 +15,5 @@
     - SEO
     - Contact us form Working
     - NewsLetter form Working
+    - Error page
+    - Loading page
