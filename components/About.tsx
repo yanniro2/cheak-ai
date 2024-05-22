@@ -6,10 +6,10 @@ type Props = {};
 
 const About = (props: Props) => {
   return (
-    <Scroll>
-      <section
-        className="w-screen h-full flex items-center justify-center drop-shadow shadow"
-        id="about">
+    <section
+      className="w-screen h-full flex items-center justify-center drop-shadow shadow"
+      id="about">
+      <Scroll>
         <div className="container mx-auto p-5 flex items-center h-full flex-col gap-[1rem] md:py-[4rem]">
           <Title
             title={"About us"}
@@ -67,8 +67,8 @@ const About = (props: Props) => {
             </div>
           </div>
         </div>
-      </section>
-    </Scroll>
+      </Scroll>
+    </section>
   );
 };
 

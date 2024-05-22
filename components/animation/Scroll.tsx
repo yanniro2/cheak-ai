@@ -23,14 +23,14 @@ const Scroll: React.FC<Props> = ({ children }) => {
     }
   }, [control, inView]);
   return (
-    <motion.section
+    <motion.div
       ref={ref}
       variants={boxVariant}
       initial="hidden"
       animate={control}
       whileInView="visible">
       {children}
-    </motion.section>
+    </motion.div>
   );
 };
 

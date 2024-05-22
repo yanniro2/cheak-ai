@@ -105,7 +105,7 @@ const Header: React.FC = () => {
             )}
           </ul>
           <div className="hidden lg:flex">
-            <Link href="/" className="btn btn-2">
+            <Link href="/#why-choose-us" className="btn btn-2">
               get started!
             </Link>
           </div>

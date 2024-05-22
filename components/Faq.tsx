@@ -17,10 +17,10 @@ const Faq = () => {
   };
 
   return (
-    <Scroll>
-      <section
-        className="w-screen h-full flex flex-col items-center justify-center drop-shadow shadow"
-        id="faq">
+    <section
+      className="w-screen h-full flex flex-col items-center justify-center drop-shadow shadow"
+      id="faq">
+      <Scroll>
         <div className="container mx-auto p-5 flex items-center h-full flex-col gap-[1rem] md:py-[4rem]">
           <Title1
             title={"Frequently Asked Questions"}
@@ -68,8 +68,8 @@ const Faq = () => {
             </div>
           </div>
         </div>
-      </section>
-    </Scroll>
+      </Scroll>
+    </section>
   );
 };
 

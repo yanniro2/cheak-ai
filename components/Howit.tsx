@@ -14,10 +14,10 @@ type Props = {};
 
 function Howit({}: Props) {
   return (
-    <Scroll>
-      <section
-        className="w-screen h-full flex flex-col items-center justify-center drop-shadow shadow"
-        id="howItWorks">
+    <section
+      className="w-screen h-full flex flex-col items-center justify-center drop-shadow shadow"
+      id="howItWorks">
+      <Scroll>
         <div className="container mx-auto p-5 flex items-center h-full flex-col gap-[1rem] md:py-[4rem]">
           <Title1
             title={"How It Works"}
@@ -44,8 +44,8 @@ function Howit({}: Props) {
             ))}
           </div>
         </div>
-      </section>
-    </Scroll>
+      </Scroll>
+    </section>
   );
 }
 
