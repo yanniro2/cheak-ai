@@ -10,7 +10,7 @@ const About = (props: Props) => {
       className="w-screen h-full flex items-center justify-center drop-shadow shadow"
       id="about">
       <Scroll>
-        <div className="container mx-auto p-5 flex items-center h-full flex-col gap-[1rem] md:py-[4rem]">
+        <div className="container mx-auto p-5 flex items-center h-full flex-col gap-[1rem] md:py-[4rem] pt-[6rem]">
           <Title
             title={"About us"}
             subtitle={"where imagination Meets Infinite Possibilities"}

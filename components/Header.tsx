@@ -105,7 +105,10 @@ const Header: React.FC = () => {
             )}
           </ul>
           <div className="hidden lg:flex">
-            <Link href="/#why-choose-us" className="btn btn-2">
+            <Link
+              href="/#why-choose-us"
+              className="btn btn-2"
+              onClick={toggleMobileMenu}>
               get started!
             </Link>
           </div>
@@ -144,8 +147,9 @@ const Header: React.FC = () => {
             <hr className="border-lighDark border w-full" />
             <div className="flex lg:hidden w-full">
               <Link
-                href="/"
-                className="text-white w-full bg-primary p-3   cursor-pointer text-[1.5rem] transition-all ease-in-out uppercase font-semibold">
+                href="/#why-choose-us"
+                className="text-white w-full bg-primary p-3   cursor-pointer text-[1.5rem] transition-all ease-in-out uppercase font-semibold"
+                onClick={toggleMobileMenu}>
                 get started
               </Link>
             </div>

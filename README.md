@@ -1,5 +1,6 @@
 # Pending
 
+    - Responsive link click current show ui issues
     - Sub pages
         - Header [get started]
         - Hero [start explore , learn more]

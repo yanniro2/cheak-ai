@@ -15,7 +15,7 @@ const Services = (props: Props) => {
       className="w-screen h-full flex flex-col items-center justify-center"
       id="services">
       <Scroll>
-        <div className="container mx-auto p-5 flex items-center h-full flex-col gap-[1rem] md:py-[4rem]">
+        <div className="container mx-auto p-5 flex items-center h-full flex-col gap-[1rem] md:py-[4rem]  pt-[6rem]">
           <Title1
             title={"Our Services"}
             subtitle={"Quick Solutions for Immediate Needs"}

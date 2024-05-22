@@ -18,7 +18,7 @@ function Howit({}: Props) {
       className="w-screen h-full flex flex-col items-center justify-center drop-shadow shadow"
       id="howItWorks">
       <Scroll>
-        <div className="container mx-auto p-5 flex items-center h-full flex-col gap-[1rem] md:py-[4rem]">
+        <div className="container mx-auto p-5 flex items-center h-full flex-col gap-[1rem] md:py-[4rem] pt-[6rem]">
           <Title1
             title={"How It Works"}
             subtitle={
