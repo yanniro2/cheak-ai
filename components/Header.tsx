@@ -5,6 +5,7 @@ import Link from "next/link";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import Logo from "./mini/Logo";
 import Hover from "./mini/Hover";
+import { useScroll, motion } from "framer-motion";
 import {
   FaHome,
   FaInfoCircle,
@@ -25,6 +26,9 @@ type NavigationItem = {
 };
 
 const Header: React.FC = () => {
+  const { scrollYProgress } = useScroll({
+    offset: ["start start", "end end"],
+  });
   const [isSticky, setIsSticky] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   let [activeSection, setActiveSection] = useState<string>("home");
@@ -71,7 +75,7 @@ const Header: React.FC = () => {
 
   return (
     <div
-      className={` ${
+      className={`animate__animated animate__fadeInDown  ${
         isSticky
           ? "backdrop-blur-lg   bg-darkBlue text-white  shadow-lg   drop-shadow-lg  border-gray-100 bg-opacity-90 border-b border-primary "
           : "bg-none  backdrop-blur-lg   bg-darkBlue text-white  shadow-lg   drop-shadow-lg  border-gray-100 bg-opacity-90 border-b border-primary  lg:border-none"
@@ -148,6 +152,10 @@ const Header: React.FC = () => {
           </div>
         )}
       </div>
+      <motion.div
+        className="progress-bar"
+        style={{ scaleX: scrollYProgress }}
+      />
     </div>
   );
 };

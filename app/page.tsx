@@ -8,6 +8,7 @@ import Hero from "@/components/Hero";
 import Howit from "@/components/Howit";
 import Services from "@/components/Services";
 import Why from "@/components/Why";
+import "animate.css";
 
 
 export default function Home() {

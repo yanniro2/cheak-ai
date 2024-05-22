@@ -8,10 +8,10 @@ import Scroll from "./animation/Scroll";
 type Props = {};
 function Hero({}: Props) {
   return (
-    <Scroll>
-      <section
-        className="w-screen h-screen flex items-center justify-center drop-shadow shadow  lg:pt-[6rem] lg:p-0"
-        id="home">
+    <section
+      className="w-screen h-screen flex items-center justify-center drop-shadow shadow  lg:pt-[6rem] lg:p-0"
+      id="home">
+      <Scroll>
         <div className="container mx-auto p-5 flex items-center h-full flex-col lg:flex-row">
           <div className="lg:w-1/2 w-full h-full flex items-center flex-col justify-center gap-3 pt-[4rem] lg:p-0">
             <div className="flex flex-col gap-1 relative">
@@ -69,8 +69,8 @@ function Hero({}: Props) {
             </button>
           </div>
         </div>
-      </section>
-    </Scroll>
+      </Scroll>
+    </section>
   );
 }
 

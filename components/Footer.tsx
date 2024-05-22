@@ -86,7 +86,7 @@ const Footer = (props: Props) => {
   return (
     // <Scroll>
     <section
-      className="w-screen bg-lighDark  text-white font-lato md:py-[3rem]  px-3 relative md:px-6 flex flex-col items-end justify-end "
+      className="w-screen bg-lighDark  text-white font-lato md:py-[3rem]  px-3 relative md:px-6 flex flex-col items-end justify-end animate__animated animate__fadeInUp"
       id="footer">
       <div className="container mx-auto p-3 md:p-0 z-20 flex flex-col justify-between h-full ">
         <div className="flex   z-20 flex-col lg:flex-row w-full justify-between gap-8">
