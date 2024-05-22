@@ -2,19 +2,63 @@
   "briefServices": [
     {
       "title": "Data Analysis",
-      "description": "Quick data analysis solutions to extract insights and make informed decisions."
+      "subTitle": "Insightful Data Interpretation",
+      "description": "Quick data analysis solutions to extract insights and make informed decisions.",
+      "url": "/services/data-analysis",
+      "img": {
+        "src": "/images/data-analysis.jpg",
+        "alt": "Data Analysis"
+      },
+      "content": {
+        "main": "Unlock the Potential of Your Data",
+        "p1": "Our data analysis services help you uncover hidden patterns and trends within your data, enabling you to make more informed business decisions. Using state-of-the-art tools and techniques, we provide actionable insights that drive success.",
+        "p2": "From data cleaning to advanced analytics, our team of experts ensures that you get the most value out of your data, helping you stay ahead of the competition."
+      }
     },
     {
       "title": "Automation Solutions",
-      "description": "Streamline processes and workflows with efficient automation solutions."
+      "subTitle": "Efficiency at Your Fingertips",
+      "description": "Streamline processes and workflows with efficient automation solutions.",
+      "url": "/services/automation-solutions",
+      "img": {
+        "src": "/images/automation-solutions.jpg",
+        "alt": "Automation Solutions"
+      },
+      "content": {
+        "main": "Revolutionize Your Workflow",
+        "p1": "Our automation solutions are designed to enhance productivity by automating repetitive tasks and processes. This allows your team to focus on higher-value activities, leading to increased efficiency and reduced operational costs.",
+        "p2": "Whether it's automating customer service, marketing campaigns, or internal workflows, we provide tailored solutions that fit your specific needs, driving innovation and growth in your organization."
+      }
     },
     {
       "title": "Cloud Integration",
-      "description": "Seamlessly integrate your systems with cloud services for enhanced scalability and flexibility."
+      "subTitle": "Scalable and Flexible Solutions",
+      "description": "Seamlessly integrate your systems with cloud services for enhanced scalability and flexibility.",
+      "url": "/services/cloud-integration",
+      "img": {
+        "src": "/images/cloud-integration.jpg",
+        "alt": "Cloud Integration"
+      },
+      "content": {
+        "main": "Elevate Your Business with Cloud",
+        "p1": "Our cloud integration services enable you to connect your existing systems with cloud platforms, providing you with the scalability and flexibility needed to adapt to changing business demands. We ensure a smooth transition with minimal disruption to your operations.",
+        "p2": "By leveraging the power of the cloud, you can reduce IT costs, enhance collaboration, and improve access to your applications and data from anywhere, at any time."
+      }
     },
     {
       "title": "Cybersecurity Essentials",
-      "description": "Ensure your digital assets are protected with essential cybersecurity measures."
+      "subTitle": "Protecting Your Digital Assets",
+      "description": "Ensure your digital assets are protected with essential cybersecurity measures.",
+      "url": "/services/cybersecurity-essentials",
+      "img": {
+        "src": "/images/cybersecurity-essentials.jpg",
+        "alt": "Cybersecurity Essentials"
+      },
+      "content": {
+        "main": "Secure Your Business Against Threats",
+        "p1": "Our cybersecurity solutions are designed to protect your digital assets from a wide range of threats. We provide comprehensive security measures, including threat detection, response, and prevention, to safeguard your data and systems.",
+        "p2": "With our expertise, you can ensure compliance with industry standards and regulations, while maintaining the trust of your customers and stakeholders. Our proactive approach to security helps you stay ahead of potential threats and vulnerabilities."
+      }
     }
   ]
 }

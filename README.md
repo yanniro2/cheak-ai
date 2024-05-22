@@ -1,5 +1,9 @@
 # Pending
 
+    - ScrollDown for every small particles
+    - Header for sub pages
+    - Header hover effect fixed
+    - Scrool down first time load
     - Sub pages
         - Our services [Data Analysis, Automation Solutions , Cloud Integration, Cybersecurity Essentials]
         - Main Services [Border Watch, Fraud Detection, AI-Based Startups,Private Document AI Assistant (LEO), Custom AI Solutions , AI Consulting]

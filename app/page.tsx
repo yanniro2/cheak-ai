@@ -21,9 +21,9 @@ export default function Home() {
       <Benifits />
       <Howit />
       <Why />
-      <Faq/>
+      <Faq />
       <Contact />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

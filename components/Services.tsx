@@ -7,6 +7,7 @@ import realmData from "@/data/realmsData.json";
 import { RiVoiceprintFill } from "react-icons/ri";
 import MainSection from "./MainSection";
 import Scroll from "./animation/Scroll";
+import Link from "next/link";
 type Props = {};
 
 const Services = (props: Props) => {
@@ -47,14 +48,15 @@ const Services = (props: Props) => {
 
               <div className="grid lg:grid-cols-2 gap-3">
                 {realmData.briefServices.map((service, index) => (
-                  <div
+                  <Link
+                    href={service.url}
                     key={index}
                     className="service cursor-pointer hover:bg-lighDark p-5 rounded transition-all ease-linear hover:shadow hover:shadow-primary">
                     <h2 className="font-semibold font-poppins pb-[1rem]">
                       {service.title}
                     </h2>
                     <p className="text">{service.description}</p>
-                  </div>
+                  </Link>
                 ))}
               </div>
             </div>
