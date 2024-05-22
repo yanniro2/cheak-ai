@@ -1,17 +1,21 @@
 "use client";
-import { motion, useAnimation } from "framer-motion";
+import { easeIn, easeInOut, motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
+import { Url } from "next/dist/shared/lib/router/router";
+
 type Props = {
   children?: React.ReactNode;
-};
-const boxVariant = {
-  visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
-  hidden: { opacity: 0, scale: 0.5 },
-  //   exit: { opacity: 0 },
+  className?: string;
+  onClick?: () => void;
 };
 
-const Scroll: React.FC<Props> = ({ children }) => {
+const boxVariant = {
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.5, easeInOut } },
+  hidden: { opacity: 0, scale: 0.5 },
+};
+
+const Scroll: React.FC<Props> = ({ children, className }) => {
   const control = useAnimation();
   const [ref, inView] = useInView();
 
@@ -22,9 +26,11 @@ const Scroll: React.FC<Props> = ({ children }) => {
       control.start("hidden");
     }
   }, [control, inView]);
+
   return (
     <motion.div
       ref={ref}
+      className={className}
       variants={boxVariant}
       initial="hidden"
       animate={control}

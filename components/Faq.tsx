@@ -38,7 +38,7 @@ const Faq = () => {
                       : "hover:border-primary hover:border border border-transparent hover:shadow-md hover:shadow-primary "
                   }`}
                   onClick={() => handleClick(index)}>
-                  <div className="text-[1.5rem] font-open font-bold  uppercase group-hover:text-primary flex  items-center justify-between w-full">
+                  <Scroll className="text-[1.5rem] font-open font-bold  uppercase group-hover:text-primary flex  items-center justify-between w-full">
                     <h3 className="text-[1rem] font-open font-bold  uppercase group-hover:text-primary w-3/4">
                       {step.question}
                     </h3>
@@ -53,19 +53,19 @@ const Faq = () => {
                         </div>
                       )}
                     </div>
-                  </div>
+                  </Scroll>
 
                   {selectedQuestion === index && (
-                    <p className=" font-poppins font-light group-hover:text-white text-[1rem] capitalize text-primary">
+                    <Scroll className=" font-poppins font-light group-hover:text-white text-[1rem] capitalize text-primary">
                       {step.answer}
-                    </p>
+                    </Scroll>
                   )}
                 </div>
               ))}
             </div>
-            <div className="lg:w-1/2 h-full lg:flex items-center justify-center hidden">
+            <Scroll className="lg:w-1/2 h-full lg:flex items-center justify-center hidden">
               <FaQuestion className="text-[30rem] text-secondry  shadow-text-secound" />
-            </div>
+            </Scroll>
           </div>
         </div>
       </Scroll>

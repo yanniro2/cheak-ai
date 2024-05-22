@@ -61,42 +61,42 @@ const MainSection: React.FC = () => {
   };
 
   return (
-    <Scroll>
-      <section className="container mx-auto p-5 flex items-center h-full flex-col gap-[1rem] md:py-[4rem] relative">
-        <Title1
-          title={"Our Main Services"}
-          subtitle={"Comprehensive Solutions Tailored to Your Needs"}
-        />
-        <div className="w-full h-full flex items-center justify-between overflow-hidden gap-[1rem] ">
-          <div
-            ref={containerRef}
-            className="w-screen overflow-y-auto grid md:grid-flow-col justify-start items-center gap-[1rem] transition-all h-full py-[1rem]">
-            {mainServicesData.mainServices.map((service, index) => (
-              <div
-                key={index}
-                className="lg:w-[25vw] md:w-[30vw]  w-full  h-full bg-lighDark lg:p-[2rem] rounded cursor-pointer hover:bg-white md:hover:scale-105 lg:m-[1rem] transition-all ease-linear shadow shadow-primary hover:shadow-lg hover:drop-shadow-lg flex flex-col justify-between text-center items-center group overscroll-contain gap-[1rem] lg:gap-0 p-[1rem] lg:hover:scale-105">
-                <div className="icons-1">{renderIcon(service.icon)}</div>
-                <h3 className="text-xl font-poppins font-semibold group-hover:text-primary">
-                  {service.title}
-                </h3>
-                <p className="text font-open">{service.description}</p>
-                <Link href={service.url} className="btn btn-1">
-                  Read more
-                </Link>
-              </div>
-            ))}
-          </div>
+    // <Scroll>
+    <section className="container mx-auto p-5 flex items-center h-full flex-col gap-[1rem] md:py-[4rem] relative">
+      <Title1
+        title={"Our Main Services"}
+        subtitle={"Comprehensive Solutions Tailored to Your Needs"}
+      />
+      <div className="w-full h-full flex items-center justify-between overflow-hidden gap-[1rem] ">
+        <div
+          ref={containerRef}
+          className="w-screen overflow-y-auto grid md:grid-flow-col justify-start items-center gap-[1rem] transition-all h-full py-[1rem]">
+          {mainServicesData.mainServices.map((service, index) => (
+            <Scroll
+              key={index}
+              className="lg:w-[25vw] md:w-[30vw]  w-full  h-full bg-lighDark lg:p-[2rem] rounded cursor-pointer hover:bg-white md:hover:scale-105 lg:m-[1rem] transition-all ease-linear shadow shadow-primary hover:shadow-lg hover:drop-shadow-lg flex flex-col justify-between text-center items-center group overscroll-contain gap-[1rem] lg:gap-0 p-[1rem] lg:hover:scale-105">
+              <div className="icons-1">{renderIcon(service.icon)}</div>
+              <h3 className="text-xl font-poppins font-semibold group-hover:text-primary">
+                {service.title}
+              </h3>
+              <p className="text font-open">{service.description}</p>
+              <Link href={service.url} className="btn btn-1">
+                Read more
+              </Link>
+            </Scroll>
+          ))}
         </div>
-        <div className="md:flex items-center justify-center gap-3 hidden">
-          <button className="btn-next" onClick={scrollBackward}>
-            <MdNavigateBefore />
-          </button>
-          <button className="btn-next" onClick={scrollForward}>
-            <MdNavigateNext />
-          </button>
-        </div>
-      </section>
-    </Scroll>
+      </div>
+      <div className="md:flex items-center justify-center gap-3 hidden">
+        <button className="btn-next" onClick={scrollBackward}>
+          <MdNavigateBefore />
+        </button>
+        <button className="btn-next" onClick={scrollForward}>
+          <MdNavigateNext />
+        </button>
+      </div>
+    </section>
+    // </Scroll>
   );
 };
 
