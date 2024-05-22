@@ -18,6 +18,7 @@ import {
   FaEnvelope,
 } from "react-icons/fa";
 import Logo from "./mini/Logo";
+import Scroll from "./animation/Scroll";
 type Props = {};
 
 type ContactInformation = {
@@ -83,7 +84,8 @@ const Footer = (props: Props) => {
     return iconComponents[iconName] || null;
   };
   return (
-    <div
+    // <Scroll>
+    <section
       className="w-screen bg-lighDark  text-white font-lato md:py-[3rem]  px-3 relative md:px-6 flex flex-col items-end justify-end "
       id="footer">
       <div className="container mx-auto p-3 md:p-0 z-20 flex flex-col justify-between h-full ">
@@ -233,7 +235,8 @@ const Footer = (props: Props) => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
+    // </Scroll>
   );
 };
 
