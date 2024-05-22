@@ -5,6 +5,7 @@ import { IoMdArrowForward } from "react-icons/io";
 import Tilty from "react-tilty";
 import Image from "next/image";
 import Scroll from "./animation/Scroll";
+import Link from "next/link";
 type Props = {};
 function Hero({}: Props) {
   return (
@@ -33,10 +34,12 @@ function Hero({}: Props) {
               <div className="w-[20rem] h-[20rem]   rounded-full   absolute -top-[50%] lg:-left-[2rem] -z-1  shadow-box bg-primary/5 left-0 "></div>
             </div>
             <div className="lg:flex lg:items-center gap-3 justify-start w-full flex-col lg:flex-row items-start hidden">
-              <button className="btn btn-1">start Exploring</button>
-              <button className="btn btn-2 group">
+              <Link href="#services" className="btn btn-1">
+                start Exploring
+              </Link>
+              <Link href="#benefits" className="btn btn-2 group">
                 learn more <IoMdArrowForward className="group-hover:ml-3" />
-              </button>
+              </Link>
             </div>
           </div>
 

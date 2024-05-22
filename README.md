@@ -1,9 +1,6 @@
 # Pending
 
-    - Responsive link click current show ui issues
     - Sub pages
-        - Header [get started]
-        - Hero [start explore , learn more]
         - Our services [Data Analysis, Automation Solutions , Cloud Integration, Cybersecurity Essentials]
         - Main Services [Border Watch, Fraud Detection, AI-Based Startups,Private Document AI Assistant (LEO), Custom AI Solutions , AI Consulting]
         - Benifits [Dedicated Artificial Intelligence, Fully Responsive & Mobile Friendly,Clean & Modern Design Layout,Multi-Device Testing System, Great User Experience]
