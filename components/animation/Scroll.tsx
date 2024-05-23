@@ -2,7 +2,7 @@
 import { easeIn, easeInOut, motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
-import { Url } from "next/dist/shared/lib/router/router";
+
 
 type Props = {
   children?: React.ReactNode;

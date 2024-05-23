@@ -1,6 +1,5 @@
 # Pending
 
-    - ScrollDown for every small particles
     - Header for sub pages
     - Header hover effect fixed
     - Scrool down first time load
