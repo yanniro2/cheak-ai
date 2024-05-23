@@ -1,9 +1,10 @@
+import Services from "@/components/Services";
 import React from "react";
 
 type Props = {};
 
-function page({}: Props) {
-  return <div>page</div>;
-}
+const page = (props: Props) => {
+  return <Services />;
+};
 
 export default page;

@@ -14,7 +14,7 @@ import "animate.css";
 export default function Home() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <Hero />
       <About />
       <Services />

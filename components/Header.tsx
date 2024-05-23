@@ -6,6 +6,7 @@ import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import Logo from "./mini/Logo";
 import Hover from "./mini/Hover";
 import { useScroll, motion } from "framer-motion";
+import { usePathname } from "next/navigation";
 import {
   FaHome,
   FaInfoCircle,
@@ -24,8 +25,10 @@ type NavigationItem = {
   icon: string;
   submenu?: NavigationItem[];
 };
+type Props = {};
 
-const Header: React.FC = () => {
+const Header: React.FC = (props: Props) => {
+  const pathName = usePathname();
   const { scrollYProgress } = useScroll({
     offset: ["start start", "end end"],
   });
@@ -90,11 +93,20 @@ const Header: React.FC = () => {
                 <li key={index}>
                   <Link
                     href={item.url}
-                    className={`  cursor-pointer text-[14px] ${
-                      activeSection == item.id ? "link-active" : "link-1"
+                    // className={`  cursor-pointer text-[14px] ${
+                    //   activeSection == item.id ? "link-active" : "link-1"
+                    // }`}
+                    className={` cursor-pointer text-[14px] ${
+                      (pathName === item.url && pathName !== "/") ||
+                      (pathName.startsWith(item.url) && item.url !== "/") ||
+                      (pathName === "/" && item.url === "/")
+                        ? "link-active"
+                        : "link-1"
                     }`}
                     aria-label={item.label}>
-                    {activeSection == item.id ? (
+                    {(pathName === item.url && pathName !== "/") ||
+                    (pathName.startsWith(item.url) && item.url !== "/") ||
+                    (pathName === "/" && item.url === "/") ? (
                       `[ ${item.label} ]`
                     ) : (
                       <Hover name={item.label} />
@@ -132,7 +144,9 @@ const Header: React.FC = () => {
                   key={index}
                   href={item.url}
                   className={` w-full bg-lighDark p-3   cursor-pointer text-[1.4rem] transition-all ease-in-out flex items-center justify-center gap-3 ${
-                    activeSection == item.id
+                    (pathName === item.url && pathName !== "/") ||
+                    (pathName.startsWith(item.url) && item.url !== "/") ||
+                    (pathName === "/" && item.url === "/")
                       ? "bg-white text-primary font-semibold"
                       : "hover:bg-white hover:text-primary "
                   }`}
