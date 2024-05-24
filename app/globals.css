@@ -3,6 +3,13 @@
 @tailwind components;
 @tailwind utilities;
 
+.layout-1 {
+  @apply w-screen h-full flex flex-col items-center justify-center drop-shadow shadow;
+}
+
+.container-layout {
+  @apply container mx-auto p-5 flex items-center h-full flex-col gap-[1rem] md:py-[4rem] pt-[6rem];
+}
 
 .btn {
   @apply py-3 px-6 border  rounded-full capitalize font-poppins font-normal transition-all drop-shadow shadow-lg cursor-pointer flex items-center justify-center gap-3 ease-linear w-full md:w-fit;

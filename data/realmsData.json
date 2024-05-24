@@ -1,12 +1,14 @@
 {
   "briefServices": [
     {
+      "id": 1,
       "title": "Data Analysis",
+      "main": "Quick and comprehensive data analysis solutions for actionable insights. Our services cater to various industries, ensuring that your data is processed efficiently and accurately. We employ advanced analytics tools and techniques to help you make data-driven decisions that enhance business performance.",
       "subTitle": "Insightful Data Interpretation",
       "description": "Quick data analysis solutions to extract insights and make informed decisions.",
       "url": "/services/data-analysis",
       "img": {
-        "src": "/images/data-analysis.jpg",
+        "src": "/assets/img/services/data-analysis.jpeg",
         "alt": "Data Analysis"
       },
       "content": {
@@ -16,12 +18,14 @@
       }
     },
     {
+      "id": 2,
       "title": "Automation Solutions",
+      "main": "Efficient automation solutions to streamline your processes. Our expertise in automation spans various domains, helping businesses automate repetitive tasks, reduce errors, and increase overall productivity. By integrating advanced automation tools, we help you achieve significant time and cost savings.",
       "subTitle": "Efficiency at Your Fingertips",
       "description": "Streamline processes and workflows with efficient automation solutions.",
       "url": "/services/automation-solutions",
       "img": {
-        "src": "/images/automation-solutions.jpg",
+        "src": "/assets/img/services/automation-solutions.jpeg",
         "alt": "Automation Solutions"
       },
       "content": {
@@ -31,12 +35,14 @@
       }
     },
     {
+      "id": 3,
       "title": "Cloud Integration",
+      "main": "Scalable cloud integration for seamless operations. Our cloud integration services offer a flexible approach to connect your on-premise systems with cloud-based platforms. We ensure data integrity and security while enhancing collaboration and accessibility across your organization.",
       "subTitle": "Scalable and Flexible Solutions",
       "description": "Seamlessly integrate your systems with cloud services for enhanced scalability and flexibility.",
       "url": "/services/cloud-integration",
       "img": {
-        "src": "/images/cloud-integration.jpg",
+        "src": "/assets/img/services/cloud-integration.jpeg",
         "alt": "Cloud Integration"
       },
       "content": {
@@ -46,12 +52,14 @@
       }
     },
     {
+      "id": 4,
       "title": "Cybersecurity Essentials",
+      "main": "Essential cybersecurity measures to protect your assets. We offer a comprehensive suite of cybersecurity services designed to defend against the latest threats. Our proactive approach ensures your digital assets are secure, helping you maintain trust with your customers and comply with industry regulations.",
       "subTitle": "Protecting Your Digital Assets",
       "description": "Ensure your digital assets are protected with essential cybersecurity measures.",
       "url": "/services/cybersecurity-essentials",
       "img": {
-        "src": "/images/cybersecurity-essentials.jpg",
+        "src": "/assets/img/services/cybersecurity-essentials.jpeg",
         "alt": "Cybersecurity Essentials"
       },
       "content": {
