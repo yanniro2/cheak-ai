@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Scroll from "../animation/Scroll";
 
 // Define a generic type for the data
 type Data<T> = {
@@ -40,7 +41,7 @@ const NextNavigation = <T extends Project>(props: Props<T>) => {
       ? briefServices[currentIndex + 1]
       : null;
   return (
-    <div className="flex justify-between mt-8 w-full">
+    <Scroll className="flex justify-between mt-8 w-full">
       {previousProject && (
         <Link href={previousProject.url} className="btn btn-2">
           &lt; Previous
@@ -52,7 +53,7 @@ const NextNavigation = <T extends Project>(props: Props<T>) => {
           Next &gt;
         </Link>
       )}
-    </div>
+    </Scroll>
   );
 };
 

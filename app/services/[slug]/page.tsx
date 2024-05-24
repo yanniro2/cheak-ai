@@ -31,13 +31,13 @@ export default function ServicesPage({ params }: { params: { slug: string } }) {
     <section className="layout-1">
       <div className="container-layout">
         <Title title={title} subtitle={subTitle}></Title>
-        <div className="w-full">
+        <Scroll className="w-full">
           <Link
             href="/services"
             className="cursor-pointer hover:text-primary  underline text transition-all">
             Back
           </Link>
-        </div>
+        </Scroll>
         <Scroll className="flex w-full items-center justify-between md:gap-[3rem] bg-lighDark md:p-[2rem] rounded shadow-lg  md:flex-row flex-col-reverse text-center md:text-left p-3 gap-3 ">
           <Scroll className="md:w-3/4 md:text-xl font-light font-open text-white w-full">
             {main}
