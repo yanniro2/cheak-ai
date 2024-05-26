@@ -2,7 +2,7 @@ import Services from "@/components/Services";
 import React from "react";
 import { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "Check AI - Services",
+  title: "Services",
 };
 type Props = {};
 

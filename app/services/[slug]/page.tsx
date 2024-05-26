@@ -5,6 +5,13 @@ import servicesData from "@/data/realmsData.json";
 import mainServiceData from "@/data/mainServiceData.json";
 import Image from "next/image";
 import Link from "next/link";
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: {
+    default: "Service",
+    template: "%s | Check AI",
+  },
+};
 
 export function generateStaticParams() {
   return [

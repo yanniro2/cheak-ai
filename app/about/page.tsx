@@ -5,7 +5,7 @@ import Image from "next/image";
 import About from "@/components/About";
 import { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "Check AI - About US",
+  title: "About US",
 };
 type Props = {};
 

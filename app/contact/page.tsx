@@ -2,7 +2,7 @@ import Contact from "@/components/Contact";
 import React from "react";
 import { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "Check AI - Contact US",
+  title: "Contact US",
 };
 type Props = {};
 

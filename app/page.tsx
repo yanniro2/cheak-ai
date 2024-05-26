@@ -12,7 +12,7 @@ import "animate.css";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Check AI - Home",
+  title: "Home - Check AI",
 };
 
 
