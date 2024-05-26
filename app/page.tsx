@@ -9,6 +9,11 @@ import Howit from "@/components/Howit";
 import Services from "@/components/Services";
 import Why from "@/components/Why";
 import "animate.css";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Check AI - Home",
+};
 
 
 export default function Home() {
