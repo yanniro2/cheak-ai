@@ -1,39 +1,81 @@
 {
   "mainServices": [
     {
+      "id": 1,
       "title": "Border Watch",
+      "main": "Enhance security camera surveillance with AI and machine learning technologies for improved threat detection and prevention. Our Border Watch service utilizes state-of-the-art AI algorithms to analyze video feeds in real-time, identifying potential threats and alerting security personnel.",
+      "subTitle": "Advanced Surveillance Solutions",
       "description": "Enhance security camera surveillance with AI and machine learning technologies for improved threat detection and prevention.",
-      "url": "/border-watch",
+      "url": "/services/border-watch",
+      "img": {
+        "src": "/assets/img/services/border-watch.jpeg",
+        "alt": "Border Watch"
+      },
       "icon": "RiVideoLine"
     },
     {
+      "id": 2,
       "title": "Fraud Detection",
+      "main": "Detect and prevent fraudulent activities by analyzing customer behavior patterns and identifying anomalies in real-time. Our Fraud Detection service leverages advanced machine learning algorithms to analyze transaction data, flagging suspicious activities and reducing financial losses for businesses.",
+      "subTitle": "Secure Financial Transactions",
       "description": "Detect and prevent fraudulent activities by analyzing customer behavior patterns and identifying anomalies in real-time.",
-      "url": "/fraud-detection",
+      "url": "/services/fraud-detection",
+      "img": {
+        "src": "/assets/img/services/fraud-detection.jpeg",
+        "alt": "Fraud Detection"
+      },
       "icon": "RiSearchLine"
     },
     {
+      "id": 3,
       "title": "AI-Based Startups",
+      "main": "Transform your startup idea with AI and ML solutions tailored to your business needs for competitive advantage and success. Our AI-Based Startups service provides startups with access to cutting-edge AI technologies and expert guidance to accelerate growth and innovation.",
+      "subTitle": "Innovative Startup Solutions",
       "description": "Transform your startup idea with AI and ML solutions tailored to your business needs for competitive advantage and success.",
-      "url": "/ai-startups",
+      "url": "/services/ai-startups",
+      "img": {
+        "src": "/assets/img/services/ai-startups.jpeg",
+        "alt": "AI-Based Startups"
+      },
       "icon": "RiLightbulbLine"
     },
     {
+      "id": 4,
       "title": "Private Document AI Assistant (LEO)",
+      "main": "Leverage an on-premises AI assistant to analyze documents, extract insights, and streamline information management processes securely. Our Private Document AI Assistant (LEO) service offers organizations a powerful AI-driven solution for managing and processing large volumes of documents efficiently.",
+      "subTitle": "Efficient Document Management",
       "description": "Leverage an on-premises AI assistant to analyze documents, extract insights, and streamline information management processes securely.",
-      "url": "/leo-ai-assistant",
+      "url": "/services/leo-ai-assistant",
+      "img": {
+        "src": "/assets/img/services/leo-ai-assistant.jpeg",
+        "alt": "Private Document AI Assistant (LEO)"
+      },
       "icon": "RiFileTextLine"
     },
     {
+      "id": 5,
       "title": "Custom AI Solutions",
+      "main": "Get personalized AI solutions designed to address your unique challenges and drive innovation across your organization. Our Custom AI Solutions service offers tailored AI models and applications built to meet specific business requirements, enabling you to unlock new opportunities and stay ahead of the competition.",
+      "subTitle": "Tailored AI Models",
       "description": "Get personalized AI solutions designed to address your unique challenges and drive innovation across your organization.",
-      "url": "/custom-ai-solutions",
+      "url": "/services/custom-ai-solutions",
+      "img": {
+        "src": "/assets/img/services/custom-ai-solutions.jpeg",
+        "alt": "Custom AI Solutions"
+      },
       "icon": "RiSettings5Line"
     },
     {
+      "id": 6,
       "title": "AI Consulting",
+      "main": "Receive expert guidance and support in implementing AI strategies to maximize your business potential and achieve long-term success. Our AI Consulting service offers businesses access to seasoned AI professionals who provide strategic advice, technical expertise, and implementation support to drive AI initiatives forward.",
+      "subTitle": "Expert AI Guidance",
       "description": "Receive expert guidance and support in implementing AI strategies to maximize your business potential and achieve long-term success.",
-      "url": "/ai-consulting",
+      "url": "/services/ai-consulting",
+      "img": {
+        "src": "/assets/img/services/ai-consulting.jpeg",
+        "alt": "AI Consulting"
+      },
       "icon": "RiUserSettingsLine"
     }
   ]

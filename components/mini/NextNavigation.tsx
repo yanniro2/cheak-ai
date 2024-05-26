@@ -2,44 +2,60 @@ import Link from "next/link";
 import React from "react";
 import Scroll from "../animation/Scroll";
 
-// Define a generic type for the data
-type Data<T> = {
-  briefServices: T[];
-};
-
-// Define a generic type for the project
-type Project = {
+type BriefService = {
   id: number;
   title: string;
+  main: string;
+  subTitle: string;
+  description: string;
   url: string;
+  img: {
+    src: string;
+    alt: string;
+  };
+  content: {
+    main: string;
+    p1: string;
+    p2: string;
+  };
 };
 
-type Props<T> = {
+type MainService = {
+  id: number;
+  title: string;
+  description: string;
+  url: string;
+  icon: string;
+  img?: {
+    src: string;
+    alt: string;
+  };
+};
+
+type Props = {
   slug: string;
-  data: Data<T>;
+  data: (BriefService | MainService)[];
 };
 
-const NextNavigation = <T extends Project>(props: Props<T>) => {
-  // Access your projects data
-  const { briefServices } = props.data;
+const NextNavigation = (props: Props) => {
+  if (!props.data) {
+    console.error("Data prop is undefined");
+    return null;
+  }
 
-  // Find the project with the matching slug
-  const projectToRender = briefServices.find(
+  const projectToRender = props.data.find(
     (project) => project.url === `/services/${props.slug}`
   );
 
-  // Find the index of the current project
   const currentIndex = projectToRender
-    ? briefServices.findIndex((project) => project.id === projectToRender.id)
+    ? props.data.findIndex((project) => project.url === projectToRender.url)
     : -1;
 
-  // Get the previous and next projects
   const previousProject =
-    currentIndex > 0 ? briefServices[currentIndex - 1] : null;
+    currentIndex > 0 ? props.data[currentIndex - 1] : null;
   const nextProject =
-    currentIndex < briefServices.length - 1
-      ? briefServices[currentIndex + 1]
-      : null;
+    currentIndex < props.data.length - 1 ? props.data[currentIndex + 1] : null;
+
   return (
     <Scroll className="flex justify-between mt-8 w-full">
       {previousProject && (
@@ -47,7 +63,6 @@ const NextNavigation = <T extends Project>(props: Props<T>) => {
           &lt; Previous
         </Link>
       )}
-
       {nextProject && (
         <Link href={nextProject.url} className="btn btn-1">
           Next &gt;
