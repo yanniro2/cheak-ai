@@ -86,7 +86,7 @@ export default function ServicesPage({ params }: { params: { slug: string } }) {
       </section>
     );
   } else if (mainToRender) {
-    const { title, main, subTitle, description, img } = mainToRender;
+    const { title, main, subTitle, description, img, content } = mainToRender;
     return (
       <section className="layout-1">
         <div className="container-layout">
@@ -106,21 +106,21 @@ export default function ServicesPage({ params }: { params: { slug: string } }) {
               {description}
             </Scroll>
           </Scroll>
-          <div className="w-full flex items-center justify-between lg:flex-row-reverse flex-col gap-[1rem]">
+          <Scroll className="w-full flex items-center justify-between lg:flex-row-reverse flex-col gap-[1rem]">
             <Scroll className="lg:w-1/2 flex flex-col rounded gap-[1rem] bg-lighDark p-[3rem]">
-              <div className="flex flex-col">
+              <Scroll className="flex flex-col">
                 <Scroll className="text-xl font-open font-semibold uppercase text-primary">
                   {subTitle}
                 </Scroll>
                 <Scroll className="text-white font-poppins text-[2rem] font-medium leading-none ">
                   {/* {content.main} */}
                 </Scroll>
-              </div>
-              {/* <Scroll className="flex flex-col gap-3">
+              </Scroll>
+              <Scroll className="flex flex-col gap-3">
                 <Scroll className="text">{description}</Scroll>
                 <Scroll className="text">{content.p1}</Scroll>
                 <Scroll className="text">{content.p2}</Scroll>
-              </Scroll> */}
+              </Scroll>
             </Scroll>
             <Scroll className="lg:w-1/2">
               <Image
@@ -131,16 +131,18 @@ export default function ServicesPage({ params }: { params: { slug: string } }) {
                 className="rounded object-cover"
               />
             </Scroll>
-          </div>
+          </Scroll>
           <NextNavigation slug={params.slug} data={mainServices} />
         </div>
       </section>
     );
   } else {
     return (
-      <div className="w-full h-full">
-        <div className="container mx-auto py-[6rem]">Service not found</div>
-      </div>
+      <Scroll className="w-full h-full">
+        <Scroll className="container mx-auto py-[6rem]">
+          Service not found
+        </Scroll>
+      </Scroll>
     );
   }
 }
