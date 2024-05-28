@@ -9,6 +9,7 @@ import {
 
 import data from "@/data/benifitsData.json";
 import Scroll from "./animation/Scroll";
+import Link from "next/link";
 
 const Benifits = () => {
   return (
@@ -23,9 +24,10 @@ const Benifits = () => {
         />
         {/* Tab */}
         <div className="lg:hidden">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-[1.5rem]">
+          <Scroll className="grid md:grid-cols-2 lg:grid-cols-3 gap-[1.5rem]">
             {data.benefits.slice(0, 4).map((step, index) => (
-              <Scroll
+              <Link
+                href={step.url}
                 key={index}
                 className="bg-lighDark p-[2rem] rounded flex flex-col items-center justify-center gap-3 text-center cursor-pointer hover:scale-105 transition-all ease-linear group hover:shadow-md hover:shadow-primary border border-primary">
                 <div className="icons-1">{renderIcon(step.icon)}</div>
@@ -33,12 +35,13 @@ const Benifits = () => {
                   {step.title}
                 </h3>
                 <p className="text font-open">{step.description}</p>
-              </Scroll>
+              </Link>
             ))}
-          </div>
-          <div className="grid  gap-[1.5rem] mt-[1.5rem]">
+          </Scroll>
+          <Scroll className="grid  gap-[1.5rem] mt-[1.5rem]">
             {data.benefits.slice(4, 5).map((step, index) => (
-              <Scroll
+              <Link
+                href={step.url}
                 key={index}
                 className="bg-lighDark p-[2rem] rounded flex flex-col items-center justify-center gap-3 text-center cursor-pointer hover:scale-105 transition-all ease-linear group hover:shadow-md hover:shadow-primary border border-primary">
                 <div className="icons-1">{renderIcon(step.icon)}</div>
@@ -46,15 +49,16 @@ const Benifits = () => {
                   {step.title}
                 </h3>
                 <p className="text font-open">{step.description}</p>
-              </Scroll>
+              </Link>
             ))}
-          </div>
+          </Scroll>
         </div>
         {/* default */}
         <div className="hidden lg:block">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-[1.5rem]">
+          <Scroll className="grid md:grid-cols-2 lg:grid-cols-3 gap-[1.5rem]">
             {data.benefits.slice(0, 3).map((step, index) => (
-              <Scroll
+              <Link
+                href={step.url}
                 key={index}
                 className="bg-lighDark p-[2rem] rounded flex flex-col items-center justify-center gap-3 text-center cursor-pointer hover:scale-105 transition-all ease-linear group hover:shadow-md hover:shadow-primary border border-primary">
                 <div className="icons-1">{renderIcon(step.icon)}</div>
@@ -62,12 +66,13 @@ const Benifits = () => {
                   {step.title}
                 </h3>
                 <p className="text font-open">{step.description}</p>
-              </Scroll>
+              </Link>
             ))}
-          </div>
-          <div className="grid grid-cols-2 gap-[1.5rem] mt-[1.5rem]">
+          </Scroll>
+          <Scroll className="grid grid-cols-2 gap-[1.5rem] mt-[1.5rem]">
             {data.benefits.slice(3, 5).map((step, index) => (
-              <Scroll
+              <Link
+                href={step.url}
                 key={index}
                 className="bg-lighDark p-[2rem] rounded flex flex-col items-center justify-center gap-3 text-center cursor-pointer hover:scale-105 transition-all ease-linear group hover:shadow-md hover:shadow-primary border border-primary">
                 <div className="icons-1">{renderIcon(step.icon)}</div>
@@ -75,9 +80,9 @@ const Benifits = () => {
                   {step.title}
                 </h3>
                 <p className="text font-open">{step.description}</p>
-              </Scroll>
+              </Link>
             ))}
-          </div>
+          </Scroll>
         </div>
       </div>
       {/* </Scroll> */}

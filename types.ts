@@ -135,3 +135,35 @@ export type NavigationItem = {
   icon: string;
   submenu?: NavigationItem[];
 };
+
+export type Image = {
+  src: string;
+  alt: string;
+};
+
+export type SubSection = {
+  title: string;
+  icon: string;
+  brief: string;
+  examples: string[];
+};
+
+export type KeyFeature = {
+  title: string;
+  description: string;
+};
+
+export type Section = {
+  id: number;
+  title: string;
+  description: string;
+  url: string;
+  img: Image;
+  overview: string;
+  key_features: KeyFeature[];
+  sub_sections: SubSection[];
+};
+
+export type SectionsData = {
+  sections: Section[];
+};
