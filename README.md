@@ -1,5 +1,7 @@
 # Pending
 
+    - SEO Tab bar name check
+    - @Type seperate file make
     - Scroll on time work
     - Header for sub pages
     - Header hover effect fixed

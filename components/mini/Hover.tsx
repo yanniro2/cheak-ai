@@ -1,12 +1,9 @@
 "use client";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { HoverType } from "@/types";
 
-type Props = {
-  name: string;
-};
-
-const Hover = (props: Props) => {
+const Hover = (props: HoverType) => {
   const [isHovered, setIsHovered] = useState<boolean>(false);
 
   const handleHover = () => {

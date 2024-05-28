@@ -3,19 +3,14 @@ import { easeIn, easeInOut, motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
-
-type Props = {
-  children?: React.ReactNode;
-  className?: string;
-  onClick?: () => void;
-};
+import { Scrolls } from "@/types";
 
 const boxVariant = {
   visible: { opacity: 1, scale: 1, transition: { duration: 0.5, easeInOut } },
   hidden: { opacity: 0, scale: 0.5 },
 };
 
-const Scroll: React.FC<Props> = ({ children, className }) => {
+const Scroll: React.FC<Scrolls> = ({ children, className }) => {
   const control = useAnimation();
   const [ref, inView] = useInView();
 

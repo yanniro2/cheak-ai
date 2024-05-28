@@ -6,12 +6,8 @@ import mainServiceData from "@/data/mainServiceData.json";
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
-export const metadata: Metadata = {
-  title: {
-    default: "Service",
-    template: "%s | Check AI",
-  },
-};
+import ServiceSlug from "@/components/Slug/ServiceSlug";
+import Contact from "@/components/Contact";
 
 export function generateStaticParams() {
   return [
@@ -40,108 +36,58 @@ export default function ServicesPage({ params }: { params: { slug: string } }) {
     (service) => service.url === `/services/${params.slug}`
   );
 
+  // let metadata = generateMetadata(params.slug);
+
   if (serviceToRender) {
     const { title, main, subTitle, description, img, content } =
       serviceToRender;
+    // const { title } = serviceToRender;
+    // metadata = generateMetadata(title);
+
     return (
-      <section className="layout-1">
-        <div className="container-layout">
-          <Title title={title} subtitle={subTitle}></Title>
-          <Scroll className="w-full">
-            <Link
-              href="/services"
-              className="cursor-pointer hover:text-primary underline text transition-all">
-              Back
-            </Link>
-          </Scroll>
-          <Scroll className="flex w-full items-center justify-between md:gap-[3rem] bg-lighDark md:p-[2rem] rounded shadow-lg md:flex-row flex-col-reverse text-center md:text-left p-3 gap-3 ">
-            <Scroll className="md:w-3/4 md:text-xl font-light font-open text-white w-full">
-              {main}
-            </Scroll>
-            <Scroll className="md:w-1/4 text-primary font-poppins w-full">
-              {description}
-            </Scroll>
-          </Scroll>
-          <div className="w-full flex items-center justify-between lg:flex-row-reverse flex-col gap-[1rem]">
-            <Scroll className="lg:w-1/2 flex flex-col rounded gap-[1rem] bg-lighDark p-[3rem]">
-              <div className="flex flex-col">
-                <Scroll className="text-xl font-open font-semibold uppercase text-primary">
-                  {subTitle}
-                </Scroll>
-                <Scroll className="text-white font-poppins text-[2rem] font-medium leading-none ">
-                  {content.main}
-                </Scroll>
-              </div>
-              <Scroll className="flex flex-col gap-3">
-                <Scroll className="text">{description}</Scroll>
-                <Scroll className="text">{content.p1}</Scroll>
-                <Scroll className="text">{content.p2}</Scroll>
-              </Scroll>
-            </Scroll>
-            <Scroll className="lg:w-1/2">
-              <Image
-                src={img.src}
-                width={"1000"}
-                height={"1000"}
-                alt={img.alt}
-                className="rounded object-cover"
-              />
-            </Scroll>
-          </div>
-          <NextNavigation slug={params.slug} data={briefServices} />
-        </div>
-      </section>
+      <ServiceSlug
+        title={title}
+        subTitle={subTitle}
+        main={main}
+        description={description}
+        content={{
+          main: content.main,
+          p1: content.p1,
+          p2: content.p2,
+        }}
+        img={{
+          src: img.src,
+          alt: img.alt,
+        }}
+        params={{
+          slug: params.slug,
+        }}
+        data={briefServices}
+      />
     );
   } else if (mainToRender) {
     const { title, main, subTitle, description, img, content } = mainToRender;
+    // metadata = generateMetadata(title);
     return (
-      <section className="layout-1">
-        <div className="container-layout">
-          <Title title={title} subtitle={subTitle}></Title>
-          <Scroll className="w-full">
-            <Link
-              href="/services"
-              className="cursor-pointer hover:text-primary underline text transition-all">
-              Back
-            </Link>
-          </Scroll>
-          <Scroll className="flex w-full items-center justify-between md:gap-[3rem] bg-lighDark md:p-[2rem] rounded shadow-lg md:flex-row flex-col-reverse text-center md:text-left p-3 gap-3 ">
-            <Scroll className="md:w-3/4 md:text-xl font-light font-open text-white w-full">
-              {main}
-            </Scroll>
-            <Scroll className="md:w-1/4 text-primary font-poppins w-full">
-              {description}
-            </Scroll>
-          </Scroll>
-          <Scroll className="w-full flex items-center justify-between lg:flex-row-reverse flex-col gap-[1rem]">
-            <Scroll className="lg:w-1/2 flex flex-col rounded gap-[1rem] bg-lighDark p-[3rem]">
-              <Scroll className="flex flex-col">
-                <Scroll className="text-xl font-open font-semibold uppercase text-primary">
-                  {subTitle}
-                </Scroll>
-                <Scroll className="text-white font-poppins text-[2rem] font-medium leading-none ">
-                  {/* {content.main} */}
-                </Scroll>
-              </Scroll>
-              <Scroll className="flex flex-col gap-3">
-                <Scroll className="text">{description}</Scroll>
-                <Scroll className="text">{content.p1}</Scroll>
-                <Scroll className="text">{content.p2}</Scroll>
-              </Scroll>
-            </Scroll>
-            <Scroll className="lg:w-1/2">
-              <Image
-                src={img.src}
-                width={"1000"}
-                height={"1000"}
-                alt={img.alt}
-                className="rounded object-cover"
-              />
-            </Scroll>
-          </Scroll>
-          <NextNavigation slug={params.slug} data={mainServices} />
-        </div>
-      </section>
+      <ServiceSlug
+        title={title}
+        subTitle={subTitle}
+        main={main}
+        description={description}
+        content={{
+          main: content.main,
+          p1: content.p1,
+          p2: content.p2,
+        }}
+        img={{
+          src: img.src,
+          alt: img.alt,
+        }}
+        params={{
+          slug: params.slug,
+        }}
+        data={mainServices}
+      />
     );
   } else {
     return (

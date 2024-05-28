@@ -26,18 +26,7 @@ interface ContactDetails {
   };
 }
 
-// Define a type for the social media object
-interface SocialMedia {
-  name: string;
-  link: string;
-  icon: string;
-}
 
-// Define a type for the entire contact data object
-interface ContactData {
-  contactDetails: ContactDetails;
-  socialMedia: SocialMedia[];
-}
 
 type Props = {};
 

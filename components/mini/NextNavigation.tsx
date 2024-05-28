@@ -1,43 +1,9 @@
 import Link from "next/link";
 import React from "react";
 import Scroll from "../animation/Scroll";
+import { NextNavigationProps } from "@/types";
 
-type BriefService = {
-  id: number;
-  title: string;
-  main: string;
-  subTitle: string;
-  description: string;
-  url: string;
-  img: {
-    src: string;
-    alt: string;
-  };
-  content: {
-    main: string;
-    p1: string;
-    p2: string;
-  };
-};
-
-type MainService = {
-  id: number;
-  title: string;
-  description: string;
-  url: string;
-  icon: string;
-  img?: {
-    src: string;
-    alt: string;
-  };
-};
-
-type Props = {
-  slug: string;
-  data: (BriefService | MainService)[];
-};
-
-const NextNavigation = (props: Props) => {
+const NextNavigation = (props: NextNavigationProps) => {
   if (!props.data) {
     console.error("Data prop is undefined");
     return null;
