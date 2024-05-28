@@ -23,7 +23,7 @@ const NextNavigation = (props: NextNavigationProps) => {
     currentIndex < props.data.length - 1 ? props.data[currentIndex + 1] : null;
 
   return (
-    <Scroll className="flex justify-between mt-8 w-full">
+    <Scroll className="flex justify-between mt-8 w-full gap-[2rem]">
       {previousProject && (
         <Link href={previousProject.url} className="btn btn-2">
           &lt; Previous

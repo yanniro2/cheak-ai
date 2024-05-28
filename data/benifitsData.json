@@ -3,10 +3,11 @@
     {
       "id": 1,
       "title": "Dedicated Artificial Intelligence",
+      "subTitle": "Enhance Business Operations with AI",
       "description": "Leverage dedicated artificial intelligence capabilities to enhance your business operations and decision-making processes.",
       "url": "/benefits/dedicated-artificial-intelligence",
       "img": {
-        "src": "/images/ai.jpg",
+        "src": "/assets/img/benefits/dedicated-artificial-intelligence.jpeg",
         "alt": "Artificial Intelligence"
       },
 
@@ -64,10 +65,11 @@
     {
       "id": 2,
       "title": "Fully Responsive & Mobile Friendly",
+      "subTitle": "Seamless Experience Across Devices",
       "description": "Enjoy a fully responsive and mobile-friendly design that ensures your website looks great and functions seamlessly across all devices.",
       "url": "/benefits/fully-responsive-mobile-friendly",
       "img": {
-        "src": "/images/responsive.jpg",
+        "src": "/assets/img/benefits/fully-responsive-mobile-friendly.jpeg",
         "alt": "Responsive Design"
       },
       "icon": "AiOutlineMobile",
@@ -128,10 +130,11 @@
     {
       "id": 3,
       "title": "Clean & Modern Design Layout",
+      "subTitle": "Professional Design for Your Brand",
       "description": "Immerse your users in a clean and modern design layout that showcases your brand's professionalism and attention to detail.",
       "url": "/benefits/clean-modern-design-layout",
       "img": {
-        "src": "/images/clean-design.jpg",
+        "src": "/assets/img/benefits/clean-modern-design-layout.jpeg",
         "alt": "Clean Design"
       },
       "icon": "AiOutlineLayout",
@@ -192,10 +195,11 @@
     {
       "id": 4,
       "title": "Multi-Device Testing System",
+      "subTitle": "Optimal Performance Across Devices",
       "description": "Benefit from a multi-device testing system that ensures your website performs optimally across various devices and screen sizes.",
       "url": "/benefits/multi-device-testing-system",
       "img": {
-        "src": "/images/multi-device.jpg",
+        "src": "/assets/img/benefits/multi-device-testing-system.jpeg",
         "alt": "Multi-Device Testing"
       },
       "icon": "AiOutlineMobile",
@@ -232,10 +236,11 @@
     {
       "id": 5,
       "title": "Great User Experience",
+      "subTitle": "Enhanced User Satisfaction",
       "description": "Deliver a great user experience to your visitors with intuitive navigation, fast loading times, and engaging interactions.",
       "url": "/benefits/great-user-experience",
       "img": {
-        "src": "/images/user-experience.jpg",
+        "src": "/assets/img/benefits/great-user-experience.jpeg",
         "alt": "User Experience"
       },
       "icon": "AiOutlineSmile",

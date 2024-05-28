@@ -1,7 +1,15 @@
 import React from "react";
 import data from "@/data/benifitsData.json";
 import Image from "next/image";
-// import { useRouter } from "next/router";
+import Title from "@/components/mini/Title";
+import Scroll from "@/components/animation/Scroll";
+import {
+  AiOutlineRobot,
+  AiOutlineMobile,
+  AiOutlineLayout,
+  AiOutlineSmile,
+} from "react-icons/ai";
+import NextNavigation from "@/components/mini/NextNavigation";
 
 export function generateStaticParams() {
   return [
@@ -22,44 +30,83 @@ function Page({ params }: { params: { slug: string } }) {
   if (!serviceToRender) return <div>Service not found</div>;
 
   return (
-    <div>
-      <h1>{serviceToRender.title}</h1>
-      <Image
-        src={serviceToRender.img.src}
-        alt={serviceToRender.img.alt}
-        width={1000}
-        height={500}
-      />
-      <p>{serviceToRender.description}</p>
-      <p>{serviceToRender.overview}</p>
+    <section className="layout-1">
+      <div className="container-layout">
+        <Title
+          title={serviceToRender.title}
+          subtitle={serviceToRender.subTitle}
+        />
+        <Scroll className="w-full h-full">
+          <Image
+            src={serviceToRender.img.src}
+            alt={serviceToRender.img.alt}
+            width={1000}
+            height={800}
+            className="w-full h-full object-cover"
+          />
+        </Scroll>
 
-      <div>
-        <h2>Key Features</h2>
-        {serviceToRender.key_features.map((feature, index) => (
-          <div key={index}>
-            <h3>{feature.title}</h3>
-            <p>{feature.description}</p>
+        <Scroll className="w-full py-[2rem]">
+          <h1 className="h1">Overview</h1>
+          <div className="flex text flex-col gap-[1rem]">
+            <p>{serviceToRender.description}</p>
+            <p>{serviceToRender.overview}</p>
           </div>
-        ))}
-      </div>
+        </Scroll>
 
-      <div>
-        <h2>Sub Sections</h2>
-        {serviceToRender.sub_sections.map((subSection, index) => (
-          <div key={index}>
-            <h3>{subSection.title}</h3>
-            <i className={subSection.icon}></i>
-            <p>{subSection.brief}</p>
-            <ul>
-              {subSection.examples.map((example, idx) => (
-                <li key={idx}>{example}</li>
-              ))}
-            </ul>
-          </div>
-        ))}
+        <Scroll className="w-full py-[2rem]">
+          <Scroll className="h1">Key Features</Scroll>
+
+          <Scroll className="grid lg:grid-cols-2 gap-3">
+            {serviceToRender.key_features.map((feature, index) => (
+              <Scroll
+                key={index}
+                className="cursor-pointer hover:bg-lighDark p-5 rounded transition-all ease-linear hover:shadow hover:shadow-primar bg-lighDark">
+                <Scroll className="font-semibold font-poppins pb-[1rem]">
+                  {feature.title}
+                </Scroll>
+                <p className="text">{feature.description}</p>
+              </Scroll>
+            ))}
+          </Scroll>
+        </Scroll>
+
+        <Scroll className="flex  justify-between gap-[1rem]">
+          {serviceToRender.sub_sections.map((subSection, index) => (
+            <Scroll
+              key={index}
+              className="p-3 rounded flex flex-col  gap-3  cursor-pointer hover:scale-105 transition-all ease-linear group hover:shadow-md hover:shadow-primary border border-primary">
+              <div className="icons-1">{renderIcon(subSection.icon)}</div>
+              <h3 className="text-xl font-poppins font-semibold group-hover:text-primary">
+                {subSection.title}
+              </h3>
+
+              <p className="text font-open">{subSection.brief}</p>
+              <div className="flex flex-wrap gap-1">
+                {subSection.examples.map((example, idx) => (
+                  <p key={idx} className="btn btn-1">
+                    {example}
+                  </p>
+                ))}
+              </div>
+            </Scroll>
+          ))}
+        </Scroll>
+        <NextNavigation slug={params.slug} data={benefits} />
       </div>
-    </div>
+    </section>
   );
 }
+const renderIcon = (iconName: string) => {
+  const iconComponents: { [key: string]: React.ElementType } = {
+    AiOutlineRobot,
+    AiOutlineMobile,
+    AiOutlineLayout,
+    AiOutlineSmile,
+  };
+
+  const IconComponent = iconComponents[iconName];
+  return <IconComponent />;
+};
 
 export default Page;
