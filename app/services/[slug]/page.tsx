@@ -1,13 +1,7 @@
 import Scroll from "@/components/animation/Scroll";
-import NextNavigation from "@/components/mini/NextNavigation";
-import Title from "@/components/mini/Title";
 import servicesData from "@/data/realmsData.json";
 import mainServiceData from "@/data/mainServiceData.json";
-import Image from "next/image";
-import Link from "next/link";
-import { Metadata } from "next";
 import ServiceSlug from "@/components/Slug/ServiceSlug";
-import Contact from "@/components/Contact";
 
 export function generateStaticParams() {
   return [
@@ -36,14 +30,9 @@ export default function ServicesPage({ params }: { params: { slug: string } }) {
     (service) => service.url === `/services/${params.slug}`
   );
 
-  // let metadata = generateMetadata(params.slug);
-
   if (serviceToRender) {
     const { title, main, subTitle, description, img, content } =
       serviceToRender;
-    // const { title } = serviceToRender;
-    // metadata = generateMetadata(title);
-
     return (
       <ServiceSlug
         title={title}
@@ -67,7 +56,7 @@ export default function ServicesPage({ params }: { params: { slug: string } }) {
     );
   } else if (mainToRender) {
     const { title, main, subTitle, description, img, content } = mainToRender;
-    // metadata = generateMetadata(title);
+
     return (
       <ServiceSlug
         title={title}

@@ -4,9 +4,8 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact US",
 };
-type Props = {};
 
-function page({}: Props) {
+function page() {
   return <Contact />;
 }
 

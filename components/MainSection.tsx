@@ -23,6 +23,7 @@ const MainSection: React.FC = () => {
     const intervalId = setInterval(scroll, 3000); // Adjust the interval as needed (5000ms = 5 seconds)
 
     return () => clearInterval(intervalId); // Cleanup function to clear the interval when the component unmounts
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []); // Empty dependency array ensures that this effect runs only once on component mount
 
   const scroll = () => {

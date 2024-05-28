@@ -10,9 +10,8 @@ import {
 import data from "@/data/howitData.json";
 import Title1 from "@/components/mini/Title";
 import Scroll from "./animation/Scroll";
-type Props = {};
 
-function Howit({}: Props) {
+function Howit() {
   return (
     <section
       className="w-screen h-full flex flex-col items-center justify-center drop-shadow shadow"

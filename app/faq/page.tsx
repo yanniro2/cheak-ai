@@ -4,9 +4,9 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "FAQ",
 };
-type Props = {};
 
-function page({}: Props) {
+
+function page() {
   return <Faq />;
 }
 

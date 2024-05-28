@@ -17,17 +17,9 @@ import {
   FaQuestionCircle,
   FaEnvelope,
 } from "react-icons/fa";
+import { NavigationItem } from "@/types";
 
-type NavigationItem = {
-  id: string;
-  label: string;
-  url: string;
-  icon: string;
-  submenu?: NavigationItem[];
-};
-type Props = {};
-
-const Header: React.FC = (props: Props) => {
+const Header: React.FC = () => {
   const pathName = usePathname();
   const { scrollYProgress } = useScroll({
     offset: ["start start", "end end"],

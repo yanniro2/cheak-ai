@@ -2,9 +2,8 @@ import React from 'react'
 import Title from "./mini/Title";
 import Image from "next/image";
 import Scroll from "./animation/Scroll";
-type Props = {};
 
-const About = (props: Props) => {
+const About = () => {
   return (
     <section
       className="w-screen h-full flex items-center justify-center drop-shadow shadow"

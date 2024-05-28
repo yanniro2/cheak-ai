@@ -6,8 +6,8 @@ import Tilty from "react-tilty";
 import Image from "next/image";
 import Scroll from "./animation/Scroll";
 import Link from "next/link";
-type Props = {};
-function Hero({}: Props) {
+
+function Hero() {
   return (
     <section
       className="w-screen h-screen flex items-center justify-center drop-shadow shadow  lg:pt-[6rem] lg:p-0"

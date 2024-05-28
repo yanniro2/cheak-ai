@@ -8,9 +8,8 @@ import { BiSolidCircleQuarter } from "react-icons/bi";
 import { FaRegSmile, FaAward, FaTasks, FaUsers } from "react-icons/fa";
 import statsData from "@/data/funData.json";
 import Scroll from "./animation/Scroll";
-type Props = {};
 
-const Why = (props: Props) => {
+const Why = () => {
   return (
     <section
       className="w-screen h-full flex flex-col items-center justify-center drop-shadow shadow"

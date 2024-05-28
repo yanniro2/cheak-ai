@@ -9,9 +9,8 @@ import {
 
 import data from "@/data/benifitsData.json";
 import Scroll from "./animation/Scroll";
-type Props = {};
 
-const Benifits = (props: Props) => {
+const Benifits = () => {
   return (
     <section
       className="w-screen h-full flex flex-col items-center justify-center drop-shadow shadow"

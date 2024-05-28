@@ -73,3 +73,65 @@ export type TitleProps = {
   title: string;
   subtitle: string;
 };
+
+export type ContactDetails = {
+  phone: {
+    text: string;
+    icon: string;
+    href: string;
+  };
+  email: {
+    text: string;
+    icon: string;
+    href: string;
+  };
+};
+
+export type ContactInformation = {
+  email: string;
+  phone: string;
+};
+
+export type Services = {
+  title: string;
+  link: string;
+};
+
+export type additional_links = {
+  title: string;
+  url: string;
+};
+
+export type SocialMedia = {
+  facebook: {
+    url: string;
+    icon: string;
+  };
+  twitter: {
+    url: string;
+    icon: string;
+  };
+  instagram: {
+    url: string;
+    icon: string;
+  };
+  linkedin: {
+    url: string;
+    icon: string;
+  };
+};
+
+export type FooterData = {
+  contactInformation: ContactInformation;
+  services: Services[];
+  socialMedia: SocialMedia;
+  additional_links: additional_links[];
+};
+
+export type NavigationItem = {
+  id: string;
+  label: string;
+  url: string;
+  icon: string;
+  submenu?: NavigationItem[];
+};

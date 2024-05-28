@@ -8,9 +8,8 @@ import { RiVoiceprintFill } from "react-icons/ri";
 import MainSection from "./MainSection";
 import Scroll from "./animation/Scroll";
 import Link from "next/link";
-type Props = {};
 
-const Services = (props: Props) => {
+const Services = () => {
   return (
     <section
       className="w-screen h-full flex flex-col items-center justify-center"

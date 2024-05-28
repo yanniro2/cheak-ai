@@ -1,10 +1,5 @@
-import React from 'react'
-import Image from "next/image";
-
+import React from "react";
 import Link from "next/link";
-// import { FaPhoneAlt } from "react-icons/bs";
-// import { FaMapMarkerAlt } from "react-icons/gr";
-// import { FaEnvelope } from "react-icons/io5";
 import Services from "./Services";
 import footerData from "@/data/footerData.json";
 import headerData from "@/data/headerData.json";
@@ -18,58 +13,12 @@ import {
   FaEnvelope,
 } from "react-icons/fa";
 import Logo from "./mini/Logo";
-import Scroll from "./animation/Scroll";
-type Props = {};
+import { FooterData } from "@/types";
 
-type ContactInformation = {
-  // address: string;
-  email: string;
-  phone: string;
-};
 
-type Services = {
-  title: string;
-  link: string;
-};
 
-type additional_links = {
-  title: string;
-  url: string;
-};
-
-type SocialMedia = {
-  facebook: {
-    url: string;
-    icon: string;
-  };
-  twitter: {
-    url: string;
-    icon: string;
-  };
-  instagram: {
-    url: string;
-    icon: string;
-  };
-  linkedin: {
-    url: string;
-    icon: string;
-  };
-};
-
-type FooterData = {
-  contactInformation: ContactInformation;
-  services: Services[];
-  socialMedia: SocialMedia;
-  additional_links: additional_links[];
-};
-
-const Footer = (props: Props) => {
-  const {
-    contactInformation,
-    services,
-    socialMedia,
-    additional_links,
-  }: FooterData = footerData.footer;
+const Footer = () => {
+  const { contactInformation, socialMedia }: FooterData = footerData.footer;
 
   const currentYear = new Date().getFullYear(); // Get current year
   const getIconComponent = (iconName: string) => {
@@ -240,4 +189,4 @@ const Footer = (props: Props) => {
   );
 };
 
-export default Footer
+export default Footer;

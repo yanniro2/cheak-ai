@@ -4,9 +4,8 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Services",
 };
-type Props = {};
 
-const page = (props: Props) => {
+const page = () => {
   return <Services />;
 };
 

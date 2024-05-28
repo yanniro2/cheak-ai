@@ -5,9 +5,9 @@ export const metadata: Metadata = {
   title: "Benifits",
 };
 
-type Props = {};
 
-function page({}: Props) {
+
+function page() {
   return <Benifits />;
 }
 

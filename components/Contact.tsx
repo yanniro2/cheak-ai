@@ -11,26 +11,9 @@ import {
   FaLinkedin,
 } from "react-icons/fa";
 import Scroll from "./animation/Scroll";
+import { ContactDetails } from "@/types";
 
-// Define a type for the contact details object
-interface ContactDetails {
-  phone: {
-    text: string;
-    icon: string;
-    href: string;
-  };
-  email: {
-    text: string;
-    icon: string;
-    href: string;
-  };
-}
-
-
-
-type Props = {};
-
-const Contact: React.FC<Props> = (props) => {
+const Contact = () => {
   return (
     <section
       className="w-screen h-full flex flex-col items-center justify-center drop-shadow shadow"
