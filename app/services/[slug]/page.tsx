@@ -2,6 +2,7 @@ import Scroll from "@/components/animation/Scroll";
 import servicesData from "@/data/realmsData.json";
 import mainServiceData from "@/data/mainServiceData.json";
 import ServiceSlug from "@/components/Slug/ServiceSlug";
+import { generateMetadata } from "@/components/meta/generateMetadata";
 
 export function generateStaticParams() {
   return [
@@ -88,3 +89,5 @@ export default function ServicesPage({ params }: { params: { slug: string } }) {
     );
   }
 }
+
+export { generateMetadata };
