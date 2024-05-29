@@ -10,7 +10,7 @@ const NextNavigation = (props: NextNavigationProps) => {
   }
 
   const projectToRender = props.data.find(
-    (project) => project.url === `/services/${props.slug}`
+    (project) => project.url === `/${props.service}/${props.slug}`
   );
 
   const currentIndex = projectToRender

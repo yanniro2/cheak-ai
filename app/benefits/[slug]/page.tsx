@@ -92,7 +92,11 @@ function Page({ params }: { params: { slug: string } }) {
             </Scroll>
           ))}
         </Scroll>
-        <NextNavigation slug={params.slug} data={benefits} />
+        <NextNavigation
+          slug={params.slug}
+          data={benefits}
+          service={"benefits"}
+        />
       </div>
     </section>
   );

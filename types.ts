@@ -66,6 +66,7 @@ export type HoverType = {
 
 export type NextNavigationProps = {
   slug: string;
+  service: string;
   data: (BriefService | MainService)[];
 };
 

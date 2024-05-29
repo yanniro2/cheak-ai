@@ -1,5 +1,6 @@
 # Pending
 
+    - benifits slug page [sub icons change , hover effects , next page , hover effects ]
     - Header for sub pages
     - Header hover effect fixed
     - Scrool down first time load
