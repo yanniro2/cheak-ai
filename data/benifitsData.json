@@ -40,19 +40,19 @@
         },
         {
           "title": "Predictive Maintenance",
-          "icon": "AiOutlineRobot",
+          "icon": "AiOutlineTool",
           "brief": "Use AI to predict when equipment needs maintenance, reducing downtime and repair costs.",
           "examples": ["Manufacturing", "Transportation", "Utilities"]
         },
         {
           "title": "Fraud Detection",
-          "icon": "AiOutlineRobot",
+          "icon": "AiOutlineSafety",
           "brief": "Implement AI to detect and prevent fraudulent activities in real-time.",
           "examples": ["Banking", "Insurance", "E-commerce"]
         },
         {
           "title": "Personalized Marketing",
-          "icon": "AiOutlineRobot",
+          "icon": "AiOutlineBulb",
           "brief": "Deliver personalized marketing messages to your customers based on AI insights.",
           "examples": [
             "Email marketing",
@@ -101,7 +101,7 @@
         },
         {
           "title": "Touch-Friendly Interfaces",
-          "icon": "AiOutlineMobile",
+          "icon": "AiOutlineAppstoreAdd",
           "brief": "Our designs include touch-friendly elements that enhance usability on touchscreen devices.",
           "examples": [
             "Swipe navigation",
@@ -111,7 +111,7 @@
         },
         {
           "title": "Responsive Images",
-          "icon": "AiOutlineMobile",
+          "icon": "AiOutlinePicture",
           "brief": "We use responsive images that adjust their size and resolution based on the device, ensuring fast load times and high quality.",
           "examples": [
             "Adaptive image sizes",
@@ -121,7 +121,7 @@
         },
         {
           "title": "Flexible Grids",
-          "icon": "AiOutlineMobile",
+          "icon": "AiOutlineLayout",
           "brief": "Our flexible grid systems adapt to different screen sizes and orientations, providing a consistent layout.",
           "examples": ["Grid-based layouts", "Column reordering", "Fluid grids"]
         }
@@ -156,7 +156,7 @@
       "sub_sections": [
         {
           "title": "Whitespace Utilization",
-          "icon": "AiOutlineLayout",
+          "icon": "AiOutlineColumnWidth",
           "brief": "We strategically use whitespace to create a balanced and harmonious layout.",
           "examples": [
             "Breathing room around elements",
@@ -166,7 +166,7 @@
         },
         {
           "title": "Typography",
-          "icon": "AiOutlineLayout",
+          "icon": "AiOutlineFontSize",
           "brief": "Our designs feature carefully selected typography that enhances readability and aesthetics.",
           "examples": [
             "Font pairing",
@@ -176,7 +176,7 @@
         },
         {
           "title": "Color Scheme",
-          "icon": "AiOutlineLayout",
+          "icon": "AiOutlineBgColors",
           "brief": "We choose color schemes that align with your brand identity and evoke the right emotions.",
           "examples": [
             "Brand colors",
@@ -186,7 +186,7 @@
         },
         {
           "title": "Interactive Elements",
-          "icon": "AiOutlineLayout",
+          "icon": "AiOutlineInteraction",
           "brief": "Our layouts include interactive elements that engage users and encourage interaction.",
           "examples": ["Hover effects", "Micro-interactions", "User feedback"]
         }
@@ -221,13 +221,13 @@
       "sub_sections": [
         {
           "title": "Cross-Browser Testing",
-          "icon": "AiOutlineMobile",
+          "icon": "AiOutlineGlobal",
           "brief": "Ensure your website functions correctly on all major browsers.",
           "examples": ["Chrome", "Firefox", "Safari", "Edge"]
         },
         {
           "title": "Responsive Design Testing",
-          "icon": "AiOutlineMobile",
+          "icon": "AiOutlineTablet",
           "brief": "Test your website's responsiveness on different devices to ensure consistent performance.",
           "examples": ["Desktops", "Tablets", "Smartphones"]
         }
@@ -262,13 +262,13 @@
       "sub_sections": [
         {
           "title": "User-Centric Design",
-          "icon": "AiOutlineSmile",
+          "icon": "AiOutlineUser",
           "brief": "Put the needs and preferences of your users first to create a positive and memorable experience.",
           "examples": ["User personas", "User testing", "Feedback collection"]
         },
         {
           "title": "Accessibility",
-          "icon": "AiOutlineSmile",
+          "icon": "AiOutlineEye",
           "brief": "Ensure that your website is accessible to users with disabilities, providing equal access to all.",
           "examples": [
             "Screen reader compatibility",
@@ -278,13 +278,13 @@
         },
         {
           "title": "Performance Optimization",
-          "icon": "AiOutlineSmile",
+          "icon": "AiOutlineRocket",
           "brief": "Optimize your website's performance to deliver a smooth and responsive experience on all devices.",
           "examples": ["Caching", "Image optimization", "Code minification"]
         },
         {
           "title": "Feedback Mechanisms",
-          "icon": "AiOutlineSmile",
+          "icon": "AiOutlineComment",
           "brief": "Encourage user feedback to continuously improve your website and enhance the user experience.",
           "examples": ["Surveys", "Contact forms", "Social media integration"]
         }

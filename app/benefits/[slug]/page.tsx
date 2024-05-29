@@ -8,6 +8,21 @@ import {
   AiOutlineMobile,
   AiOutlineLayout,
   AiOutlineSmile,
+  AiOutlineTool,
+  AiOutlineSafety,
+  AiOutlineBulb,
+  AiOutlineAppstoreAdd,
+  AiOutlinePicture,
+  AiOutlineColumnWidth,
+  AiOutlineFontSize,
+  AiOutlineBgColors,
+  AiOutlineInteraction,
+  AiOutlineGlobal,
+  AiOutlineTablet,
+  AiOutlineUser,
+  AiOutlineEye,
+  AiOutlineRocket,
+  AiOutlineComment,
 } from "react-icons/ai";
 import NextNavigation from "@/components/mini/NextNavigation";
 
@@ -107,6 +122,21 @@ const renderIcon = (iconName: string) => {
     AiOutlineMobile,
     AiOutlineLayout,
     AiOutlineSmile,
+    AiOutlineTool,
+    AiOutlineSafety,
+    AiOutlineBulb,
+    AiOutlinePicture,
+    AiOutlineAppstoreAdd,
+    AiOutlineColumnWidth,
+    AiOutlineFontSize,
+    AiOutlineBgColors,
+    AiOutlineInteraction,
+    AiOutlineGlobal,
+    AiOutlineTablet,
+    AiOutlineUser,
+    AiOutlineEye,
+    AiOutlineRocket,
+    AiOutlineComment,
   };
 
   const IconComponent = iconComponents[iconName];
