@@ -10,12 +10,8 @@
       "img": "/assets/img/howIt/schedule_consultation.jpg",
       "subLinks": [
         {
-          "text": "Contact Form",
+          "text": "Contact now",
           "url": "/contact"
-        },
-        {
-          "text": "Learn More",
-          "url": "/learn-more"
         }
       ],
       "brief": [
@@ -36,12 +32,12 @@
       "img": "/assets/img/howIt/submit_challenges.jpg",
       "subLinks": [
         {
-          "text": "Submission Form",
-          "url": "/submit-challenges"
+          "text": "Contact now",
+          "url": "/contact"
         },
         {
-          "text": "Tips for Submission",
-          "url": "/submission-tips"
+          "text": "faq",
+          "url": "/faq"
         }
       ],
       "brief": [

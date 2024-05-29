@@ -1,5 +1,3 @@
-import Howit from "@/components/Howit";
-
 import { Metadata } from "next";
 import React from "react";
 import {
@@ -36,10 +34,8 @@ function page() {
             <Scroll
               key={index}
               id={step.id}
-              className={`w-full h-[60vh] flex items-center justify-between steps-container gap-[3rem] ${
-                index % 2 === 0 ? "flex-row" : "flex-row-reverse"
-              }`}>
-              <div className="w-1/2 h-full flex flex-col  justify-between">
+              className="w-full md:h-[60vh] flex flex-col  items-center justify-between  gap-[3rem] h-full steps-container">
+              <div className="md:w-1/2 h-full flex flex-col  justify-between w-full">
                 <div className="flex items-center gap-5 ">
                   <div className="text-primary font-poppins font-bold group-hover:text-white text-[3rem]">
                     0{step.stepNumber}
@@ -77,7 +73,7 @@ function page() {
                   ))}
                 </div>
               </div>
-              <div className="w-1/2 h-full">
+              <div className="md:w-1/2 h-full w-full">
                 <Image
                   src={step.img}
                   alt={step.title}

@@ -147,18 +147,26 @@
 }
 
 /* Apply flex direction to odd steps */
+/* Apply flex direction to odd steps */
 .steps-container:nth-child(odd) {
+  display: flex;
   flex-direction: row;
 }
 
 /* Apply flex direction to even steps */
 .steps-container:nth-child(even) {
-  flex-direction: row-reverse ;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
-.steps-container {
-  display: flex;
-  flex-direction: row;
+/* For responsiveness, switch to column direction on medium screens */
+@media (max-width: 768px) {
+  .steps-container:nth-child(odd) {
+    flex-direction: column;
+  }
+  .steps-container:nth-child(even) {
+    flex-direction: column;
+  }
 }
 
 .link-underline {
