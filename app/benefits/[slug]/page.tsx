@@ -90,16 +90,18 @@ function Page({ params }: { params: { slug: string } }) {
           {serviceToRender.sub_sections.map((subSection, index) => (
             <Scroll
               key={index}
-              className="p-3 rounded flex flex-col  gap-3  cursor-pointer hover:scale-105 transition-all ease-linear group hover:shadow-md hover:shadow-primary border border-primary">
+              className="p-3 rounded flex flex-col  gap-3  cursor-pointer hover:scale-105 transition-all ease-linear group hover:shadow-md hover:shadow-primary border border-primary hover:bg-primary">
               <div className="icons-1">{renderIcon(subSection.icon)}</div>
-              <h3 className="text-xl font-poppins font-semibold group-hover:text-primary">
+              <h3 className="text-xl font-poppins font-semibold ">
                 {subSection.title}
               </h3>
 
-              <p className="text font-open">{subSection.brief}</p>
+              <p className="text font-open group-hover:text-white">
+                {subSection.brief}
+              </p>
               <div className="flex flex-wrap gap-1">
                 {subSection.examples.map((example, idx) => (
-                  <p key={idx} className="btn btn-1">
+                  <p key={idx} className="btn btn-1 group-hover:btn-1">
                     {example}
                   </p>
                 ))}
