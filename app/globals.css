@@ -145,3 +145,22 @@
   background: #6608e1;
   transform-origin: 0%;
 }
+
+/* Apply flex direction to odd steps */
+.steps-container:nth-child(odd) {
+  flex-direction: row;
+}
+
+/* Apply flex direction to even steps */
+.steps-container:nth-child(even) {
+  flex-direction: row-reverse ;
+}
+
+.steps-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.link-underline {
+  @apply underline uppercase font-semibold text-primary shadow-primary font-poppins cursor-pointer hover:text-secondry transition-all;
+}

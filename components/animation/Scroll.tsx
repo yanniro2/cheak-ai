@@ -10,7 +10,7 @@ const boxVariant = {
   hidden: { opacity: 0, scale: 0.5 },
 };
 
-const Scroll: React.FC<Scrolls> = ({ children, className }) => {
+const Scroll: React.FC<Scrolls> = ({ children, className, id }) => {
   const control = useAnimation();
   const [ref, inView] = useInView();
 
@@ -29,7 +29,8 @@ const Scroll: React.FC<Scrolls> = ({ children, className }) => {
       variants={boxVariant}
       initial="hidden"
       animate={control}
-      whileInView="visible">
+      whileInView="visible"
+      id={id}>
       {children}
     </motion.div>
   );

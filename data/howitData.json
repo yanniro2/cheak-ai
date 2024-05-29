@@ -1,34 +1,134 @@
 {
   "howItWorksSteps": [
     {
+      "id": "schedule-consultation",
       "stepNumber": 1,
       "title": "Schedule a Consultation",
+      "subtitle": "Book Your Initial Meeting",
       "description": "Start by scheduling a consultation with us. Use the contact form below to book a time to chat with one of our solution experts.",
-      "icon": "BiCalendarEvent"
+      "icon": "BiCalendarEvent",
+      "img": "/assets/img/howIt/schedule_consultation.jpg",
+      "subLinks": [
+        {
+          "text": "Contact Form",
+          "url": "/contact"
+        },
+        {
+          "text": "Learn More",
+          "url": "/learn-more"
+        }
+      ],
+      "brief": [
+        {
+          "p1": "our team of experienced professionals who are eager to assist you in understanding and addressing your business needs",
+          "p2": "that fits your schedule, ensuring a smooth and hassle-free experience as we align our availability with yours.",
+          "paragraph": "Start your journey by booking a consultation with us. Our experts are ready to understand your unique business needs. Use the contact form to choose a suitable time for your initial meeting. This step ensures we align our availability with yours, making the process seamless from the beginning."
+        }
+      ]
     },
     {
+      "id": "submit-business-challenges",
       "stepNumber": 2,
       "title": "Submit Your Business Challenges",
+      "subtitle": "Share Your Pain Points",
       "description": "Describe your business challenges in detail. The more information you provide, the better we can understand your needs.",
-      "icon": "BiMessageSquareDetail"
+      "icon": "BiMessageSquareDetail",
+      "img": "/assets/img/howIt/submit_challenges.jpg",
+      "subLinks": [
+        {
+          "text": "Submission Form",
+          "url": "/submit-challenges"
+        },
+        {
+          "text": "Tips for Submission",
+          "url": "/submission-tips"
+        }
+      ],
+      "brief": [
+        {
+          "p1": "to help us understand the intricacies of your situation and develop tailored solutions",
+          "p2": "by crafting strategies that address your specific pain points effectively.",
+          "paragraph": "To help us understand your business better, describe your challenges in detail. This information is crucial for us to tailor our solutions to your specific needs. The more comprehensive your submission, the more effectively we can address your pain points."
+        }
+      ]
     },
     {
+      "id": "meet-our-experts",
       "stepNumber": 3,
       "title": "Meet with Our Experts",
+      "subtitle": "Discuss Potential Solutions",
       "description": "Meet with our solution experts at the scheduled time. We'll discuss your challenges and explore potential solutions together.",
-      "icon": "BiGroup"
+      "icon": "BiGroup",
+      "img": "/assets/img/howIt/meet_experts.jpg",
+      "subLinks": [
+        {
+          "text": "Our Experts",
+          "url": "/experts"
+        },
+        {
+          "text": "Schedule Meeting",
+          "url": "/schedule-meeting"
+        }
+      ],
+      "brief": [
+        {
+          "p1": "who are well-versed in various industries and ready to tackle your unique challenges.",
+          "p2": "leveraging our expertise to find the best possible solutions tailored to your needs.",
+          "paragraph": "At the scheduled meeting, our solution experts will delve into your business challenges. We will discuss various potential solutions and strategies tailored to your needs. This collaborative session is designed to explore all possible avenues to address your issues effectively."
+        }
+      ]
     },
     {
+      "id": "collaborate-on-solutions",
       "stepNumber": 4,
       "title": "Collaborate on Solutions",
+      "subtitle": "Develop Custom Strategies",
       "description": "Collaborate with our team to develop customized solutions tailored to your specific requirements.",
-      "icon": "BiBrain"
+      "icon": "BiBrain",
+      "img": "/assets/img/howIt/collaborate_solutions.jpg",
+      "subLinks": [
+        {
+          "text": "Collaboration Tools",
+          "url": "/tools"
+        },
+        {
+          "text": "Success Stories",
+          "url": "/success-stories"
+        }
+      ],
+      "brief": [
+        {
+          "p1": "that address your specific business needs, ensuring that the strategies are effective and implementable",
+          "p2": "providing a clear roadmap to achieving your business goals and overcoming challenges.",
+          "paragraph": "Collaboration is key to developing effective solutions. Our team will work with you to create strategies that are customized to your business needs. This step involves close interaction to ensure that the solutions we develop are perfectly aligned with your goals."
+        }
+      ]
     },
     {
+      "id": "implement-and-optimize",
       "stepNumber": 5,
       "title": "Implement and Optimize",
+      "subtitle": "Deploy and Fine-Tune Solutions",
       "description": "Implement the agreed-upon solutions and work with us to optimize and fine-tune them for maximum effectiveness.",
-      "icon": "BiRocket"
+      "icon": "BiRocket",
+      "img": "/assets/img/howIt/implement_optimize.jpg",
+      "subLinks": [
+        {
+          "text": "Implementation Guide",
+          "url": "/implementation-guide"
+        },
+        {
+          "text": "Optimization Tips",
+          "url": "/optimization-tips"
+        }
+      ],
+      "brief": [
+        {
+          "p1": "in your business operations, ensuring that all aspects are covered and the transition is smooth",
+          "p2": "continually improving and adapting them to meet your evolving business needs",
+          "paragraph": "The final step involves putting the developed solutions into action. Our team will assist in the implementation process, ensuring everything runs smoothly. Post-implementation, we will work together to optimize and fine-tune the solutions, ensuring they deliver the desired results and drive your business forward."
+        }
+      ]
     }
   ]
 }

@@ -57,6 +57,7 @@ export type ServiceSlugProps = {
 export type Scrolls = {
   children?: React.ReactNode;
   className?: string;
+  id?: string;
   onClick?: () => void;
 };
 
