@@ -1,13 +1,10 @@
 import React from 'react'
 import Title1 from "@/components/mini/Title";
-import { RiVoiceprintFill } from "react-icons/ri";
 import Title2 from "./mini/Title2";
-import Image from "next/image";
-import whyData from "@/data/whyData.json";
-import { BiSolidCircleQuarter } from "react-icons/bi";
 import { FaRegSmile, FaAward, FaTasks, FaUsers } from "react-icons/fa";
 import statsData from "@/data/funData.json";
 import Scroll from "./animation/Scroll";
+import Link from "next/link";
 
 const Why = () => {
   return (
@@ -78,7 +75,9 @@ const Why = () => {
 
             <div className="grid md:grid-cols-2 gap-3 md:pl-5">
               {/* 1 */}
-              <Scroll className="service cursor-pointer hover:bg-lighDark  rounded transition-all ease-linear hover:shadow hover:shadow-primary bg-lighDark relative flex justify-between flex-col p-5 ">
+              <Link
+                className="service cursor-pointer hover:bg-lighDark  rounded transition-all ease-linear hover:shadow hover:shadow-primary bg-lighDark relative flex justify-between flex-col p-5 "
+                href={"/why-choose-us/step-1"}>
                 <div className="flex flex-col">
                   <h2 className="step-h1 ">Why Choose Us</h2>
                   <h3 className="step-h3">step 1</h3>
@@ -90,10 +89,12 @@ const Why = () => {
                 </div>
 
                 <div className="absolute bottom-0 right-0 object-contain  text-[8rem] text-dark quarter-circle-div-1 -rotate-90"></div>
-              </Scroll>
+              </Link>
 
               {/* 2 */}
-              <Scroll className="service cursor-pointer hover:bg-lighDark  rounded transition-all ease-linear hover:shadow hover:shadow-primary bg-lighDark relative flex  flex-col p-5 md:items-end md:justify-end md:text-right text-left">
+              <Link
+                className="service cursor-pointer hover:bg-lighDark  rounded transition-all ease-linear hover:shadow hover:shadow-primary bg-lighDark relative flex  flex-col p-5 md:items-end md:justify-end md:text-right text-left"
+                href={"/why-choose-us/step-2"}>
                 <div className="flex flex-col md:items-end">
                   <h2 className="step-h1">Enhanced Security</h2>
                   <h3 className="step-h3">step 2</h3>
@@ -104,10 +105,12 @@ const Why = () => {
                 </div>
 
                 <div className="absolute md:bottom-0 md:left-0 object-contain  text-[8rem] text-dark md:quarter-circle-div-2 quarter-circle-div-3 right-0 top-0 md:top-auto -rotate-180 md:rotate-0"></div>
-              </Scroll>
+              </Link>
 
               {/* 3 */}
-              <Scroll className="service cursor-pointer hover:bg-lighDark  rounded transition-all ease-linear hover:shadow hover:shadow-primary bg-lighDark relative flex  flex-col p-5 items-start justify-end text-left">
+              <Link
+                className="service cursor-pointer hover:bg-lighDark  rounded transition-all ease-linear hover:shadow hover:shadow-primary bg-lighDark relative flex  flex-col p-5 items-start justify-end text-left"
+                href={"/why-choose-us/step-3"}>
                 <div className="flex flex-col">
                   <h2 className="step-h1">Scalability & Flexibility</h2>
                   <h3 className="step-h3">step 3</h3>
@@ -118,16 +121,18 @@ const Why = () => {
                 </div>
 
                 <div className="absolute md:top-0 right-0 object-contain  text-[8rem] text-dark md:quarter-circle-div-3 quarter-circle-div-1 md:-rotate-180 -rotate-90 bottom-0 top-auto"></div>
-              </Scroll>
+              </Link>
 
               {/* 4 */}
-              <Scroll className="service cursor-pointer   rounded transition-all ease-linear hover:shadow hover:shadow-primary relative    p-5 text-right flex items-end  group md:bg-gradient-to-l from-primary to-lighDark bg-gradient-to-r">
+              <Link
+                className="service cursor-pointer   rounded transition-all ease-linear hover:shadow hover:shadow-primary relative    p-5 text-right flex items-end  group md:bg-gradient-to-l from-primary to-lighDark bg-gradient-to-r"
+                href={"/why-choose-us/start-now"}>
                 <h3 className="text-4xl  font-poppins md:text-right w-full text-white text-left">
                   Start Now!
                 </h3>
 
                 <div className="absolute top-0 md:left-0 object-contain  text-[8rem] text-dark  quarter-circle-div-4 md:rotate-90 shadow-xl right-0 -rotate-180"></div>
-              </Scroll>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,6 +1,5 @@
 # Pending
 
-    - How it started [link show current section , scroll down]
     - Header for sub pages
     - Header hover effect fixed
     - Scrool down first time load
