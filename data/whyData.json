@@ -1,9 +1,13 @@
 {
   "whyChooseUs": [
     {
-      "step": "step-1",
+      "id": "why-choose-us",
+      "stepNumber": "step-1",
       "title": "Why Choose Us",
       "subtitle": "Streamlined Processes",
+      "mainBrief": "Our solutions are designed to simplify your workflows, enhancing efficiency and productivity. With optimized processes, your business can focus on core activities while we handle the complexities.",
+      "subBrief": "Experience the benefits of streamlined processes. ",
+      "icon": "BiCheckCircle",
       "description": "Simplify your workflows and increase efficiency with streamlined processes.",
       "url": "/why-choose-us/step-1",
       "img1": "/assets/img/whyChooseUs/streamlined_processes_1.jpg",
@@ -11,36 +15,34 @@
       "subsections": [
         {
           "icon": "BiCheckCircle",
-          "title": "Efficiency",
-          "description": "Maximize productivity with optimized workflows.",
-          "url": "/why-choose-us/efficiency"
+          "headline": "Efficiency"
         },
         {
-          "icon": "BiAutorenew",
-          "title": "Automation",
-          "description": "Automate repetitive tasks to save time and reduce errors.",
-          "url": "/why-choose-us/automation"
+          "icon": "BiArch",
+          "headline": "Automation"
         },
         {
           "icon": "BiPlug",
-          "title": "Integration",
-          "description": "Integrate seamlessly with existing systems to enhance functionality.",
-          "url": "/why-choose-us/integration"
+          "headline": "Integration"
         }
       ],
       "brief": [
         {
-          "p1": "Our solutions simplify your workflows, enhancing overall efficiency.",
-          "p2": "We provide tools to streamline your processes, reducing complexity and increasing productivity.",
-          "p3": "Streamlining your workflows can save valuable time and resources.",
-          "p4": "By integrating our solutions, you can achieve greater operational efficiency and focus on your core business."
+          "p1": "Our solutions simplify your workflows, enhancing overall efficiency by eliminating redundant tasks and automating processes. This allows your team to focus on higher-value work, improving productivity and satisfaction.",
+          "p2": "We provide tools to streamline your processes, reducing complexity and increasing productivity across your organization. These tools are designed to integrate seamlessly with your existing systems, providing a smooth transition.",
+          "p3": "Streamlining your workflows can save valuable time and resources, allowing your team to focus on strategic initiatives. Our solutions are tailored to meet the specific needs of your business, ensuring maximum efficiency.",
+          "p4": "By integrating our solutions, you can achieve greater operational efficiency and focus on your core business, driving growth and success. Our expert team supports you throughout the implementation process, ensuring a hassle-free experience."
         }
       ]
     },
     {
-      "step": "step-2",
+      "id": "enhanced-security",
+      "stepNumber": "step-2",
       "title": "Enhanced Security",
       "subtitle": "Robust Cybersecurity",
+      "mainBrief": "Our cybersecurity solutions safeguard your digital assets against threats. With advanced protection measures, we ensure the safety and integrity of your sensitive information.",
+      "subBrief": "Stay secure with our robust cybersecurity solutions. ",
+      "icon": "BiLock",
       "description": "Protect your digital assets and sensitive information with robust cybersecurity measures.",
       "url": "/why-choose-us/step-2",
       "img1": "/assets/img/whyChooseUs/robust_cybersecurity_1.jpg",
@@ -48,36 +50,34 @@
       "subsections": [
         {
           "icon": "BiLock",
-          "title": "Data Protection",
-          "description": "Ensure your data is safe with advanced encryption techniques.",
-          "url": "/why-choose-us/data-protection"
+          "headline": "Data Protection"
         },
         {
           "icon": "BiShield",
-          "title": "Threat Detection",
-          "description": "Identify and respond to potential threats in real-time.",
-          "url": "/why-choose-us/threat-detection"
+          "headline": "Threat Detection"
         },
         {
           "icon": "BiNetworkChart",
-          "title": "Network Security",
-          "description": "Secure your network against unauthorized access and vulnerabilities.",
-          "url": "/why-choose-us/network-security"
+          "headline": "Network Security"
         }
       ],
       "brief": [
         {
-          "p1": "Our cybersecurity measures protect your digital assets.",
-          "p2": "We offer advanced data protection to ensure your information remains secure.",
-          "p3": "Real-time threat detection helps us identify and mitigate risks promptly.",
-          "p4": "Our solutions secure your network from unauthorized access and vulnerabilities."
+          "p1": "Our cybersecurity measures protect your digital assets from unauthorized access, ensuring your data remains confidential and secure. We employ the latest encryption technologies to keep your information safe.",
+          "p2": "We offer advanced data protection to ensure your information remains secure, using cutting-edge encryption techniques to safeguard your sensitive data. Our solutions are designed to be comprehensive and easy to implement.",
+          "p3": "Real-time threat detection helps us identify and mitigate risks promptly, keeping your business safe from evolving cyber threats. Our systems are constantly updated to defend against the latest vulnerabilities.",
+          "p4": "Our solutions secure your network from unauthorized access and vulnerabilities, providing comprehensive protection for your entire IT infrastructure. We offer continuous monitoring and quick response to any potential threats."
         }
       ]
     },
     {
-      "step": "step-3",
+      "id": "scalability-flexibility",
+      "stepNumber": "step-3",
       "title": "Scalability & Flexibility",
       "subtitle": "Flexible Cloud Integration",
+      "mainBrief": "Our cloud solutions offer unmatched scalability, allowing you to adapt to changing business needs with ease. Scale your operations seamlessly with our flexible and reliable cloud integration services.",
+      "subBrief": "Experience seamless scalability with our flexible cloud integration solutions. ",
+      "icon": "BiCloud",
       "description": "Scale your operations seamlessly and adapt to changing business needs with flexible cloud integration.",
       "url": "/why-choose-us/step-3",
       "img1": "/assets/img/whyChooseUs/scalability_flexibility_1.jpg",
@@ -85,66 +85,58 @@
       "subsections": [
         {
           "icon": "BiCloud",
-          "title": "Cloud Solutions",
-          "description": "Leverage the power of cloud computing for greater flexibility.",
-          "url": "/why-choose-us/cloud-solutions"
+          "headline": "Cloud Solutions"
         },
         {
           "icon": "BiServer",
-          "title": "Server Scalability",
-          "description": "Easily scale your server resources to meet growing demands.",
-          "url": "/why-choose-us/server-scalability"
+          "headline": "Server Scalability"
         },
         {
           "icon": "BiSync",
-          "title": "Seamless Integration",
-          "description": "Integrate cloud solutions with your existing systems smoothly.",
-          "url": "/why-choose-us/seamless-integration"
+          "headline": "Seamless Integration"
         }
       ],
       "brief": [
         {
-          "p1": "Our cloud integration solutions offer unmatched scalability.",
-          "p2": "Adapt to changing business needs with our flexible solutions.",
-          "p3": "Easily scale your operations to meet growing demands.",
-          "p4": "Seamlessly integrate cloud solutions with your existing systems."
+          "p1": "Our cloud integration solutions offer unmatched scalability, allowing your business to grow and adapt to changing needs effortlessly. We provide the infrastructure and support needed to scale your operations seamlessly.",
+          "p2": "Adapt to changing business needs with our flexible solutions, which provide the ability to scale resources up or down as required. Our cloud services are designed to be both powerful and adaptable.",
+          "p3": "Easily scale your operations to meet growing demands, ensuring that your business can handle increased workloads without compromising performance. We offer solutions that are both cost-effective and highly efficient.",
+          "p4": "Seamlessly integrate cloud solutions with your existing systems, enhancing functionality and ensuring smooth operations across your organization. Our expert team assists you every step of the way, from planning to implementation."
         }
       ]
     },
     {
-      "step": "step-4",
+      "id": "startNow",
+      "stepNumber": "start now",
       "title": "Start Now!",
       "subtitle": "Begin Your Journey",
+      "mainBrief": "Begin your journey towards success with our innovative solutions. Our team is ready to assist you in transforming your business and achieving your goals.",
+      "subBrief": "Take the first step towards a successful transformation with our solutions.",
+      "icon": "BiPlayCircle",
       "description": "Experience the benefits of our solutions and start your journey towards success today.",
-      "url": "/why-choose-us/start-now",
+      "url": "/why-choose-us/startNow",
       "img1": "/assets/img/whyChooseUs/start_now_1.jpg",
       "img2": "/assets/img/whyChooseUs/start_now_2.jpg",
       "subsections": [
         {
           "icon": "BiPlayCircle",
-          "title": "Get Started",
-          "description": "Take the first step towards transforming your business.",
-          "url": "/why-choose-us/get-started"
+          "headline": "Get Started"
         },
         {
           "icon": "BiRocket",
-          "title": "Accelerate Growth",
-          "description": "Utilize our solutions to drive rapid business growth.",
-          "url": "/why-choose-us/accelerate-growth"
+          "headline": "Accelerate Growth"
         },
         {
           "icon": "BiSupport",
-          "title": "24/7 Support",
-          "description": "Receive round-the-clock support from our dedicated team.",
-          "url": "/why-choose-us/support"
+          "headline": "24/7 Support"
         }
       ],
       "brief": [
         {
-          "p1": "Start your journey towards success with our solutions.",
-          "p2": "Experience the transformative power of our services.",
-          "p3": "Accelerate your business growth with our tailored solutions.",
-          "p4": "Benefit from 24/7 support to ensure your success."
+          "p1": "Start your journey towards success with our solutions, designed to transform your business and achieve your goals efficiently. Our team of experts is here to support you every step of the way.",
+          "p2": "Experience the transformative power of our services, which provide the tools and support needed to drive your business forward. We are committed to helping you succeed in a competitive market.",
+          "p3": "Accelerate your business growth with our tailored solutions, ensuring you stay ahead in a competitive market. Our solutions are designed to be both innovative and effective, delivering results quickly.",
+          "p4": "Benefit from 24/7 support from our dedicated team, ensuring your success and addressing any challenges promptly. Our support services are available round-the-clock to assist you whenever needed."
         }
       ]
     }

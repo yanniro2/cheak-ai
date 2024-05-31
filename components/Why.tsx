@@ -126,7 +126,7 @@ const Why = () => {
               {/* 4 */}
               <Link
                 className="service cursor-pointer   rounded transition-all ease-linear hover:shadow hover:shadow-primary relative    p-5 text-right flex items-end  group md:bg-gradient-to-l from-primary to-lighDark bg-gradient-to-r"
-                href={"/why-choose-us/start-now"}>
+                href={"/why-choose-us/startNow"}>
                 <h3 className="text-4xl  font-poppins md:text-right w-full text-white text-left">
                   Start Now!
                 </h3>
