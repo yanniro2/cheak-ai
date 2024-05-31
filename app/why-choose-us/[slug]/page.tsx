@@ -18,6 +18,7 @@ import {
   BiSupport,
   BiArch,
 } from "react-icons/bi"; // Importing icons
+import NextNavigation from "@/components/mini/NextNavigation";
 
 export function generateStaticParams() {
   return [
@@ -44,6 +45,7 @@ const iconComponents: { [key: string]: React.ElementType } = {
 
 function Page({ params }: { params: { slug: string } }) {
   const { whyChooseUs } = data;
+
   const serviceToRender = whyChooseUs.find(
     (service) => service.url === `/why-choose-us/${params.slug}`
   );
@@ -115,6 +117,11 @@ function Page({ params }: { params: { slug: string } }) {
             </Scroll>
           </div>
         </Scroll>
+        <NextNavigation
+          slug={params.slug}
+          data={whyChooseUs}
+          service={"why-choose-us"}
+        />
       </div>
     </section>
   );

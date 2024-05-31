@@ -68,7 +68,7 @@ export type HoverType = {
 export type NextNavigationProps = {
   slug: string;
   service: string;
-  data: (BriefService | MainService)[];
+  data: (BriefService | MainService | Service)[];
 };
 
 export type TitleProps = {
@@ -169,3 +169,35 @@ export type Section = {
 export type SectionsData = {
   sections: Section[];
 };
+
+export interface Subsection {
+  icon: string;
+  headline: string;
+}
+
+export interface Brief {
+  p1: string;
+  p2: string;
+  p3: string;
+  p4: string;
+}
+
+export interface Service {
+  id: string;
+  stepNumber: string;
+  title: string;
+  subtitle: string;
+  mainBrief: string;
+  subBrief: string;
+  icon: string;
+  description: string;
+  url: string;
+  img1: string;
+  img2: string;
+  subsections: Subsection[];
+  brief: Brief[];
+}
+
+export interface WhyChooseUsData {
+  whyChooseUs: Service[];
+}
