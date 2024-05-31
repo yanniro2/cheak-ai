@@ -84,8 +84,8 @@ function Page({ params }: { params: { slug: string } }) {
           />
         </Scroll>
 
-        <Scroll className="w-full h-full flex items-center gap-[3rem]">
-          <div className="w-1/2">
+        <Scroll className="w-full h-full flex md:flex-row flex-col-reverse items-center gap-[3rem]">
+          <div className="md:w-1/2 w-full">
             <Image
               src={serviceToRender.img2}
               width={"1000"}
@@ -93,7 +93,7 @@ function Page({ params }: { params: { slug: string } }) {
               alt="img"
             />
           </div>
-          <div className="flex flex-col w-1/2 ">
+          <div className="flex flex-col md:w-1/2 w-full">
             <Title2
               title={serviceToRender.description}
               subtitle={serviceToRender.subtitle}
