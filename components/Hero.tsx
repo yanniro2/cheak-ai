@@ -65,10 +65,12 @@ function Hero() {
         />
 
         <div className="lg:hidden flex lg:items-center gap-3 justify-start w-full flex-col md:flex-row items-start">
-          <button className="btn btn-1">start Exploring</button>
-          <button className="btn btn-2 group">
+          <Link href="#services" className="btn btn-1">
+            start Exploring
+          </Link>
+          <Link href="#benefits" className="btn btn-2 group">
             learn more <IoMdArrowForward className="group-hover:ml-3" />
-          </button>
+          </Link>
         </div>
       </div>
       {/* </Scroll> */}
