@@ -86,8 +86,8 @@
 .quarter-circle-div-1 {
   width: 4.5rem; /* Adjust width as needed */
   height: 4.5rem; /* Adjust height as needed */
- background: linear-gradient(to right, #6608e1, #6608e1);
- opacity: .5;
+  background: linear-gradient(to right, #6608e1, #6608e1);
+  opacity: .5;
   border-radius: 0 100% 0 0; /* Creates a quarter circle */
 
 }
@@ -119,8 +119,6 @@
 .input {
   @apply border border-primary placeholder:text-slate-600 outline-none bg-transparent text-white py-4 px-6 rounded font-poppins font-light w-full;
 }
-
-
 
 .box-1 {
   @apply flex items-center w-full gap-[1rem] flex-col md:flex-row;
