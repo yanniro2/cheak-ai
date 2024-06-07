@@ -121,12 +121,33 @@ const Contact = () => {
               <Scroll className="box-2">
                 <select id="services" name="services" className="input">
                   <option value="">Select a service</option>
-                  <option value="Service 1">Service 1</option>
-                  <option value="Service 2">Service 2</option>
-                  <option value="Service 3">Service 3</option>
+                  <option value="AI Model Training">AI Model Training</option>
+                  <option value="Data Preprocessing">Data Preprocessing</option>
+                  <option value="Model Evaluation">Model Evaluation</option>
+                  <option value="Real-Time Predictions">
+                    Real-Time Predictions
+                  </option>
+                  <option value="Automated Data Labeling">
+                    Automated Data Labeling
+                  </option>
+                  <option value="AI-Powered Analytics">
+                    AI-Powered Analytics
+                  </option>
+                  <option value="Custom AI Solutions">
+                    Custom AI Solutions
+                  </option>
+                  <option value="AI Consultation">AI Consultation</option>
+                  <option value="Machine Learning Integration">
+                    Machine Learning Integration
+                  </option>
+                  <option value="Predictive Maintenance">
+                    Predictive Maintenance
+                  </option>
+                  <option value="others">Other Serices</option>
                   {/* Add more options as needed */}
                 </select>
               </Scroll>
+
               <Scroll>
                 <textarea
                   id="message"
