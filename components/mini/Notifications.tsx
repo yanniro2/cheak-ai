@@ -15,9 +15,9 @@ const Notifications: React.FC<Props> = ({
   time,
 }) => {
   return (
-    <section className="fixed z-[9999] backdrop-blur-md  w-[20rem] h-auto bg-darkBlue  drop-shadow shadow-xl text-white right-5 bottom-5   border-[4px] animate__animated animate__fadeInRightBig">
-      <div className="w-full flex items-center justify-between p-3 h2 border-b">
-        <div className="">{title}</div>
+    <section className="fixed z-[9999] backdrop-blur-md  w-[20rem] h-auto bg-dark  drop-shadow shadow-xl  right-5 bottom-5   border  text-white border-primary rounded">
+      <div className="w-full flex items-center justify-between p-3 h2 ">
+        <div className="step-h1">{title}</div>
 
         <button
           onClick={handleClose}
@@ -26,10 +26,10 @@ const Notifications: React.FC<Props> = ({
           <IoIosCloseCircle />
         </button>
       </div>
-      <div className="p-3 w-full h-full items-center justify-center text-center bg-white text-darkBlue flex flex-col">
-        <div className="text-gray-400 font-light capitalize">
+      <div className="p-3 w-full h-full items-center justify-center text-center bg-lighDark text-darkBlue flex flex-col">
+        <div className="text font-light capitalize">
           automatic close with in
-          <h1 className="h1">{time}</h1>
+          <h1 className="h1 text-primary">{time}</h1>
         </div>
 
         <h1 className="font-normal font-roboto">{message} </h1>

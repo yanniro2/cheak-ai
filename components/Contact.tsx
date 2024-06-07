@@ -245,6 +245,7 @@ const Contact = () => {
                   className="input"
                   placeholder="First name"
                   defaultValue={formValues.fname}
+                  onChange={handleChange}
                   pattern="[A-Za-zÀ-ÿ\s]+"
                   required
                 />
@@ -256,10 +257,12 @@ const Contact = () => {
                   className="input"
                   placeholder="Last name"
                   defaultValue={formValues.lname}
+                  onChange={handleChange}
                   pattern="[A-Za-zÀ-ÿ\s]+"
                   required
                 />
               </Scroll>
+
               <Scroll className="box-2">
                 <input
                   type="text"
@@ -341,6 +344,23 @@ const Contact = () => {
                   value={formValues.description}
                   onChange={handleChange}
                   required></textarea>
+              </Scroll>
+              <Scroll>
+                {errors.fname && (
+                  <span className="text-red-500">{errors.fname}</span>
+                )}
+
+                {errors.lname && (
+                  <span className="text-red-500">{errors.lname}</span>
+                )}
+
+                {errors.email && (
+                  <span className="text-red-500">{errors.lname}</span>
+                )}
+
+                {errors.phoneNumber && (
+                  <span className="text-red-500">{errors.lname}</span>
+                )}
               </Scroll>
 
               <Scroll className="box-3">
