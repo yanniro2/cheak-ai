@@ -117,7 +117,11 @@
 }
 
 .input {
-  @apply border border-primary placeholder:text-slate-600 outline-none bg-transparent text-white py-4 px-6 rounded font-poppins font-light w-full;
+  @apply border border-primary placeholder:text-slate-600 outline-none bg-transparent text-white py-4 px-6 rounded font-poppins font-light w-full  focus:border-secondry
+      focus:invalid:border-pink-500 focus:invalid:ring-pink-500;
+}
+.input-red {
+  @apply border border-red-500 placeholder:text-slate-600 outline-none bg-transparent text-white py-4 px-6 rounded font-poppins font-light w-full;
 }
 
 .box-1 {
