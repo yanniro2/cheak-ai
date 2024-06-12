@@ -19,6 +19,7 @@ import {
   BiArch,
 } from "react-icons/bi"; // Importing icons
 import NextNavigation from "@/components/mini/NextNavigation";
+import Link from "next/link";
 
 export function generateStaticParams() {
   return [
@@ -64,6 +65,13 @@ function Page({ params }: { params: { slug: string } }) {
           title={`${serviceToRender.stepNumber} : ${serviceToRender.title}`}
           subtitle={serviceToRender.subtitle}
         />
+        <Scroll className="w-full">
+          <Link
+            href="/why-choose-us"
+            className="cursor-pointer hover:text-primary underline text transition-all">
+            Back
+          </Link>
+        </Scroll>
 
         <Scroll className="flex w-full items-center justify-between md:gap-[3rem] bg-lighDark md:p-[2rem] rounded shadow-lg  md:flex-row flex-col-reverse text-center md:text-left p-3 gap-3 ">
           <div className="md:w-3/4 md:text-xl font-light font-open text-white w-full">
