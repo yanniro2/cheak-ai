@@ -22,10 +22,10 @@ const Hover = (props: HoverType) => {
       transition={{ type: "spring", stiffness: 400, damping: 10 }}
       onMouseEnter={handleHover}
       onMouseLeave={handleHoverExit}
-      className="flex items-center justify-center gap-2 hover:font-semibold">
+      className="flex items-center justify-center gap-2 ">
       {isHovered && (
         <motion.div
-          className="parent-hover"
+          className="absolute z-[5000] -left-3"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0.8 }}
@@ -41,7 +41,7 @@ const Hover = (props: HoverType) => {
       </motion.div>
       {isHovered && (
         <motion.div
-          className="parent-hover"
+          className="absolute z-[5000] -right-3"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0.8 }}
