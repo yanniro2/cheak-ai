@@ -1,5 +1,7 @@
 # Pending
 
+    - FAQ Width
+    - Contact Form Submition
     - Sub pages
         - Footer [terms, privay , cookies]
     - Responsive - sub
