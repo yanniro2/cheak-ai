@@ -75,54 +75,50 @@
       ]
     },
     {
-      "id": "collaborate-on-solutions",
+      "id": "fraud-detection",
       "stepNumber": 4,
       "title": "Collaborate on Solutions",
-      "subtitle": "Develop Custom Strategies",
-      "description": "Collaborate with our team to develop customized solutions tailored to your specific requirements.",
+      "subtitle": "Develop Custom Fraud Detection Strategies",
+      "description": "Collaborate with our team to develop customized fraud detection solutions tailored to your specific requirements.",
       "icon": "BiBrain",
       "img": "/assets/img/howIt/collaborate_solutions.jpg",
       "subLinks": [
         {
           "text": "Collaboration Tools",
-          "url": "/tools"
-        },
-        {
-          "text": "Success Stories",
-          "url": "/success-stories"
+          "url": "/services/ai-startups"
         }
       ],
       "brief": [
         {
-          "p1": "that address your specific business needs, ensuring that the strategies are effective and implementable",
-          "p2": "providing a clear roadmap to achieving your business goals and overcoming challenges.",
-          "paragraph": "Collaboration is key to developing effective solutions. Our team will work with you to create strategies that are customized to your business needs. This step involves close interaction to ensure that the solutions we develop are perfectly aligned with your goals."
+          "p1": "that address your specific business needs, ensuring that the fraud detection strategies are effective and implementable",
+          "p2": "providing a clear roadmap to achieving your business goals and overcoming fraud-related challenges.",
+          "paragraph": "Collaboration is key to developing effective fraud detection solutions. Our team will work with you to create strategies that are customized to your business needs. This step involves close interaction to ensure that the solutions we develop are perfectly aligned with your goals."
         }
       ]
     },
     {
-      "id": "implement-and-optimize",
+      "id": "ai-based-startups",
       "stepNumber": 5,
       "title": "Implement and Optimize",
-      "subtitle": "Deploy and Fine-Tune Solutions",
-      "description": "Implement the agreed-upon solutions and work with us to optimize and fine-tune them for maximum effectiveness.",
+      "subtitle": "Deploy and Fine-Tune AI-Based Solutions",
+      "description": "Implement the agreed-upon AI-based solutions and work with us to optimize and fine-tune them for maximum effectiveness.",
       "icon": "BiRocket",
       "img": "/assets/img/howIt/implement_optimize.jpg",
       "subLinks": [
         {
           "text": "Implementation Guide",
-          "url": "/implementation-guide"
+          "url": "/services/ai-startups"
         },
         {
           "text": "Optimization Tips",
-          "url": "/optimization-tips"
+          "url": "/benefits/multi-device-testing-system"
         }
       ],
       "brief": [
         {
-          "p1": "in your business operations, ensuring that all aspects are covered and the transition is smooth",
+          "p1": "in your startup operations, ensuring that all aspects are covered and the transition to AI-based solutions is smooth",
           "p2": "continually improving and adapting them to meet your evolving business needs",
-          "paragraph": "The final step involves putting the developed solutions into action. Our team will assist in the implementation process, ensuring everything runs smoothly. Post-implementation, we will work together to optimize and fine-tune the solutions, ensuring they deliver the desired results and drive your business forward."
+          "paragraph": "The final step involves putting the developed AI-based solutions into action. Our team will assist in the implementation process, ensuring everything runs smoothly. Post-implementation, we will work together to optimize and fine-tune the solutions, ensuring they deliver the desired results and drive your startup forward."
         }
       ]
     }

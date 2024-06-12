@@ -1,7 +1,6 @@
 # Pending
 
     - Sub pages
-        - How it works [05 steps]
         - Footer [terms, privay , cookies]
     - Responsive - sub
     - Sub Scroll down animation
