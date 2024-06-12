@@ -1,6 +1,6 @@
 # Pending
 
-    - Header for sub pages
+    - Header for sub pages no name show up correnlty
     - Header hover effect fixed
     - Scrool down first time load
     - Sub pages

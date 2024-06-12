@@ -1,45 +1,17 @@
 [
   {
-    "img": "/assets/img/team/member-1.jpg",
-    "name": "John Doe",
-    "field": "Data Science",
+    "img": "/assets/img/team/Jeffrey Rivero.jpg",
+    "name": "Jeffrey Rivero",
+    "field": "CEO, CTO",
     "quotes": [
       "Data is the new oil , Predictive analytics is the future of business."
     ],
-    "years_of_experience": 10,
+    "years_of_experience": 20,
     "date": "2024-06-04",
     "contact": {
-      "email": "john.doe@example.com",
-      "phone": "+1234567890",
-      "linkedin": "https://www.linkedin.com/in/johndoe"
-    }
-  },
-  {
-    "img": "/assets/img/team/member-2.jpg",
-    "name": "Jane Smith",
-    "field": "Artificial Intelligence",
-    "quotes": [
-      "AI will revolutionize every industry , Ethical AI is crucial for our future."
-    ],
-    "years_of_experience": 8,
-    "date": "2024-06-04",
-    "contact": {
-      "email": "jane.smith@example.com",
-      "phone": "+1234567891",
-      "linkedin": "https://www.linkedin.com/in/janesmith"
-    }
-  },
-  {
-    "img": "/assets/img/team/member-3.jpg",
-    "name": "David Brown",
-    "field": "Cybersecurity",
-    "quotes": ["Security is everyone's responsibility , Always assume breach."],
-    "years_of_experience": 15,
-    "date": "2024-06-04",
-    "contact": {
-      "email": "david.brown@example.com",
-      "phone": "+1234567892",
-      "linkedin": "https://www.linkedin.com/in/davidbrown"
+      "email": "info@check-ai.com",
+      "phone": "+1 954 998 1219",
+      "linkedin": "https://www.linkedin.com/in/jeffrey-rivero-9248681/"
     }
   }
 ]

@@ -385,7 +385,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      {open && (
+      {!open && (
         <Notifications
           message={message}
           handleClose={handleClose}

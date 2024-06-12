@@ -15,7 +15,7 @@ const Notifications: React.FC<Props> = ({
   time,
 }) => {
   return (
-    <section className="fixed z-[9999] backdrop-blur-md  w-[20rem] h-auto bg-dark  drop-shadow shadow-xl  right-5 bottom-5   border  text-white border-primary rounded">
+    <section className="fixed z-[9999] backdrop-blur-md  w-[20rem] h-auto bg-dark  drop-shadow shadow-xl  left-5 bottom-5   border  text-white border-primary rounded">
       <div className="w-full flex items-center justify-between p-3 h2 ">
         <div className="step-h1">{title}</div>
 

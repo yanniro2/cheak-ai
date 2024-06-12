@@ -23,8 +23,8 @@ const Page: React.FC = () => {
           {expertData.map((expert: any, index: number) => (
             <Scroll
               key={index}
-              className="w-1/3 flex items-center justify-center flex-col rounded shadow-primary shadow  overflow-hidden">
-              <Scroll className="w-full  overflow-hidden">
+              className="w-full flex items-center justify-center flex-row rounded shadow-primary shadow  overflow-hidden ">
+              <Scroll className="w-1/3  overflow-hidden">
                 <Image
                   src={expert.img}
                   alt={expert.name}
@@ -34,7 +34,7 @@ const Page: React.FC = () => {
                 />
               </Scroll>
 
-              <Scroll className="flex flex-col bg-lighDark w-full p-5 h-fit text-center gap-[1rem]">
+              <Scroll className="w-2/3 h-full flex flex-col items-center justify-center bg-lighDark p-5  text-center gap-[1rem]">
                 <Scroll>
                   {expert.quotes.map((quote: string, quoteIndex: number) => (
                     <Scroll
@@ -45,7 +45,9 @@ const Page: React.FC = () => {
                   ))}
                   <Scroll>
                     <Scroll className="">- {expert.name}</Scroll>
-                    <Scroll className="text">[ {expert.field} ]</Scroll>
+                    <Scroll className="text-secondry font-poppins font-semibold">
+                      [ {expert.field} ]
+                    </Scroll>
                   </Scroll>
                 </Scroll>
 
