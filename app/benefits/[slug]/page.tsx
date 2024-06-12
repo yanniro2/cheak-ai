@@ -25,6 +25,7 @@ import {
   AiOutlineComment,
 } from "react-icons/ai";
 import NextNavigation from "@/components/mini/NextNavigation";
+import Link from "next/link";
 
 export function generateStaticParams() {
   return [
@@ -51,6 +52,13 @@ function Page({ params }: { params: { slug: string } }) {
           title={serviceToRender.title}
           subtitle={serviceToRender.subTitle}
         />
+        <Scroll className="w-full">
+          <Link
+            href="/benefits"
+            className="cursor-pointer hover:text-primary underline text transition-all">
+            Back
+          </Link>
+        </Scroll>
         <Scroll className="w-full h-full">
           <Image
             src={serviceToRender.img.src}
