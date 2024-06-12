@@ -67,7 +67,8 @@ function page() {
                     <Link
                       key={linkIndex}
                       href={link.url}
-                      className="link-underline">
+                      className="link-underline"
+                      target="_blank">
                       {link.text}
                     </Link>
                   ))}
