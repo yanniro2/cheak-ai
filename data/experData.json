@@ -2,10 +2,12 @@
   {
     "img": "/assets/img/team/Jeffrey Rivero.jpg",
     "name": "Jeffrey Rivero",
-    "field": "CEO, CTO",
-    "quotes": [
-      "Data is the new oil , Predictive analytics is the future of business."
-    ],
+    "field": "Our Leadership",
+    "quotes": {
+      "p1": "With over three decades of experience in the ever-evolving field of cybersecurity, Jeffrey Rivero is now at the forefront of integrating artificial intelligence into advanced security solutions. His accomplished career has made a significant impact on securing organizations across various industries.",
+      "p2": "His extensive expertise now includes leveraging AI to identify vulnerabilities, investigate fraud, and create innovative detection platforms, products, and controls. As a recognized thought leader and visionary, Jeff combines a deep understanding of cybersecurity threats with the latest AI technologies to provide cutting-edge solutions.",
+      "p3": "At Check AI, Jeff leads our team with the same passion and dedication. His ability to mentor, teach, and foster collaboration within teams ensures the delivery of tailored AI solutions that streamline operations, enhance decision-making, and drive innovation. Join the ranks of our happy clients and award-winning projects, and experience the future of technology today."
+    },
     "years_of_experience": 20,
     "date": "2024-06-04",
     "contact": {

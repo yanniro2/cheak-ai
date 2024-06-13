@@ -1,5 +1,3 @@
-// Page.tsx
-
 import React from "react";
 import Title1 from "@/components/mini/Title";
 import expertData from "@/data/experData.json";
@@ -18,36 +16,45 @@ const Page: React.FC = () => {
             "Explore our experts and book a consulting appointment with us today."
           }
         />
+        <Scroll className="w-full">
+          <Link
+            href="/howItWorks"
+            className="cursor-pointer hover:text-primary underline text transition-all">
+            Back
+          </Link>
+        </Scroll>
 
         <Scroll className="flex w-full justify-between gap-[1rem] ">
           {expertData.map((expert: any, index: number) => (
             <Scroll
               key={index}
-              className="w-1/3 flex items-center justify-center flex-col rounded shadow-primary shadow  overflow-hidden">
-              <Scroll className="w-full h-[40vh]  overflow-hidden">
+              className="w-full flex items-center justify-center flex-col md:flex-row rounded shadow-primary shadow overflow-hidden">
+              <Scroll className="md:w-1/3 h-fit overflow-hidden w-full">
                 <Image
                   src={expert.img}
                   alt={expert.name}
-                  width={"500"}
-                  height={"500"}
-                  className="object-contain w-full h-full"
+                  width={"600"}
+                  height={"600"}
+                  className="object-cover  w-full h-full"
                 />
               </Scroll>
 
-              <Scroll className="flex flex-col bg-lighDark w-full p-5 h-fit text-center gap-[1rem]">
+              <Scroll className="md:w-2/3 md:h-full flex flex-col items-start justify-center bg-lighDark p-5  gap-[1rem] text-left md:pl-[3rem] w-full ">
                 <Scroll>
-                  {expert.quotes.map((quote: string, quoteIndex: number) => (
-                    <Scroll
-                      key={quoteIndex}
-                      className="font-poppins italic  font-light text-primary text-center">
-                      &quot;{quote}&quot;
-                    </Scroll>
-                  ))}
-                  <Scroll>
-                    <Scroll className="">- {expert.name}</Scroll>
-                    <Scroll className="text">[ {expert.field} ]</Scroll>
+                  <Scroll className="h1">{expert.name}</Scroll>
+                  <Scroll className="text-primary font-semibold">
+                    [ {expert.field} ]
                   </Scroll>
                 </Scroll>
+                <Scroll className="flex flex-col gap-3">
+                  <Scroll className="text">{expert.quotes.p1}</Scroll>
+                  <Scroll className="text">{expert.quotes.p2}</Scroll>
+                  <Scroll className="text">{expert.quotes.p3}</Scroll>
+                </Scroll>
+
+                <div className="capitalize text-secondry font-poppins font-semibold">
+                  Contact with in
+                </div>
 
                 <Scroll className="flex items-center justify-center gap-[1rem]">
                   <Link
