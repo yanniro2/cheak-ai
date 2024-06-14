@@ -1,0 +1,49 @@
+{
+  "title": "Terms and Conditions",
+  "lastUpdated": "2024-04-25",
+  "address": "12555 Orange Dr, Davie, FL 33330, USA",
+  "email": "sales@check-ai.com",
+  "phone": "+1 954-998-1219",
+  "sections": [
+    {
+      "title": "Introduction",
+      "icon": "AiOutlineFileText",
+      "content": "Welcome to Check AI! These terms and conditions outline the rules and regulations for the use of our website and services. By using our website, you agree to these terms."
+    },
+    {
+      "title": "Acceptance of Terms",
+      "icon": "AiOutlineCheckCircle",
+      "content": "By accessing this website, we assume you accept these terms and conditions. Do not continue to use Check AI if you do not agree to all of the terms and conditions stated on this page."
+    },
+    {
+      "title": "Services",
+      "icon": "BiRocket",
+      "content": "Check AI offers cutting-edge AI solutions designed to streamline operations, enhance decision-making, and drive innovation. Our services cater to your unique business needs, supported by a dedicated team of experts."
+    },
+    {
+      "title": "Use of Our Services",
+      "icon": "BiShield",
+      "content": "You must not misuse our services, including but not limited to hacking, distributing malware, or interfering with our services' functionality. Our solutions are intended to foster innovation and operational efficiency."
+    },
+    {
+      "title": "Intellectual Property",
+      "icon": "FaLock",
+      "content": "The content and materials on our website, including but not limited to text, graphics, logos, and images, are the intellectual property of Check AI. You may not use, reproduce, or distribute any content from our website without our permission."
+    },
+    {
+      "title": "Limitation of Liability",
+      "icon": "FiAlertCircle",
+      "content": "Check AI shall not be liable for any indirect, incidental, special, or consequential damages resulting from the use or inability to use our services."
+    },
+    {
+      "title": "Governing Law",
+      "icon": "GiMagnifyingGlass",
+      "content": "These terms and conditions are governed by and construed in accordance with the laws of the United States, and any disputes relating to these terms and conditions will be subject to the exclusive jurisdiction of the courts of Florida."
+    },
+    {
+      "title": "Changes to Terms",
+      "icon": "IoMdSettings",
+      "content": "Check AI reserves the right to revise these terms and conditions at any time. By using our website, you agree to be bound by the current version of these terms and conditions."
+    }
+  ]
+}
