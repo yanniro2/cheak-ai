@@ -6,19 +6,17 @@ type Props = {};
 const Banner = (props: Props) => {
   return (
     <section className="w-full  bg-primary ">
-      <div className="container mx-auto flex items-center justify-between p-[3rem] rounded gap-[3rem]">
-        <div className="w-1/2">
+      <div className="container mx-auto flex lg:flex-row flex-col items-center justify-between p-[3rem] rounded gap-[3rem]">
+        <div className="lg:w-1/2 ">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3584.018515254454!2d-80.31948972463681!3d26.065651295978977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9a7a16ba8d2ed%3A0x1c4f36f25f47d196!2sParking%20lot%2C%2012555%20Orange%20Dr%2C%20Davie%2C%20FL%2033330%2C%20USA!5e0!3m2!1sen!2sca!4v1718375672721!5m2!1sen!2sca"
-            width="600"
-            height="450"
             style={{ border: 0 }}
             allowFullScreen
             loading="lazy"
-            className="rounded overflow-hidden"
+            className="rounded overflow-hidden w-full h-[20rem] lg:h-[60vh]"
             referrerPolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <div className="w-1/2 pl-[3rem] flex flex-col gap-[1rem]">
+        <div className="lg:w-1/2 lg:pl-[3rem] flex flex-col gap-[1rem]">
           <div>
             <div className="font-semibold uppercase text-[2rem] font-poppins tracking-tighter ">
               Check AI

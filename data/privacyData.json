@@ -72,15 +72,29 @@
         "id": "changes_to_this_policy",
         "title": "Changes to This Policy",
         "icon": "AiOutlineSync",
-        "format": "main_section",
-        "content": "We may update this Privacy Policy from time to time. We will notify you of any material changes by posting the new Privacy Policy on this page."
+        "format": "list",
+        "content": [
+          "We may update this Privacy Policy from time to time.",
+          "We will notify you of any material changes by:",
+          "Posting the new Privacy Policy on this page.",
+          "Sending you an email notification.",
+          "Notifying you through our website or application."
+        ]
       },
       {
         "id": "contact_us",
         "title": "Contact Us",
         "icon": "AiOutlineMail",
-        "format": "main_section",
-        "content": "If you have any questions or concerns about our Privacy Policy, please contact us at the contact information provided above."
+        "format": "list",
+        "content": [
+          "If you have any questions or concerns about our Privacy Policy,",
+          "please contact us at the contact information provided above.",
+          "Email: sales@check-ai.com",
+          "Phone: +1 954-998-1219",
+          "Address: 123 Main Street, City, State, Zip Code",
+          "For business inquiries, please email: business@check-ai.com",
+          "For technical support, please email: support@check-ai.com"
+        ]
       },
       {
         "id": "information_we_collect",
