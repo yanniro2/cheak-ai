@@ -176,9 +176,9 @@ const Footer = () => {
             </Link>
             <span className="hidden md:block">|</span>
             <Link
-              href="/privacy-policy"
+              href="/cookies-policies"
               className="link-bottom"
-              aria-label={"Privacy Policy"}>
+              aria-label={"cookies policies"}>
               Cookies Policies
             </Link>
           </div>

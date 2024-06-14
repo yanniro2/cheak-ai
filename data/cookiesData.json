@@ -1,0 +1,98 @@
+{
+  "title": "Cookies Policies",
+  "lastUpdated": "2024-06-13",
+  "address": "12555 Orange Dr, Davie, FL 33330, USA",
+  "email": "support@check-ai.com",
+  "phone": "+1 954-998-1219",
+  "sections": [
+    {
+      "title": "Introduction",
+      "icon": "AiOutlineFileText",
+      "content": "We use cookies to ensure the best experience on our website. This policy explains what cookies are, how we use them, and how you can manage them."
+    },
+    {
+      "title": "What are Cookies?",
+      "icon": "AiOutlineQuestionCircle",
+      "content": "Cookies are small text files placed on your device to collect standard Internet log information and visitor behavior information. When you visit our websites, we may collect information from you automatically through cookies or similar technology."
+    },
+    {
+      "title": "How We Use Cookies",
+      "icon": "AiOutlineSetting",
+      "content": "Check AI uses cookies in a range of ways to improve your experience on our website, including keeping you signed in, understanding how you use our website, and providing personalized content and advertisements."
+    },
+    {
+      "title": "Types of Cookies We Use",
+      "icon": "AiOutlineAppstore",
+      "content": "There are several different types of cookies, however, our website uses:",
+      "list": [
+        {
+          "type": "Essential Cookies",
+          "description": "These cookies are necessary for the website to function and cannot be switched off in our systems."
+        },
+        {
+          "type": "Performance Cookies",
+          "description": "These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site."
+        },
+        {
+          "type": "Functional Cookies",
+          "description": "These cookies enable the website to provide enhanced functionality and personalization."
+        },
+        {
+          "type": "Targeting Cookies",
+          "description": "These cookies may be set through our site by our advertising partners to build a profile of your interests and show you relevant adverts on other sites."
+        }
+      ]
+    },
+    {
+      "title": "Managing Cookies",
+      "icon": "AiOutlineControl",
+      "content": "You can set your browser not to accept cookies, and the above website tells you how to remove cookies from your browser. However, in a few cases, some of our website features may not function as a result.",
+      "list": [
+        {
+          "browser": "Chrome",
+          "url": "https://support.google.com/chrome/answer/95647"
+        },
+        {
+          "browser": "Firefox",
+          "url": "https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences"
+        },
+        {
+          "browser": "Safari",
+          "url": "https://support.apple.com/guide/safari/manage-cookies-and-website-data-sfri11471/mac"
+        },
+        {
+          "browser": "Edge",
+          "url": "https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09"
+        }
+      ]
+    },
+    {
+      "title": "Third-Party Cookies",
+      "icon": "AiOutlineShareAlt",
+      "content": "In addition to our own cookies, we may also use various third-party cookies to report usage statistics of the Service, deliver advertisements on and through the Service, and so on.",
+      "list": [
+        { "name": "Google Analytics", "url": "https://analytics.google.com" },
+        { "name": "Facebook", "url": "https://facebook.com" },
+        { "name": "Twitter", "url": "https://twitter.com" }
+      ]
+    },
+    {
+      "title": "Changes to This Cookies Policy",
+      "icon": "AiOutlineSetting",
+      "content": "Check AI may update this Cookies Policy from time to time in order to reflect, for example, changes to our practices or for other operational, legal, or regulatory reasons."
+    },
+    {
+      "title": "Contact Us",
+      "icon": "AiOutlineMail",
+      "content": "If you have any questions about this Cookies Policy, please contact us at:",
+      "list": [
+        { "type": "Email", "description": "support@check-ai.com" },
+        { "type": "Phone", "description": "+1 954-998-1219" },
+        {
+          "type": "Address",
+          "description": "12555 Orange Dr, Davie, FL 33330, USA"
+        }
+      ]
+    }
+  ]
+}

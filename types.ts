@@ -201,3 +201,27 @@ export interface Service {
 export interface WhyChooseUsData {
   whyChooseUs: Service[];
 }
+
+export type CookieListItem = {
+  type?: string;
+  description?: string;
+  browser?: string;
+  url?: string;
+  name?: string;
+};
+
+export type CookiePolicySection = {
+  title: string;
+  icon: string;
+  content: string;
+  list?: CookieListItem[];
+};
+
+export type CookiePolicyContent = {
+  title: string;
+  lastUpdated: string;
+  address: string;
+  email: string;
+  phone: string;
+  sections: CookiePolicySection[];
+};
