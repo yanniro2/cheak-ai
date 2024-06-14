@@ -20,7 +20,7 @@ interface TermsData {
 const Terms = () => {
   const data: TermsData = termsData;
   return (
-    <section className="main-section-2 text-darkBlue bg-color z-[50] p-3">
+    <section className="main-section-2 text-darkBlue bg-color z-[50] ">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 ">
         {data.sections.map((section) => (
           <InfoBox

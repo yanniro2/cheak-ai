@@ -2,6 +2,7 @@ import React from "react";
 import Title1 from "@/components/mini/Title";
 import { Metadata } from "next";
 import Terms from "@/components/Terms";
+import Banner from "@/components/Banner";
 type Props = {};
 
 export const metadata: Metadata = {
@@ -17,6 +18,7 @@ const page = (props: Props) => {
         />
         <Terms />
       </div>
+      <Banner />
     </section>
   );
 };
