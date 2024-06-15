@@ -12,6 +12,8 @@ import {
   AiOutlineShareAlt,
   AiOutlineMail,
 } from "react-icons/ai";
+import Cookie from "../Cookie";
+// import Cookie from "@/components/mini/Cookie";
 type Props = {};
 
 export const metadata: Metadata = {
@@ -23,57 +25,67 @@ const page = (props: Props) => {
     cookiePolicyContent as CookiePolicyContent;
 
   return (
-    <section className="w-screen h-full flex flex-col items-center justify-center drop-shadow-md bg-gray-50">
-      <div className="container mx-auto  flex items-center h-full flex-col gap-4 md:py-16 pt-24 p-3 lg:px-0">
-        <Title1
-          title={"Cookies Policies"}
-          subtitle={"Learn how we protect your data."}
-        />
+    <>
+      <section className="w-screen h-full flex flex-col items-center justify-center drop-shadow-md bg-gray-50 relative">
+        <div className="container mx-auto  flex items-center h-full flex-col gap-4 md:py-16 pt-24 p-3 lg:px-0">
+          <Title1
+            title={"Cookies Policies"}
+            subtitle={"Learn how we protect your data."}
+          />
 
-        {sections.map((section, index) => (
-          <div key={index} className="w-full step-box gap-[1rem] text ">
-            <h2 className="font-semibold font-poppins text-primary flex items-center gap-[1rem] ">
-              <div className="icons-1">{renderIcon(section.icon)}</div>
-              {section.title}
-            </h2>
-            <p className="text">{section.content}</p>
-            {section.list && (
-              <ul className="list-disc list-inside mt-2">
-                {section.list.map((item, idx) => (
-                  <li key={idx}>
-                    {item.type && (
-                      <>
-                        <strong className="text-secondry">{item.type}</strong>:{" "}
-                        {item.description}
-                      </>
-                    )}
-                    {item.browser && (
-                      <>
-                        <strong className="text-secondry">
-                          {item.browser}
-                        </strong>
-                        :{" "}
-                        <a href={item.url} className="text-blue-600 underline">
-                          {/* {item.url} */}
-                        </a>
-                      </>
-                    )}
-                    {item.name && (
-                      <>
-                        <strong className="text-secondry">{item.name}</strong>:{" "}
-                        <a href={item.url} className="text-blue-600 underline">
-                          {item.url}
-                        </a>
-                      </>
-                    )}
-                  </li>
-                ))}
-              </ul>
-            )}
-          </div>
-        ))}
-      </div>
-    </section>
+          {sections.map((section, index) => (
+            <div key={index} className="w-full step-box gap-[1rem] text ">
+              <h2 className="font-semibold font-poppins text-primary flex items-center gap-[1rem] ">
+                <div className="icons-1">{renderIcon(section.icon)}</div>
+                {section.title}
+              </h2>
+              <p className="text">{section.content}</p>
+              {section.list && (
+                <ul className="list-disc list-inside mt-2">
+                  {section.list.map((item, idx) => (
+                    <li key={idx}>
+                      {item.type && (
+                        <>
+                          <strong className="text-secondry">{item.type}</strong>
+                          : {item.description}
+                        </>
+                      )}
+                      {item.browser && (
+                        <>
+                          <strong className="text-secondry">
+                            {item.browser}
+                          </strong>
+                          :{" "}
+                          <a
+                            href={item.url}
+                            className="text-blue-600 underline">
+                            {/* {item.url} */}
+                          </a>
+                        </>
+                      )}
+                      {item.name && (
+                        <>
+                          <strong className="text-secondry">{item.name}</strong>
+                          :{" "}
+                          <a
+                            href={item.url}
+                            className="text-blue-600 underline">
+                            {item.url}
+                          </a>
+                        </>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          ))}
+
+          {/* <button className="btn btn-1"> Remove Cookies</button> */}
+        </div>
+      </section>
+      <Cookie />
+    </>
   );
 };
 

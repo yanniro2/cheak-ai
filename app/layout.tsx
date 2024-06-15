@@ -25,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="font-open scroll-smooth bg-dark text-white">
+      <body className="font-open scroll-smooth bg-dark text-white relative">
         <Header />
         {children}
         <Footer />
