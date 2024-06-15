@@ -28,7 +28,7 @@ const Cookie = (props: Props) => {
   }
 
   return (
-    <div className="fixed bottom-[1rem] left-0 right-0 z-[3000] w-full bg-primary">
+    <div className="fixed bottom-0 left-0 right-0 z-[3000] w-full bg-primary">
       <div className="container mx-auto p-4 rounded flex flex-col justify-between gap-4">
         <p className="text-stone-300">
           This website uses cookies to provide the best possible user
