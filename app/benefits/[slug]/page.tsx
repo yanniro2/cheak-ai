@@ -98,7 +98,7 @@ function Page({ params }: { params: { slug: string } }) {
           {serviceToRender.sub_sections.map((subSection, index) => (
             <Scroll
               key={index}
-              className="p-3 rounded flex flex-col  gap-3  cursor-pointer hover:scale-105 transition-all ease-linear group hover:shadow-md hover:shadow-primary border border-primary hover:bg-primary">
+              className="p-3 rounded flex flex-col  gap-3  cursor-pointer hover:scale-105 transition-all ease-linear group hover:shadow-md hover:shadow-primary border border-primary hover:bg-primary group">
               <div className="icons-1">{renderIcon(subSection.icon)}</div>
               <h3 className="text-xl font-poppins font-semibold ">
                 {subSection.title}
@@ -109,7 +109,9 @@ function Page({ params }: { params: { slug: string } }) {
               </p>
               <div className="flex flex-wrap gap-1">
                 {subSection.examples.map((example, idx) => (
-                  <p key={idx} className="btn btn-1 group-hover:btn-1">
+                  <p
+                    key={idx}
+                    className="btn btn-1 group-hover:bg-white group-hover:text-primary transition-all">
                     {example}
                   </p>
                 ))}
