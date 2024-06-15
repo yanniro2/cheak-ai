@@ -42,7 +42,7 @@ function page() {
                   </div>
                   <div className="icons-2">{renderIcon(step.icon)}</div>
                   <div>
-                    <h3 className="text-[1.2rem] font-open font-bold uppercase group-hover:text-primary">
+                    <h3 className="md:text-[1.2rem] font-open font-bold uppercase group-hover:text-primary">
                       {step.title}
                     </h3>
                     <p className="capitalize  font-open text-secondry">
@@ -62,7 +62,7 @@ function page() {
                     <p className="text">{brief.paragraph}</p>
                   </div>
                 ))}
-                <div className="flex items-center gap-5">
+                <div className="flex items-center gap-5 pt-3">
                   {step.subLinks.map((link, linkIndex) => (
                     <Link
                       key={linkIndex}
