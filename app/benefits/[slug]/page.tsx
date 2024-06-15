@@ -26,6 +26,7 @@ import {
 } from "react-icons/ai";
 import NextNavigation from "@/components/mini/NextNavigation";
 import Link from "next/link";
+import { Metadata } from "next";
 
 export function generateStaticParams() {
   return [
@@ -36,6 +37,10 @@ export function generateStaticParams() {
     { slug: "great-user-experience" },
   ];
 }
+
+export const metadata: Metadata = {
+  title: "Benefits",
+};
 
 function Page({ params }: { params: { slug: string } }) {
   const { benefits } = data;
