@@ -35,8 +35,8 @@ function ServiceSlug({
             {description}
           </Scroll>
         </Scroll>
-        <div className="w-full flex items-center justify-between lg:flex-row-reverse flex-col gap-[1rem]">
-          <Scroll className="lg:w-1/2 flex flex-col rounded gap-[1rem] bg-lighDark p-[3rem]">
+        <Scroll className="w-full flex items-center justify-between lg:flex-row-reverse flex-col gap-[1rem]">
+          <Scroll className="lg:w-1/2 flex flex-col rounded gap-[1rem] bg-lighDark md:p-[3rem] p-5">
             <div className="flex flex-col">
               <Scroll className="text-xl font-open font-semibold uppercase text-primary">
                 {subTitle}
@@ -60,7 +60,7 @@ function ServiceSlug({
               className="rounded object-cover"
             />
           </Scroll>
-        </div>
+        </Scroll>
         <NextNavigation slug={params.slug} data={data} service={"services"} />
       </div>
     </section>
