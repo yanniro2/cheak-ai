@@ -73,10 +73,16 @@ const Cookie = (props: Props) => {
         )}
 
         <div className="flex items-center gap-4">
-          <button className="btn btn-3" onClick={handleSettings}>
+          <button
+            className="btn btn-3"
+            onClick={handleSettings}
+            title="cookiebtn">
             Cookie Settings
           </button>
-          <button className="btn btn-4" onClick={handleAccept}>
+          <button
+            className="btn btn-4"
+            onClick={handleAccept}
+            title="cookieAccpetbtn">
             Accept
           </button>
         </div>

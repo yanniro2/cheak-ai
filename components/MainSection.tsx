@@ -89,10 +89,10 @@ const MainSection: React.FC = () => {
         </div>
       </div>
       <div className="md:flex items-center justify-center gap-3 hidden">
-        <button className="btn-next" onClick={scrollBackward}>
+        <button className="btn-next" onClick={scrollBackward} title="beforebtn">
           <MdNavigateBefore />
         </button>
-        <button className="btn-next" onClick={scrollForward}>
+        <button className="btn-next" onClick={scrollForward} title="nextbtn">
           <MdNavigateNext />
         </button>
       </div>

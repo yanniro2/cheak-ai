@@ -123,7 +123,7 @@ const Header: React.FC = () => {
                 isMobileMenuOpen ? "text-orange" : "text-gray-200"
               }`}
               onClick={toggleMobileMenu}
-              aria-label="button">
+              title="mobilebtn">
               <HiOutlineMenuAlt3 />
             </button>
           </div>

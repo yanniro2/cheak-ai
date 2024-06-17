@@ -21,7 +21,8 @@ const Notifications: React.FC<Props> = ({
 
         <button
           onClick={handleClose}
-          className="text-white hover:text-orange transition-all">
+          className="text-white hover:text-orange transition-all"
+          title="closebtn">
           {/* Close button triggers the onClose callback */}
           <IoIosCloseCircle />
         </button>

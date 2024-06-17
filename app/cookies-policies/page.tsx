@@ -82,7 +82,7 @@ const page = (props: Props) => {
             </Scroll>
           ))}
 
-          {/* <button className="btn btn-1"> Remove Cookies</button> */}
+
         </div>
       </section>
       <Cookie />
