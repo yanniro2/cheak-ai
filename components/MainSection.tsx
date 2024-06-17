@@ -81,7 +81,10 @@ const MainSection: React.FC = () => {
                 {service.title}
               </h3>
               <p className="text font-open">{service.description}</p>
-              <Link href={service.url} className="btn btn-1">
+              <Link
+                href={service.url}
+                className="btn btn-1"
+                aria-label={service.title}>
                 {service.title}
               </Link>
             </Scroll>

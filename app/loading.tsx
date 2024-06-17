@@ -8,7 +8,8 @@ export default function Loading() {
       <div className="flex flex-col items-center gap-[1rem]">
         <Link
           href="/"
-          className="font-semibold uppercase text-[2rem] font-poppins tracking-tighter cursor-pointer hover:text-white hover:shadow-xl hover:drop-shadow-primary transition-all text-primary">
+          className="font-semibold uppercase text-[2rem] font-poppins tracking-tighter cursor-pointer hover:text-white hover:shadow-xl hover:drop-shadow-primary transition-all text-primary"
+          aria-label={"home"}>
           Check AI
         </Link>
         <Scroll className="flex items-center gap-5 lg:p-0 p-5">

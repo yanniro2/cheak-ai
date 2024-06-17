@@ -50,6 +50,7 @@ const Services = () => {
                 <Link
                   href={service.url}
                   key={index}
+                  aria-label={service.title}
                   className="service cursor-pointer hover:bg-lighDark p-5 rounded transition-all ease-linear hover:shadow hover:shadow-primary">
                   <Scroll className="font-semibold font-poppins pb-[1rem]">
                     {service.title}

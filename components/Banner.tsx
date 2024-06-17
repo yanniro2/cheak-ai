@@ -52,15 +52,10 @@ const Banner = (props: Props) => {
             <Link
               href="/contact"
               target="_blank"
-              className="btn hover:bg-white text-white shadow-md hover:shadow-primary w-full md:w-fit bg-lighDark transition-all hover:text-primary">
+              className="btn hover:bg-white text-white shadow-md hover:shadow-primary w-full md:w-fit bg-lighDark transition-all hover:text-primary"
+              aria-label={"call back"}>
               request a call back
             </Link>
-
-            {/* <Link href="" className="btn btn-4">
-              Book an appoinment
-
-              4162906790
-            </Link> */}
           </div>
         </div>
       </div>

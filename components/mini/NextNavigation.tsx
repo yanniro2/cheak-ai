@@ -25,12 +25,18 @@ const NextNavigation = (props: NextNavigationProps) => {
   return (
     <Scroll className="flex justify-between mt-8 w-full gap-[2rem]">
       {previousProject && (
-        <Link href={previousProject.url} className="btn btn-2">
+        <Link
+          href={previousProject.url}
+          className="btn btn-2"
+          aria-label={previousProject.title}>
           &lt; Previous
         </Link>
       )}
       {nextProject && (
-        <Link href={nextProject.url} className="btn btn-1">
+        <Link
+          href={nextProject.url}
+          className="btn btn-1"
+          aria-label={nextProject.title}>
           Next &gt;
         </Link>
       )}

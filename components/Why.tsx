@@ -77,6 +77,7 @@ const Why = () => {
               {/* 1 */}
               <Link
                 className="service cursor-pointer hover:bg-lighDark  rounded transition-all ease-linear hover:shadow hover:shadow-primary bg-lighDark relative flex justify-between flex-col p-5 "
+                aria-label={"step 1"}
                 href={"/why-choose-us/step-1"}>
                 <div className="flex flex-col">
                   <h2 className="step-h1 ">Why Choose Us</h2>
@@ -94,6 +95,7 @@ const Why = () => {
               {/* 2 */}
               <Link
                 className="service cursor-pointer hover:bg-lighDark  rounded transition-all ease-linear hover:shadow hover:shadow-primary bg-lighDark relative flex  flex-col p-5 md:items-end md:justify-end md:text-right text-left"
+                aria-label={"step 2"}
                 href={"/why-choose-us/step-2"}>
                 <div className="flex flex-col md:items-end">
                   <h2 className="step-h1">Enhanced Security</h2>
@@ -110,6 +112,7 @@ const Why = () => {
               {/* 3 */}
               <Link
                 className="service cursor-pointer hover:bg-lighDark  rounded transition-all ease-linear hover:shadow hover:shadow-primary bg-lighDark relative flex  flex-col p-5 items-start justify-end text-left"
+                aria-label={"step 3"}
                 href={"/why-choose-us/step-3"}>
                 <div className="flex flex-col">
                   <h2 className="step-h1">Scalability & Flexibility</h2>
@@ -126,7 +129,8 @@ const Why = () => {
               {/* 4 */}
               <Link
                 className="service cursor-pointer   rounded transition-all ease-linear hover:shadow hover:shadow-primary relative    p-5 text-right flex items-end  group md:bg-gradient-to-l from-primary to-lighDark bg-gradient-to-r"
-                href={"/why-choose-us/startNow"}>
+                href={"/why-choose-us/startNow"}
+                aria-label={"start Now"}>
                 <h3 className="text-4xl  font-poppins md:text-right w-full text-white text-left">
                   Start Now!
                 </h3>

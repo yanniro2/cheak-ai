@@ -107,13 +107,15 @@ const Footer = () => {
               </h1>
               <Link
                 href={`mailto:${contactInformation.email}`}
-                className="flex items-center gap-3 ">
+                className="flex items-center gap-3 "
+                aria-label={contactInformation.email}>
                 <FaEnvelope className="link-active" />{" "}
                 {contactInformation.email}
               </Link>
               <Link
                 href={`tel:${contactInformation.phone}`}
-                className="flex items-center gap-3">
+                className="flex items-center gap-3"
+                aria-label={contactInformation.phone}>
                 <FaPhoneAlt className="link-active" />
                 {contactInformation.phone}
               </Link>

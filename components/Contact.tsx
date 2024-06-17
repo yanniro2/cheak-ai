@@ -193,7 +193,8 @@ const Contact = () => {
                       href={
                         contactData.contactDetails[key as keyof ContactDetails]
                           .href
-                      }>
+                      }
+                      aria-label={"social"}>
                       {renderIcon(
                         contactData.contactDetails[key as keyof ContactDetails]
                           .icon
@@ -225,7 +226,8 @@ const Contact = () => {
                       href={social.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="icons-3 ">
+                      className="icons-3 "
+                      aria-label={social.name}>
                       {renderIcon(social.icon)}
                     </Link>
                   ))}
@@ -373,11 +375,17 @@ const Contact = () => {
                     htmlFor="terms"
                     className="text-primary flex gap-1 flex-wrap ">
                     I agree to the
-                    <Link href="/" className="link-2">
+                    <Link
+                      href="/"
+                      className="link-2"
+                      aria-label={"terms of use"}>
                       terms of use
                     </Link>
                     and
-                    <Link href="/" className="link-2">
+                    <Link
+                      href="/"
+                      className="link-2"
+                      aria-label={"privacy policy"}>
                       privacy policy
                     </Link>
                   </label>

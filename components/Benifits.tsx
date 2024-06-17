@@ -29,7 +29,8 @@ const Benifits = () => {
               <Link
                 href={step.url}
                 key={index}
-                className="bg-lighDark p-[2rem] rounded flex flex-col items-center justify-center gap-3 text-center cursor-pointer hover:scale-105 transition-all ease-linear group hover:shadow-md hover:shadow-primary border border-primary">
+                className="bg-lighDark p-[2rem] rounded flex flex-col items-center justify-center gap-3 text-center cursor-pointer hover:scale-105 transition-all ease-linear group hover:shadow-md hover:shadow-primary border border-primary"
+                aria-label={step.title}>
                 <div className="icons-1">{renderIcon(step.icon)}</div>
                 <h3 className="text-xl font-semibold font-poppins">
                   {step.title}
@@ -43,7 +44,8 @@ const Benifits = () => {
               <Link
                 href={step.url}
                 key={index}
-                className="bg-lighDark p-[2rem] rounded flex flex-col items-center justify-center gap-3 text-center cursor-pointer hover:scale-105 transition-all ease-linear group hover:shadow-md hover:shadow-primary border border-primary">
+                className="bg-lighDark p-[2rem] rounded flex flex-col items-center justify-center gap-3 text-center cursor-pointer hover:scale-105 transition-all ease-linear group hover:shadow-md hover:shadow-primary border border-primary"
+                aria-label={step.title}>
                 <div className="icons-1">{renderIcon(step.icon)}</div>
                 <h3 className="text-xl font-semibold font-poppins">
                   {step.title}
@@ -60,7 +62,8 @@ const Benifits = () => {
               <Link
                 href={step.url}
                 key={index}
-                className="bg-lighDark p-[2rem] rounded flex flex-col items-center justify-center gap-3 text-center cursor-pointer hover:scale-105 transition-all ease-linear group hover:shadow-md hover:shadow-primary border border-primary">
+                className="bg-lighDark p-[2rem] rounded flex flex-col items-center justify-center gap-3 text-center cursor-pointer hover:scale-105 transition-all ease-linear group hover:shadow-md hover:shadow-primary border border-primary"
+                aria-label={step.title}>
                 <div className="icons-1">{renderIcon(step.icon)}</div>
                 <h3 className="text-xl font-semibold font-poppins">
                   {step.title}
@@ -74,7 +77,8 @@ const Benifits = () => {
               <Link
                 href={step.url}
                 key={index}
-                className="bg-lighDark p-[2rem] rounded flex flex-col items-center justify-center gap-3 text-center cursor-pointer hover:scale-105 transition-all ease-linear group hover:shadow-md hover:shadow-primary border border-primary">
+                className="bg-lighDark p-[2rem] rounded flex flex-col items-center justify-center gap-3 text-center cursor-pointer hover:scale-105 transition-all ease-linear group hover:shadow-md hover:shadow-primary border border-primary"
+                aria-label={step.title}>
                 <div className="icons-1">{renderIcon(step.icon)}</div>
                 <h3 className="text-xl font-semibold font-poppins">
                   {step.title}

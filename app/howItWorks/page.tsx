@@ -68,7 +68,8 @@ function page() {
                       key={linkIndex}
                       href={link.url}
                       className="link-underline"
-                      target="_blank">
+                      target="_blank"
+                      aria-label={link.text}>
                       {link.text}
                     </Link>
                   ))}

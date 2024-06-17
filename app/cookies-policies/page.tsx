@@ -59,7 +59,8 @@ const page = (props: Props) => {
                           :{" "}
                           <a
                             href={item.url}
-                            className="text-blue-600 underline">
+                            className="text-blue-600 underline"
+                            aria-label={item.name}>
                             {/* {item.url} */}
                           </a>
                         </>
@@ -70,7 +71,8 @@ const page = (props: Props) => {
                           :{" "}
                           <a
                             href={item.url}
-                            className="text-blue-600 underline">
+                            className="text-blue-600 underline"
+                            aria-label={item.name}>
                             {item.url}
                           </a>
                         </>
@@ -81,8 +83,6 @@ const page = (props: Props) => {
               )}
             </Scroll>
           ))}
-
-
         </div>
       </section>
       <Cookie />

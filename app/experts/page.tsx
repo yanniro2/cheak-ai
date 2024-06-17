@@ -24,7 +24,8 @@ const Page: React.FC = () => {
         <Scroll className="w-full">
           <Link
             href="/howItWorks"
-            className="cursor-pointer hover:text-primary underline text transition-all">
+            className="cursor-pointer hover:text-primary underline text transition-all"
+            aria-label={"how it works"}>
             Back
           </Link>
         </Scroll>

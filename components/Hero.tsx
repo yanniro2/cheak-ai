@@ -32,10 +32,13 @@ function Hero() {
             <div className="w-[20rem] h-[20rem]   rounded-full   absolute -top-[50%] lg:-left-[2rem] -z-1  shadow-box bg-primary/5 left-0 "></div>
           </div>
           <div className="lg:flex lg:items-center gap-3 justify-start w-full flex-col lg:flex-row items-start hidden">
-            <Link href="#services" className="btn btn-1">
+            <Link href="#services" className="btn btn-1" aria-label={"service"}>
               start Exploring
             </Link>
-            <Link href="#benefits" className="btn btn-2 group">
+            <Link
+              href="#benefits"
+              className="btn btn-2 group"
+              aria-label={"benifits"}>
               learn more <IoMdArrowForward className="group-hover:ml-3" />
             </Link>
           </div>
@@ -65,10 +68,13 @@ function Hero() {
         />
 
         <div className="lg:hidden flex lg:items-center gap-3 justify-start w-full flex-col md:flex-row items-start">
-          <Link href="#services" className="btn btn-1">
+          <Link href="#services" className="btn btn-1" aria-label={"services"}>
             start Exploring
           </Link>
-          <Link href="#benefits" className="btn btn-2 group">
+          <Link
+            href="#benefits"
+            className="btn btn-2 group"
+            aria-label={"benifits"}>
             learn more <IoMdArrowForward className="group-hover:ml-3" />
           </Link>
         </div>

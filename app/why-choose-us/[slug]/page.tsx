@@ -69,7 +69,8 @@ export default function Page({ params }: { params: { slug: string } }) {
         <Scroll className="w-full">
           <Link
             href="/why-choose-us"
-            className="cursor-pointer hover:text-primary underline text transition-all">
+            className="cursor-pointer hover:text-primary underline text transition-all"
+            aria-label={"why choose us"}>
             Back
           </Link>
         </Scroll>

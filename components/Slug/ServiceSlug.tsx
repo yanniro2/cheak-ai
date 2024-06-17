@@ -23,7 +23,8 @@ function ServiceSlug({
         <Scroll className="w-full">
           <Link
             href="/services"
-            className="cursor-pointer hover:text-primary underline text transition-all">
+            className="cursor-pointer hover:text-primary underline text transition-all"
+            aria-label={"service"}>
             Back
           </Link>
         </Scroll>

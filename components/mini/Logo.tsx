@@ -8,7 +8,8 @@ function Logo() {
     <div>
       <Link
         href="/"
-        className="font-semibold uppercase text-[2rem] font-poppins tracking-tighter cursor-pointer hover:text-primary hover:shadow-xl hover:drop-shadow-primary transition-all">
+        className="font-semibold uppercase text-[2rem] font-poppins tracking-tighter cursor-pointer hover:text-primary hover:shadow-xl hover:drop-shadow-primary transition-all"
+        aria-label={"logo"}>
         Check AI
       </Link>
     </div>

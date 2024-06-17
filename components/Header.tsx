@@ -112,7 +112,8 @@ const Header: React.FC = () => {
             <Link
               href="/#why-choose-us"
               className="btn btn-2"
-              onClick={toggleMobileMenu}>
+              onClick={toggleMobileMenu}
+              aria-label={"get started"}>
               get started!
             </Link>
           </div>
@@ -155,7 +156,8 @@ const Header: React.FC = () => {
               <Link
                 href="/#why-choose-us"
                 className="text-white w-full bg-primary p-3   cursor-pointer text-[1.5rem] transition-all ease-in-out uppercase font-semibold"
-                onClick={toggleMobileMenu}>
+                onClick={toggleMobileMenu}
+                aria-label={"why choose us"}>
                 get started
               </Link>
             </div>

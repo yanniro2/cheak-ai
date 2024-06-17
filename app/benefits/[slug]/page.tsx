@@ -56,7 +56,8 @@ export default function Page({ params }: { params: { slug: string } }) {
         <Scroll className="w-full">
           <Link
             href="/benefits"
-            className="cursor-pointer hover:text-primary underline text transition-all">
+            className="cursor-pointer hover:text-primary underline text transition-all"
+            aria-label={"benifits"}>
             Back
           </Link>
         </Scroll>
