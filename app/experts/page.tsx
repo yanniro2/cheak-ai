@@ -5,6 +5,11 @@ import Image from "next/image";
 import Scroll from "@/components/animation/Scroll";
 import { FaEnvelope, FaPhone, FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Our Experts",
+};
 
 const Page: React.FC = () => {
   return (
