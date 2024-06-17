@@ -1,11 +1,8 @@
 # Pending
 
-    - Tab Responsive Check
     - SEO
     - Contact us form Working
     - NewsLetter form Working
-    - Error page
-    - Loading page
     - Contact Form Submition
 
 ## Check Again buget list
