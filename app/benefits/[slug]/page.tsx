@@ -26,7 +26,7 @@ import {
 } from "react-icons/ai";
 import NextNavigation from "@/components/mini/NextNavigation";
 import Link from "next/link";
-import { Metadata } from "next";
+import { generateMetadata } from "@/components/meta/generateMetadata";
 
 export function generateStaticParams() {
   return [
@@ -38,11 +38,7 @@ export function generateStaticParams() {
   ];
 }
 
-export const metadata: Metadata = {
-  title: "Benefits",
-};
-
-function Page({ params }: { params: { slug: string } }) {
+export default function Page({ params }: { params: { slug: string } }) {
   const { benefits } = data;
   const serviceToRender = benefits.find(
     (service) => service.url === `/benefits/${params.slug}`
@@ -160,4 +156,4 @@ const renderIcon = (iconName: string) => {
   return <IconComponent />;
 };
 
-export default Page;
+export { generateMetadata };

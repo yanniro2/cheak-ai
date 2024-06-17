@@ -19,7 +19,7 @@ export function generateStaticParams() {
   ];
 }
 
-export default function ServicesPage({ params }: { params: { slug: string } }) {
+export default function Page({ params }: { params: { slug: string } }) {
   const { briefServices } = servicesData;
   const { mainServices } = mainServiceData;
 
