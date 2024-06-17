@@ -82,7 +82,7 @@ const MainSection: React.FC = () => {
               </h3>
               <p className="text font-open">{service.description}</p>
               <Link href={service.url} className="btn btn-1">
-                Read more
+                {service.title}
               </Link>
             </Scroll>
           ))}
