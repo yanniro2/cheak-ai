@@ -1,9 +1,5 @@
 # Pending
 
-    - Service Sub Slug SEO Title Check,
-    - Benifits Slug SEO Title Check ,
-    - Expert SEO Title Check,
-    - Why choose us SEO Title Check,
     - Contact Form Submition
     - Responsive - sub
     - Sub Scroll down animation

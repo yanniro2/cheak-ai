@@ -7,7 +7,7 @@ import Privacy from "@/components/Privacy";
 type Props = {};
 
 export const metadata: Metadata = {
-  title: "privacy policy",
+  title: "Privacy Policy",
 };
 const page = (props: Props) => {
   return (

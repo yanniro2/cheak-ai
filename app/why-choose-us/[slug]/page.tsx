@@ -20,6 +20,7 @@ import {
 } from "react-icons/bi"; // Importing icons
 import NextNavigation from "@/components/mini/NextNavigation";
 import Link from "next/link";
+import { generateMetadata } from "@/components/meta/generateMetadata";
 
 export function generateStaticParams() {
   return [
@@ -44,7 +45,7 @@ const iconComponents: { [key: string]: React.ElementType } = {
   BiSupport,
 };
 
-function Page({ params }: { params: { slug: string } }) {
+export default function Page({ params }: { params: { slug: string } }) {
   const { whyChooseUs } = data;
 
   const serviceToRender = whyChooseUs.find(
@@ -155,4 +156,4 @@ const renderIcon = (iconName: string) => {
   return <IconComponent />;
 };
 
-export default Page;
+export { generateMetadata };

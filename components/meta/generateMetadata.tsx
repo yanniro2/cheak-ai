@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import servicesData from "@/data/realmsData.json"; // Adjust the import path as necessary
 import mainServiceData from "@/data/mainServiceData.json"; // Adjust the import path as necessary
 import benifitsData from "@/data/benifitsData.json";
+import whyData from "@/data/whyData.json";
 import { BriefService, MainService } from "@/types";
 type Props = {
   params: { slug: string };
@@ -21,8 +22,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const benifitsRender = benifitsData.benefits.find(
     (service) => service.url === `/benefits/${params.slug}`
   );
+  const whyRender = whyData.whyChooseUs.find(
+    (service) => service.url === `/why-choose-us/${params.slug}`
+  );
 
-  const service = serviceToRender || mainToRender || benifitsRender;
+  const service =
+    serviceToRender || mainToRender || benifitsRender || whyRender;
 
   if (service) {
     return {
