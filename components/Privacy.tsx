@@ -82,7 +82,7 @@ const Privacy: React.FC<Props> = () => {
   // Mapping over sections and rendering the content
   return (
     <section className="main-section-2 bg-color text-darkBlue relative z-[50]">
-      <div className="container mx-auto p-5 ">
+      <div className="container mx-auto ">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:gap-[2.5rem] py-[1rem] gap-5">
           {sections.map((section) => (
             <div key={section.id} className="step-box gap-[1rem]">
