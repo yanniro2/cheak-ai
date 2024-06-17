@@ -1,6 +1,5 @@
 # Pending
 
-    - Contact Form Submition
     - Responsive - sub
     - Sub Scroll down animation
     - Mobile Responsive check on Mobile
@@ -9,6 +8,7 @@
     - NewsLetter form Working
     - Error page
     - Loading page
+    - Contact Form Submition
 
 ## Check Again buget list
 

@@ -12,7 +12,7 @@ import {
   AiOutlineShareAlt,
   AiOutlineMail,
 } from "react-icons/ai";
-import Cookie from "../Cookie";
+import Cookie from "../../components/mini/Cookie";
 // import Cookie from "@/components/mini/Cookie";
 type Props = {};
 

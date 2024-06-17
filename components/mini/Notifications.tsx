@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { IoIosCloseCircle } from "react-icons/io";
 
 type Props = {
@@ -15,7 +15,7 @@ const Notifications: React.FC<Props> = ({
   time,
 }) => {
   return (
-    <section className="fixed z-[9999] backdrop-blur-md  w-[20rem] h-auto bg-dark  drop-shadow shadow-xl  left-5 bottom-5   border  text-white border-primary rounded">
+    <div className="fixed z-[9999] backdrop-blur-md  md:w-[20rem] h-auto bg-dark  drop-shadow shadow-xl  md:left-[6%] bottom-5   border  text-white border-primary rounded w-full left-0">
       <div className="w-full flex items-center justify-between p-3 h2 ">
         <div className="step-h1">{title}</div>
 
@@ -34,7 +34,7 @@ const Notifications: React.FC<Props> = ({
 
         <h1 className="font-normal font-roboto">{message} </h1>
       </div>
-    </section>
+    </div>
   );
 };
 

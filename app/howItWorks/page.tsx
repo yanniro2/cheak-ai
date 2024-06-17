@@ -29,7 +29,7 @@ function page() {
           title={"How It Works"}
           subtitle={"Book a consulting appoitment with us and let us help you."}
         />
-        <div className="w-full h-full flex flex-col gap-[6rem]">
+        <Scroll className="w-full h-full flex flex-col gap-[6rem]">
           {data.howItWorksSteps.map((step, index) => (
             <Scroll
               key={index}
@@ -51,7 +51,7 @@ function page() {
                   </div>
                 </div>
 
-                <p className="font-poppins font-light group-hover:text-white">
+                <p className="font-poppins font-light group-hover:text-white py-3">
                   {step.description}
                 </p>
 
@@ -85,7 +85,7 @@ function page() {
               </div>
             </Scroll>
           ))}
-        </div>
+        </Scroll>
       </div>
       {/* </Scroll> */}
     </section>
