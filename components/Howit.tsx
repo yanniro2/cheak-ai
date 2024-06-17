@@ -23,7 +23,7 @@ function Howit() {
           title={"How It Works"}
           subtitle={"Book a consulting appoitment with us and let us help you."}
         />
-        <div className="w-full h-full flex flex-col gap-[1rem]">
+        <Scroll className="w-full h-full flex flex-col gap-[1rem]">
           {data.howItWorksSteps.map((step, index) => (
             <Link
               href="/howItWorks"
@@ -41,7 +41,7 @@ function Howit() {
               <div className="icons-2">{renderIcon(step.icon)}</div>
             </Link>
           ))}
-        </div>
+        </Scroll>
       </div>
       {/* </Scroll> */}
     </section>

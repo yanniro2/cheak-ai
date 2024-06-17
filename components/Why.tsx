@@ -15,8 +15,8 @@ const Why = () => {
       <div className="container mx-auto p-5 flex items-center h-full flex-col gap-[1rem] md:py-[4rem] pt-[6rem]">
         <Title1 title={"Why Choose Us"} subtitle={"Core Features"} />
         <div className="w-full h-full flex items-center justify-between gap-[3rem] lg:flex-row-reverse flex-col">
-          <div className="lg:w-1/2  flex flex-col  rounded gap-[1rem]">
-            <div className="flex flex-col">
+          <Scroll className="lg:w-1/2  flex flex-col  rounded gap-[1rem]">
+            <Scroll className="flex flex-col">
               <Scroll className="text-xl font-open font-semibold uppercase text-primary">
                 Dedicated Artificial Intelligence
               </Scroll>
@@ -24,7 +24,7 @@ const Why = () => {
                 Reap the Benefits of using the latest Artificial Intelligence
                 Technologies.
               </Scroll>
-            </div>
+            </Scroll>
             <Scroll className="flex flex-col gap-3">
               <p className="text">
                 Driven by a passion for innovation and excellence, our dedicated
@@ -43,8 +43,8 @@ const Why = () => {
                 innovation and possibility
               </p>
             </Scroll>
-            <div>
-              <div className="grid md:grid-cols-2  gap-[1rem]">
+            <Scroll>
+              <Scroll className="grid md:grid-cols-2  gap-[1rem]">
                 {statsData.stats.map((stat, index) => (
                   <Scroll
                     key={index}
@@ -62,10 +62,10 @@ const Why = () => {
                     </div>
                   </Scroll>
                 ))}
-              </div>
-            </div>
-          </div>
-          <div className="lg:w-1/2  items-start  flex flex-col justify-between gap-[1rem]">
+              </Scroll>
+            </Scroll>
+          </Scroll>
+          <Scroll className="lg:w-1/2  items-start  flex flex-col justify-between gap-[1rem]">
             <div className="md:pl-5">
               <Title2
                 title={"Empower Your Vision with Us"}
@@ -73,7 +73,7 @@ const Why = () => {
               />
             </div>
 
-            <div className="grid md:grid-cols-2 gap-3 md:pl-5">
+            <Scroll className="grid md:grid-cols-2 gap-3 md:pl-5">
               {/* 1 */}
               <Link
                 className="service cursor-pointer hover:bg-lighDark  rounded transition-all ease-linear hover:shadow hover:shadow-primary bg-lighDark relative flex justify-between flex-col p-5 "
@@ -133,8 +133,8 @@ const Why = () => {
 
                 <div className="absolute top-0 md:left-0 object-contain  text-[8rem] text-dark  quarter-circle-div-4 md:rotate-90 shadow-xl right-0 -rotate-180"></div>
               </Link>
-            </div>
-          </div>
+            </Scroll>
+          </Scroll>
         </div>
       </div>
       {/* </Scroll> */}

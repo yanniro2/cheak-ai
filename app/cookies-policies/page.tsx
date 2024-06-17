@@ -13,6 +13,7 @@ import {
   AiOutlineMail,
 } from "react-icons/ai";
 import Cookie from "../../components/mini/Cookie";
+import Scroll from "@/components/animation/Scroll";
 // import Cookie from "@/components/mini/Cookie";
 type Props = {};
 
@@ -34,9 +35,9 @@ const page = (props: Props) => {
           />
 
           {sections.map((section, index) => (
-            <div key={index} className="w-full step-box gap-[1rem] text ">
+            <Scroll key={index} className="w-full step-box gap-[1rem] text ">
               <h2 className="font-semibold font-poppins text-primary flex items-center gap-[1rem] ">
-                <div className="icons-1">{renderIcon(section.icon)}</div>
+                <Scroll className="icons-1">{renderIcon(section.icon)}</Scroll>
                 {section.title}
               </h2>
               <p className="text">{section.content}</p>
@@ -78,7 +79,7 @@ const page = (props: Props) => {
                   ))}
                 </ul>
               )}
-            </div>
+            </Scroll>
           ))}
 
           {/* <button className="btn btn-1"> Remove Cookies</button> */}

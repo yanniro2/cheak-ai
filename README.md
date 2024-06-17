@@ -1,6 +1,5 @@
 # Pending
 
-    - Responsive - sub
     - Sub Scroll down animation
     - Mobile Responsive check on Mobile
     - SEO

@@ -17,6 +17,7 @@ import {
   AiFillInfoCircle,
   AiFillDatabase,
 } from "react-icons/ai";
+import Scroll from "./animation/Scroll";
 
 // Defining the Props type
 type Props = {};
@@ -85,13 +86,13 @@ const Privacy: React.FC<Props> = () => {
       <div className="container mx-auto ">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:gap-[2.5rem] py-[1rem] gap-5">
           {sections.map((section) => (
-            <div key={section.id} className="step-box gap-[1rem]">
-              <div className="flex items-center gap-[1rem]">
-                <div className="icons-1">{renderIcon(section.icon)}</div>
+            <Scroll key={section.id} className="step-box gap-[1rem]">
+              <Scroll className="flex items-center gap-[1rem]">
+                <Scroll className="icons-1">{renderIcon(section.icon)}</Scroll>
                 <h1 className="font-semibold font-poppins text-primary">
                   {section.title}
                 </h1>
-              </div>
+              </Scroll>
 
               {section.format === "main_section" ||
               section.format === "sub_section" ? (
@@ -119,7 +120,7 @@ const Privacy: React.FC<Props> = () => {
               ) : (
                 <p className="text">{section.content}</p>
               )}
-            </div>
+            </Scroll>
           ))}
         </div>
       </div>
