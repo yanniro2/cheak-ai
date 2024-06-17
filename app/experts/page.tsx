@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const Page: React.FC = () => {
   return (
     <section className="w-screen h-full flex flex-col items-center justify-center drop-shadow shadow">
-      <div className="container mx-auto p-5 flex items-center h-full flex-col gap-[1rem] md:py-[4rem] pt-[6rem]">
+      <div className="container mx-auto p-5 flex items-center h-full flex-col gap-[1rem] lg:py-[4rem] pt-[6rem]">
         <Title1
           title={"our experts"}
           subtitle={
@@ -33,8 +33,8 @@ const Page: React.FC = () => {
           {expertData.map((expert: any, index: number) => (
             <Scroll
               key={index}
-              className="w-full flex items-center justify-center flex-col md:flex-row rounded shadow-primary shadow overflow-hidden">
-              <Scroll className="md:w-1/3 h-fit overflow-hidden w-full">
+              className="w-full flex items-center justify-center flex-col lg:flex-row rounded shadow-primary shadow overflow-hidden">
+              <Scroll className="lg:w-1/3 h-fit overflow-hidden w-full">
                 <Image
                   src={expert.img}
                   alt={expert.name}
@@ -44,7 +44,7 @@ const Page: React.FC = () => {
                 />
               </Scroll>
 
-              <Scroll className="md:w-2/3 md:h-full flex flex-col items-start justify-center bg-lighDark p-5  gap-[1rem] text-left md:pl-[3rem] w-full ">
+              <Scroll className="lg:w-2/3 lg:h-full flex flex-col items-start justify-center bg-lighDark p-5  gap-[1rem] text-left lg:pl-[3rem] w-full ">
                 <Scroll>
                   <Scroll className="h1">{expert.name}</Scroll>
                   <Scroll className="text-primary font-semibold">

@@ -95,7 +95,7 @@ export default function Page({ params }: { params: { slug: string } }) {
           </Scroll>
         </Scroll>
 
-        <Scroll className="flex  justify-between gap-[1rem] md:flex-row flex-col">
+        <Scroll className="flex  justify-between gap-[1rem] lg:flex-row flex-col">
           {serviceToRender.sub_sections.map((subSection, index) => (
             <Scroll
               key={index}

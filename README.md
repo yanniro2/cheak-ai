@@ -1,7 +1,6 @@
 # Pending
 
-    - Sub Scroll down animation
-    - Mobile Responsive check on Mobile
+    - Tab Responsive Check
     - SEO
     - Contact us form Working
     - NewsLetter form Working

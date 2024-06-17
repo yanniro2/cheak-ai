@@ -27,11 +27,11 @@ function ServiceSlug({
             Back
           </Link>
         </Scroll>
-        <Scroll className="flex w-full items-center justify-between md:gap-[3rem] bg-lighDark md:p-[2rem] rounded shadow-lg md:flex-row flex-col-reverse text-center md:text-left p-3 gap-3 ">
-          <Scroll className="md:w-3/4 md:text-xl font-light font-open text-white w-full">
+        <Scroll className="flex w-full items-center justify-between md:gap-[3rem] bg-lighDark md:p-[2rem] rounded shadow-lg lg:flex-row flex-col-reverse text-center lg:text-left p-3 gap-3 ">
+          <Scroll className="lg:w-3/4 md:text-xl font-light font-open text-white w-full">
             {main}
           </Scroll>
-          <Scroll className="md:w-1/4 text-primary font-poppins w-full">
+          <Scroll className="lg:w-1/4 text-primary font-poppins w-full">
             {description}
           </Scroll>
         </Scroll>

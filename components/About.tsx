@@ -26,8 +26,8 @@ const About = () => {
           </div>
         </Scroll>
 
-        <div className="w-full flex items-center justify-between gap-[1rem] md:flex-row flex-col">
-          <Scroll className="md:w-1/2 h-[60vh] flex w-full">
+        <div className="w-full flex items-center justify-between gap-[1rem] lg:flex-row flex-col">
+          <Scroll className="lg:w-1/2 lg:h-[60vh]  flex w-full bg-orange-400">
             <Image
               src="/assets/img/about.jpeg"
               width="1000"
@@ -36,7 +36,7 @@ const About = () => {
               className="object-cover rounded"
             />
           </Scroll>
-          <Scroll className="md:w-1/2  lg:h-full md:h-[60vh] bg-lighDark rounded flex flex-col lg:p-[3rem]  shadow-lg w-full p-[1.5rem]">
+          <Scroll className="lg:w-1/2  lg:h-full bg-lighDark rounded flex flex-col lg:p-[3rem]  shadow-lg w-full p-[1.5rem]">
             <h3 className="capitalize text-3xl font-poppins text-primary">
               our story
             </h3>
