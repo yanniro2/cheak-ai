@@ -29,7 +29,7 @@ function page() {
           title={"How It Works"}
           subtitle={"Book a consulting appoitment with us and let us help you."}
         />
-        <Scroll className="w-full h-full flex flex-col gap-[6rem]">
+        <div className="w-full h-full flex flex-col gap-[6rem]">
           {data.howItWorksSteps.map((step, index) => (
             <Scroll
               key={index}
@@ -85,7 +85,7 @@ function page() {
               </div>
             </Scroll>
           ))}
-        </Scroll>
+        </div>
       </div>
       {/* </Scroll> */}
     </section>
