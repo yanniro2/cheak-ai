@@ -14,7 +14,8 @@ const Banner = (props: Props) => {
             allowFullScreen
             loading="lazy"
             className="rounded overflow-hidden w-full h-[20rem] lg:h-[60vh]"
-            referrerPolicy="no-referrer-when-downgrade"></iframe>
+            referrerPolicy="no-referrer-when-downgrade"
+            title="location map"></iframe>
         </div>
         <div className="lg:w-1/2 lg:pl-[3rem] flex flex-col gap-[1rem]">
           <div>

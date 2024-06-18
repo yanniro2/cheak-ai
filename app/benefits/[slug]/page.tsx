@@ -105,7 +105,6 @@ export default function Page({ params }: { params: { slug: string } }) {
               <h2 className="text-xl font-poppins font-semibold ">
                 {subSection.title}
               </h2>
-
               <p className="text font-open group-hover:text-white">
                 {subSection.brief}
               </p>
