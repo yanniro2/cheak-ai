@@ -216,9 +216,9 @@ const Contact = () => {
                 ))}
               </div>
               <Scroll className="pt-[2rem]">
-                <h4 className="text-xl font-poppins font-semibold">
+                <h3 className="text-xl font-poppins font-semibold">
                   Social Media
-                </h4>
+                </h3>
                 <div className="flex gap-[1rem] mt-4 items-center">
                   {contactData.socialMedia.map((social, index) => (
                     <Link
@@ -312,6 +312,7 @@ const Contact = () => {
                     className="input"
                     defaultValue={formValues.service}
                     onChange={handleChange}
+                    aria-label="service select state"
                     required>
                     <option value="">Select a service</option>
                     <option value="AI Model Training">AI Model Training</option>
