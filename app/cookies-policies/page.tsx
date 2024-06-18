@@ -61,7 +61,7 @@ const page = (props: Props) => {
                             href={item.url}
                             className="text-blue-600 underline"
                             aria-label={item.name}>
-                            {/* {item.url} */}
+                            [Read more]
                           </a>
                         </>
                       )}
@@ -73,7 +73,7 @@ const page = (props: Props) => {
                             href={item.url}
                             className="text-blue-600 underline"
                             aria-label={item.name}>
-                            {item.url}
+                            [Read more]
                           </a>
                         </>
                       )}

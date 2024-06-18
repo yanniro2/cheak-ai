@@ -1,6 +1,7 @@
 # Pending
 
-    - SEO [home , Aboutus , services[4 main , 6 sub] , Benifits [5 sub] , How it works[expert] , Why choose us[4 sub], FAQ , Contact us , terms & conditions , Privacy Policy , Coookies Policies , loading , errors]
+    - SEO [Coookies Policies , loading , errors]
+    - Two Pages are pending [Stack testing feedback]
     - Frontend testing
     - Contact us form Working
     - NewsLetter form Working
