@@ -14,7 +14,8 @@ import {
 } from "react-icons/ai";
 import Cookie from "../../components/mini/Cookie";
 import Scroll from "@/components/animation/Scroll";
-// import Cookie from "@/components/mini/Cookie";
+import Link from "next/link";
+
 type Props = {};
 
 export const metadata: Metadata = {
@@ -28,7 +29,7 @@ const page = (props: Props) => {
   return (
     <>
       <section className="w-screen h-full flex flex-col items-center justify-center drop-shadow-md bg-gray-50 relative">
-        <div className="container mx-auto  flex items-center h-full flex-col gap-4 md:py-16 pt-24 p-3 lg:px-0">
+        <div className="container mx-auto flex items-center h-full flex-col gap-4 md:py-16 pt-24 p-3 lg:px-0">
           <Title1
             title={"Cookies Policies"}
             subtitle={"Learn how we protect your data."}
@@ -57,24 +58,32 @@ const page = (props: Props) => {
                             {item.browser}
                           </strong>
                           :{" "}
-                          <a
-                            href={item.url}
-                            className="text-blue-600 underline"
-                            aria-label={item.name}>
-                            [Read more]
-                          </a>
+                          {item.url ? (
+                            <Link
+                              href={item.url}
+                              className="text-blue-600 underline"
+                              aria-label={item.name}>
+                              [Read more]
+                            </Link>
+                          ) : (
+                            "[Read more]"
+                          )}
                         </>
                       )}
                       {item.name && (
                         <>
                           <strong className="text-secondry">{item.name}</strong>
                           :{" "}
-                          <a
-                            href={item.url}
-                            className="text-blue-600 underline"
-                            aria-label={item.name}>
-                            [Read more]
-                          </a>
+                          {item.url ? (
+                            <Link
+                              href={item.url}
+                              className="text-blue-600 underline"
+                              aria-label={item.name}>
+                              [Read more]
+                            </Link>
+                          ) : (
+                            "[Read more]"
+                          )}
                         </>
                       )}
                     </li>
