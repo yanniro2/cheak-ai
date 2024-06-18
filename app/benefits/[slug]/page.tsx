@@ -102,9 +102,9 @@ export default function Page({ params }: { params: { slug: string } }) {
               key={index}
               className="p-3 rounded flex flex-col  gap-3  cursor-pointer hover:scale-105 transition-all ease-linear group hover:shadow-md hover:shadow-primary border border-primary hover:bg-primary group">
               <div className="icons-1">{renderIcon(subSection.icon)}</div>
-              <h3 className="text-xl font-poppins font-semibold ">
+              <h2 className="text-xl font-poppins font-semibold ">
                 {subSection.title}
-              </h3>
+              </h2>
 
               <p className="text font-open group-hover:text-white">
                 {subSection.brief}
