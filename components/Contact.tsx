@@ -239,8 +239,12 @@ const Contact = () => {
                 Add your details
               </Scroll>
               <form
-                onSubmit={handleSubmit}
-                className="flex flex-col w-full gap-[1rem]">
+                // onSubmit={handleSubmit}
+                className="flex flex-col w-full gap-[1rem]"
+                action="https://formkeep.com/f/65392f2dc164"
+                accept-charset="UTF-8"
+                encType="multipart/form-data"
+                method="POST">
                 <Scroll className="box-1">
                   <input
                     type="text"

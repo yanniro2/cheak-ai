@@ -1,6 +1,5 @@
 # Pending
 
-    - SEO [Coookies Policies , loading , errors]
     - Two Pages are pending [Stack testing feedback]
     - Frontend testing
     - Contact us form Working
