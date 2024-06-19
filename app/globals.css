@@ -130,6 +130,10 @@
   @apply border border-primary placeholder:text-slate-600 outline-none bg-transparent text-white py-4 px-6 rounded font-poppins font-light w-full  focus:border-secondry
       focus:invalid:border-pink-500 focus:invalid:ring-pink-500;
 }
+.input-l {
+  @apply border border-primary placeholder:text-slate-600 outline-none bg-transparent text-white py-4 px-6 rounded font-poppins font-light w-full  focus:border-secondry rounded-r-none
+      focus:invalid:border-pink-500 focus:invalid:ring-pink-500;
+}
 .input-red {
   @apply border border-red-500 placeholder:text-slate-600 outline-none bg-transparent text-white py-4 px-6 rounded font-poppins font-light w-full;
 }
@@ -184,4 +188,12 @@
 
 .link-underline {
   @apply underline uppercase font-semibold text-primary shadow-primary font-poppins cursor-pointer hover:text-secondry transition-all;
+}
+
+.headline-2 {
+  @apply text-xl font-poppins text-primary font-semibold;
+}
+
+.box-4 {
+  @apply w-full flex flex-col gap-3 bg-lighDark text-white p-5;
 }
