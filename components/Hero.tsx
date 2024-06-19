@@ -6,6 +6,7 @@ import Tilty from "react-tilty";
 import Image from "next/image";
 import Scroll from "./animation/Scroll";
 import Link from "next/link";
+import HeroBanner from "./HeroBanner";
 
 function Hero() {
   return (
@@ -45,7 +46,7 @@ function Hero() {
         </Scroll>
 
         <Scroll className="lg:w-1/2  w-full h-full  lg:items-center flex-col justify-center gap-3 overflow-hidden relative object-contain shadow-box hidden md:flex lg:flex">
-          <Tilty
+          {/* <Tilty
             scale={1.2}
             reverse
             axis="X"
@@ -57,7 +58,8 @@ function Hero() {
               alt="img"
               className="object-contain  lg:block w-full h-full"
             />
-          </Tilty>
+          </Tilty> */}
+          <HeroBanner />
         </Scroll>
         <Image
           src="/assets/img/hero.png"

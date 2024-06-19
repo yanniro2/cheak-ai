@@ -9,6 +9,7 @@ import Why from "@/components/Why";
 import "animate.css";
 import { Metadata } from "next";
 import Loading from "./loading";
+import HeroBanner from "@/components/HeroBanner";
 
 export const metadata: Metadata = {
   title: "Home - Check AI",
@@ -18,6 +19,7 @@ export default function Home() {
   return (
     <>
       {/* <Header /> */}
+      {/* <HeroBanner /> */}
       <Hero />
       <About />
       <Services />

@@ -12,6 +12,7 @@
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.3.0",
     "animate.css": "^4.1.1",
+    "animejs": "^3.2.2",
     "framer-motion": "^11.2.5",
     "next": "14.2.3",
     "react": "^18",
@@ -21,6 +22,7 @@
     "react-tilty": "^3.0.0"
   },
   "devDependencies": {
+    "@types/animejs": "^3.1.12",
     "@types/node": "^20",
     "@types/react": "^18.3.1",
     "@types/react-dom": "^18.3.0",
