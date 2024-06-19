@@ -122,15 +122,28 @@ const Footer = () => {
             </div>
 
             <div className="flex py-2 flex-col gap-3">
-              <label htmlFor="nemail" className="text-xl font-bold  z-20">
+              <label htmlFor="nemail" className="text-xl font-bold z-20">
                 Subscribe to our Newsletter
               </label>
-              <input
-                type="email"
-                placeholder="Email Address"
-                className="input"
-                id="nemail"
-              />
+              <form
+                className="flex items-center"
+                action="https://formkeep.com/f/dc981753c9e4"
+                acceptCharset="UTF-8"
+                encType="multipart/form-data"
+                method="POST">
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  className="input-l"
+                  id="nemail"
+                />
+                <button
+                  className="border-primary bg-primary py-4 px-6 flex items-center justify-center border rounded-r font-poppins uppercase"
+                  type="submit"
+                  title="submitbtn">
+                  submit
+                </button>
+              </form>
             </div>
           </div>
         </div>

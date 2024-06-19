@@ -1,6 +1,5 @@
 # Pending
 
-    - Two Pages are pending [Stack testing feedback]
     - Frontend testing
     - Contact us form Working
     - NewsLetter form Working
