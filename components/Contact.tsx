@@ -386,6 +386,7 @@ const Contact = () => {
                     <Link
                       href="/Terms-and-conditions"
                       className="link-2"
+                      target="_blank"
                       aria-label={"terms of use"}>
                       terms of use
                     </Link>
@@ -393,6 +394,7 @@ const Contact = () => {
                     <Link
                       href="/privacy-policy"
                       className="link-2"
+                      target="_blank"
                       aria-label={"privacy policy"}>
                       privacy policy
                     </Link>
