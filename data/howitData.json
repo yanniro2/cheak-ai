@@ -81,7 +81,7 @@
       "subLinks": [
         {
           "text": "Collaboration Tools",
-          "url": "/services/ai-startups"
+          "url": "/howItWorks/Collaborate"
         }
       ],
       "brief": [
@@ -103,11 +103,7 @@
       "subLinks": [
         {
           "text": "Implementation Guide",
-          "url": "/services/ai-startups"
-        },
-        {
-          "text": "Optimization Tips",
-          "url": "/benefits/multi-device-testing-system"
+          "url": "/howItWorks/Implement"
         }
       ],
       "brief": [

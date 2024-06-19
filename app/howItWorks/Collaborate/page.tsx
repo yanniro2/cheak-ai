@@ -1,7 +1,13 @@
 import React from "react";
 import Title1 from "@/components/mini/Title";
+// import { Scroll } from "@react-three/drei";
+import Link from "next/link";
+import Scroll from "@/components/animation/Scroll";
+import { Metadata } from "next";
 type Props = {};
-
+export const metadata: Metadata = {
+  title: "Collaborate on Solutions",
+};
 const page = (props: Props) => {
   return (
     <section className="w-screen h-full flex flex-col items-center justify-center drop-shadow shadow">
@@ -10,6 +16,14 @@ const page = (props: Props) => {
           title={"Collaborate on Solutions"}
           subtitle={"Develop Custom Fraud Detection Strategies"}
         />
+        <Scroll className="w-full">
+          <Link
+            href="/howItWorks"
+            className="cursor-pointer hover:text-primary underline text transition-all"
+            aria-label={"benifits"}>
+            Back
+          </Link>
+        </Scroll>
 
         <p className="">
           Collaborate with our team to develop customized fraud detection
