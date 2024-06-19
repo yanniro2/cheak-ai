@@ -241,7 +241,10 @@ const Contact = () => {
               <form
                 // onSubmit={handleSubmit}
                 className="flex flex-col w-full gap-[1rem]"
-                action="https://formkeep.com/f/65392f2dc164"
+                action="https://formkeep.com/f/82ec647bef8a"
+                // action={
+                //   "https://formkeep.com/p/53c8f60bdf8e6d76faade7c5835fc758"
+                // }
                 accept-charset="UTF-8"
                 encType="multipart/form-data"
                 method="POST">
@@ -381,14 +384,14 @@ const Contact = () => {
                     className="text-primary flex gap-1 flex-wrap ">
                     I agree to the
                     <Link
-                      href="/"
+                      href="/Terms-and-conditions"
                       className="link-2"
                       aria-label={"terms of use"}>
                       terms of use
                     </Link>
                     and
                     <Link
-                      href="/"
+                      href="/privacy-policy"
                       className="link-2"
                       aria-label={"privacy policy"}>
                       privacy policy
