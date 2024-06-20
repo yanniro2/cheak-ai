@@ -241,7 +241,7 @@ const Contact = () => {
               <form
                 // onSubmit={handleSubmit}
                 className="flex flex-col w-full gap-[1rem]"
-                action="https://formkeep.com/f/82ec647bef8a"
+                action="https://formkeep.com/f/cb370d9e61a6"
                 // action={
                 //   "https://formkeep.com/p/53c8f60bdf8e6d76faade7c5835fc758"
                 // }

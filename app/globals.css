@@ -37,6 +37,10 @@
     /* background-color: transparent; */
 }
 
+.shadow-box-hero {
+   filter: drop-shadow(35px 6px 10px #6608e15f);
+}
+
 .shadow-text {
   filter: drop-shadow(5px 5px 10px #6608e1);
 }

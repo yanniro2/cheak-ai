@@ -45,7 +45,7 @@ function Hero() {
           </div>
         </Scroll>
 
-        <Scroll className="lg:w-1/2  w-full h-full  lg:items-center flex-col justify-center gap-3 overflow-hidden relative object-contain shadow-box hidden md:flex lg:flex">
+        <Scroll className="lg:w-1/2  w-full h-full  lg:items-center flex-col justify-center gap-3 overflow-hidden relative object-contain shadow-box-hero  hidden md:flex lg:flex">
           {/* <Tilty
             scale={1.2}
             reverse
