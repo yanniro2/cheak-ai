@@ -4,6 +4,8 @@
     - Copy text background color change
     - Frontend testing
     - Contact us form Working
+    - After submiting everything is be null check
+    - Add cancel Button
     - NewsLetter form Working
 
 ## Check Again buget list

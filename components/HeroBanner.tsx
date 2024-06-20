@@ -108,9 +108,9 @@ function HeroBanner({}: Props) {
     };
   }, []);
   return (
-    <div className="home" ref={sphereRef}>
-      <div className="animation-wrapper">
-        <div className="sphere-animation">
+    <div className="flex items-center justify-center" ref={sphereRef}>
+      <div className="w-1/2 pb-[1/2]">
+        <div className="lg:absolute top-1/2 left-1/2 transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:w-[580px]  lg:h-[580px] w-full h-[50vh] flex items-center justify-center">
           <svg className="sphere" viewBox="0 0 440 440" stroke="#0f172a">
             <defs>
               <linearGradient

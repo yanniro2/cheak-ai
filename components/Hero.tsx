@@ -14,7 +14,7 @@ function Hero() {
       className="w-screen h-screen flex items-center justify-center drop-shadow shadow  lg:pt-[6rem] lg:p-0"
       id="home">
       <div className="container mx-auto p-5 flex items-center h-full flex-col lg:flex-row">
-        <Scroll className="lg:w-1/2 w-full h-full flex items-center flex-col justify-center gap-3 pt-[4rem] lg:p-0">
+        <Scroll className="lg:w-1/2 w-full h-full flex items-center flex-col justify-center gap-3 pt-[4rem] lg:p-0 ">
           <div className="flex flex-col gap-1 relative ">
             <div className="px-4 py-1 border rounded-full w-fit backdrop-blur backdrop-brightness-50 font-open font-extralight text-[14px] bg-secondry shadow-md shadow-secondry z-[5] ">
               Reimagine the World!
@@ -30,7 +30,7 @@ function Hero() {
               company, leverages advance architecture and distributed computing
               to bring AI to the masses while solving real world problems
             </p>
-            <div className="w-[20rem] h-[20rem]   rounded-full   absolute -top-[50%] lg:-left-[2rem] -z-1  shadow-box bg-primary/5 left-0 "></div>
+            <div className="w-[20rem] h-[20rem]   rounded-full   absolute -top-[50%] lg:-left-[2rem] -z-1  shadow-box bg-primary/5 left-0 -translate-x-1/2 lg:translate-x-0 -translate-y-1/4 lg:translate-y-0"></div>
           </div>
           <div className="lg:flex lg:items-center gap-3 justify-start w-full flex-col lg:flex-row items-start hidden">
             <Link href="#services" className="btn btn-1" aria-label={"service"}>
