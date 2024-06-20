@@ -4,6 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
+::selection {
+  background-color: #6608e1; /* Change this to your desired background color */
+  color: #fff; /* Change this to your desired text color */
+}
+
 .layout-1 {
   @apply w-screen h-full flex flex-col items-center justify-center drop-shadow shadow;
 }

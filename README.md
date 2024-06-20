@@ -1,6 +1,5 @@
 # Pending
 
-    - Hero banner responsive check
     - Copy text background color change
     - Frontend testing
     - Contact us form Working
