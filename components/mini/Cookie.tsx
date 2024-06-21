@@ -1,9 +1,9 @@
 "use client";
 import React, { useState, useEffect } from "react";
 
-type Props = {};
 
-const Cookie = (props: Props) => {
+
+const Cookie = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [showSettings, setShowSettings] = useState(false);
 

@@ -1,14 +1,8 @@
+import { NotificationProps } from "@/types";
 import React from "react";
 import { IoIosCloseCircle } from "react-icons/io";
 
-type Props = {
-  message: string | null;
-  handleClose: () => void;
-  time: number;
-  title: string;
-};
-
-const Notifications: React.FC<Props> = ({
+const Notifications: React.FC<NotificationProps> = ({
   message,
   handleClose,
   title,

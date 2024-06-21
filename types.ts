@@ -225,3 +225,10 @@ export type CookiePolicyContent = {
   phone: string;
   sections: CookiePolicySection[];
 };
+
+export type NotificationProps = {
+  message: string | null;
+  handleClose: () => void;
+  time: number;
+  title: string;
+};
