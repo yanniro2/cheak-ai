@@ -26,30 +26,30 @@ const page = () => {
           </Link>
         </Scroll>
 
-        <p className="">
+        <Scroll className="">
           Implement the agreed-upon AI-based solutions and work with us to
           optimize and fine-tune them for maximum effectiveness. In your startup
           operations, ensuring that all aspects are covered and the transition
           to AI-based solutions is smooth.
-        </p>
-        <p className="">
+        </Scroll>
+        <Scroll className="">
           The final step involves putting the developed AI-based solutions into
           action. Our team will assist in the implementation process, ensuring
           everything runs smoothly. Post-implementation, we will work together
           to optimize and fine-tune the solutions, ensuring they deliver the
           desired results and drive your startup forward.
-        </p>
+        </Scroll>
 
-        <div className="box-4">
+        <Scroll className="box-4">
           <h2 className="headline-2">Our Approach</h2>
           <p className="mt-4 ">
             Our approach ensures that the AI-based solutions are seamlessly
             integrated into your startup’s operations. We focus on covering all
             aspects of the transition to ensure it is smooth and effective.
           </p>
-        </div>
+        </Scroll>
 
-        <div className="box-4">
+        <Scroll className="box-4">
           <h2 className="headline-2">Benefits of Implementation</h2>
           <ul className="list-disc pl-5  w-full">
             <li className="mb-2">
@@ -66,9 +66,9 @@ const page = () => {
               Enhanced operational efficiency and decision-making capabilities.
             </li>
           </ul>
-        </div>
+        </Scroll>
 
-        <div className="box-4">
+        <Scroll className="box-4">
           <h2 className="headline-2">Steps to Implementation</h2>
           <ol className="list-decimal pl-5 ">
             <li className="mb-2">
@@ -85,7 +85,7 @@ const page = () => {
               needs.
             </li>
           </ol>
-        </div>
+        </Scroll>
       </div>
     </section>
   );
