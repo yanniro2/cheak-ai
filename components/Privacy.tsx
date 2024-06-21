@@ -20,7 +20,7 @@ import {
 import Scroll from "./animation/Scroll";
 
 // Defining the Props type
-type Props = {};
+
 
 // Define PrivacyPolicyData type
 interface PrivacyPolicySection {
@@ -59,7 +59,7 @@ const iconComponents = {
 };
 
 // Component definition
-const Privacy: React.FC<Props> = () => {
+const Privacy = () => {
   // Destructuring the data
   const {
     company_name,

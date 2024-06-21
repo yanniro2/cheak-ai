@@ -16,13 +16,13 @@ import Cookie from "../../components/mini/Cookie";
 import Scroll from "@/components/animation/Scroll";
 import Link from "next/link";
 
-type Props = {};
+
 
 export const metadata: Metadata = {
   title: "Cookies Policies",
 };
 
-const page = (props: Props) => {
+const page = () => {
   const { title, lastUpdated, address, email, phone, sections } =
     cookiePolicyContent as CookiePolicyContent;
 

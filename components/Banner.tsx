@@ -1,9 +1,8 @@
 import Link from "next/link";
 import React from "react";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
-type Props = {};
 
-const Banner = (props: Props) => {
+const Banner = () => {
   return (
     <section className="w-full  bg-primary ">
       <div className="container mx-auto flex lg:flex-row flex-col items-center justify-between p-[3rem] rounded gap-[3rem]">

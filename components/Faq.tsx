@@ -12,7 +12,7 @@ const Faq = () => {
   const [selectedQuestion, setSelectedQuestion] = useState<number | null>(0); // Explicitly define the type
 
   const handleClick = (index: number) => {
-    // Define the type for the 'index' parameter
+
     setSelectedQuestion(selectedQuestion === index ? null : index);
   };
 

@@ -2,9 +2,9 @@
 import React, { useEffect, useRef } from "react";
 import anime from "animejs";
 
-type Props = {};
 
-function HeroBanner({}: Props) {
+
+function HeroBanner() {
   const sphereRef = useRef<HTMLDivElement | null>(null);
 
   const fitElementToParent = (el: HTMLElement, padding: number = 0) => {

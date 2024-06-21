@@ -4,12 +4,12 @@ import { Metadata } from "next";
 import Terms from "@/components/Terms";
 import Banner from "@/components/Banner";
 import Privacy from "@/components/Privacy";
-type Props = {};
+
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
 };
-const page = (props: Props) => {
+const page = () => {
   return (
     <section className="w-screen h-full flex flex-col items-center justify-center drop-shadow shadow">
       <div className="container mx-auto p-3 flex items-center h-full flex-col gap-[1rem] md:py-[4rem] pt-[6rem]">

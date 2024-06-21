@@ -4,12 +4,12 @@ import Link from "next/link";
 import Scroll from "@/components/animation/Scroll";
 import { Metadata } from "next";
 
-type Props = {};
+
 export const metadata: Metadata = {
   title: "Implement and Optimize",
 };
 
-const page: React.FC<Props> = () => {
+const page = () => {
   return (
     <section className="w-screen h-full flex flex-col items-center justify-center drop-shadow shadow">
       <div className="container mx-auto p-5 flex items-center h-full flex-col gap-[1rem] md:py-[4rem] pt-[6rem]">
