@@ -1,0 +1,17 @@
+image: node:20
+
+
+stages:
+  - build
+
+pages:
+  stage: build
+  script:
+    - npm install
+    - npm run build
+  artifacts:
+    paths:
+      - out
+  publish: out
+  only:
+    - main
