@@ -29,7 +29,6 @@ const Contact = () => {
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
   const [open, setOpen] = useState<boolean>(false);
   const [message, setMessage] = useState<string | null>("");
-  const [submissionCount, setSubmissionCount] = useState<number>(0);
   const [time, setTime] = useState<number>(5);
 
   const handleOpen = (message: string | null) => {
@@ -47,7 +46,7 @@ const Contact = () => {
   };
 
   const handleClose = () => {
-    setOpen((open) => false);
+    setOpen(false);
   };
 
   const handleChange = (
@@ -159,11 +158,21 @@ const Contact = () => {
         }
       } catch (error) {
         handleOpen("An error occurred. Please try again later.");
-      } finally {
-        // setLoading(false);
       }
-      // Reset form after submission
     }
+  };
+
+  const handleReset = () => {
+    setFormValues({
+      fname: "",
+      lname: "",
+      companyName: "",
+      email: "",
+      phoneNumber: "",
+      description: "",
+      service: "",
+    });
+    setErrors({});
   };
 
   return (
@@ -242,9 +251,6 @@ const Contact = () => {
                 // onSubmit={handleSubmit}
                 className="flex flex-col w-full gap-[1rem]"
                 action="https://formkeep.com/f/cb370d9e61a6"
-                // action={
-                //   "https://formkeep.com/p/53c8f60bdf8e6d76faade7c5835fc758"
-                // }
                 accept-charset="UTF-8"
                 encType="multipart/form-data"
                 method="POST">
@@ -255,7 +261,7 @@ const Contact = () => {
                     name="fname"
                     className="input"
                     placeholder="First name"
-                    defaultValue={formValues.fname}
+                    value={formValues.fname}
                     onChange={handleChange}
                     pattern="[A-Za-zÀ-ÿ\s]+"
                     required
@@ -267,7 +273,7 @@ const Contact = () => {
                     name="lname"
                     className="input"
                     placeholder="Last name"
-                    defaultValue={formValues.lname}
+                    value={formValues.lname}
                     onChange={handleChange}
                     pattern="[A-Za-zÀ-ÿ\s]+"
                     required
@@ -281,7 +287,7 @@ const Contact = () => {
                     name="companyName"
                     className="input"
                     placeholder="Company Name"
-                    defaultValue={formValues.companyName}
+                    value={formValues.companyName}
                     onChange={handleChange}
                     pattern="^\w[\w.\-#&\s]*$"
                   />
@@ -293,7 +299,7 @@ const Contact = () => {
                     name="email"
                     className="input"
                     placeholder="Email address"
-                    defaultValue={formValues.email}
+                    value={formValues.email}
                     onChange={handleChange}
                     pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
                     required
@@ -306,7 +312,7 @@ const Contact = () => {
                     name="phoneNumber"
                     className="input"
                     placeholder="Phone number"
-                    defaultValue={formValues.phoneNumber}
+                    value={formValues.phoneNumber}
                     onChange={handleChange}
                     pattern="^(\+|\d)[0-9]{7,16}$"
                     required
@@ -317,7 +323,7 @@ const Contact = () => {
                     id="service"
                     name="service"
                     className="input"
-                    defaultValue={formValues.service}
+                    value={formValues.service}
                     onChange={handleChange}
                     aria-label="service select state"
                     required>
@@ -369,11 +375,11 @@ const Contact = () => {
                   )}
 
                   {errors.email && (
-                    <span className="text-red-500">{errors.lname}</span>
+                    <span className="text-red-500">{errors.email}</span>
                   )}
 
                   {errors.phoneNumber && (
-                    <span className="text-red-500">{errors.lname}</span>
+                    <span className="text-red-500">{errors.phoneNumber}</span>
                   )}
                 </Scroll>
 
@@ -400,9 +406,18 @@ const Contact = () => {
                     </Link>
                   </label>
                 </Scroll>
-                <button type="submit" className="btn btn-1" title="submitbtn">
-                  Submit
-                </button>
+                <div className="flex items-center gap-3">
+                  <button type="submit" className="btn btn-1" title="submitbtn">
+                    Submit
+                  </button>
+                  <button
+                    type="button"
+                    onClick={handleReset}
+                    className="btn btn-2"
+                    title="resetbtn">
+                    Reset
+                  </button>
+                </div>
               </form>
             </div>
           </div>

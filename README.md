@@ -1,8 +1,5 @@
 # Pending
 
-    - Implemention page / [howItWorks/Implement] scroll animation
-    - Frontend testing
-    - Contact us form Working
     - After submiting everything is be null check
     - Add cancel Button
     - NewsLetter form Working
