@@ -1,9 +1,6 @@
 # Pending
 
-    - After submiting everything is be null check
-    - Add cancel Button
     - NewsLetter form Working
-    - Completed this Change git repo to main access and npm export check everything working well or not.
 
 ## Check Again buget list
 

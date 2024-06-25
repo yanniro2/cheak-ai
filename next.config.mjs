@@ -7,8 +7,8 @@ const nextConfig = {
   output: "export",
   async generateStaticParams() {
     return {
-      "/not-found": { page: "/not-found" },
-      "/loading": { page: "/loading" },
+      "./not-found.tsx": { page: "/not-found" },
+      "./loading.tsx": { page: "/loading" },
     };
   },
 };
