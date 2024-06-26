@@ -36,7 +36,7 @@ const Services = () => {
             </div>
           </Scroll>
           <div className="lg:w-1/2 lg:h-[60vh] items-start  flex flex-col w-full h-full">
-            <div className="pl-5">
+            <div>
               <Title2
                 title={"explore diverse realms"}
                 subtitle={
@@ -45,7 +45,7 @@ const Services = () => {
               />
             </div>
 
-            <div className="grid lg:grid-cols-2 gap-3">
+            <div className="grid lg:grid-cols-2 gap-3 w-full">
               {realmData.briefServices.map((service, index) => (
                 <Link
                   href={service.url}
@@ -62,7 +62,6 @@ const Services = () => {
           </div>
         </div>
       </div>
-      {/* </Scroll> */}
       <MainSection />
     </section>
   );

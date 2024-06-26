@@ -14,7 +14,7 @@ function Hero() {
       className="w-screen h-screen flex items-center justify-center drop-shadow shadow  lg:pt-[6rem] lg:p-0"
       id="home">
       <div className="container mx-auto p-5 flex items-center h-full flex-col lg:flex-row">
-        <Scroll className="lg:w-1/2 w-full h-full flex items-center flex-col justify-center gap-3 pt-[4rem] lg:p-0 ">
+        <Scroll className="lg:w-1/2 w-full h-full flex items-center flex-col justify-center gap-3 pt-[4rem] lg:p-0">
           <div className="flex flex-col gap-1 relative ">
             <div className="px-4 py-1 border rounded-full w-fit backdrop-blur backdrop-brightness-50 font-open font-extralight text-[14px] bg-secondry shadow-md shadow-secondry z-[5] ">
               Reimagine the World!
@@ -81,7 +81,6 @@ function Hero() {
           </Link>
         </div>
       </div>
-      {/* </Scroll> */}
     </section>
   );
 }

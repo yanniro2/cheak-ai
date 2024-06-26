@@ -27,13 +27,13 @@ const About = () => {
         </Scroll>
 
         <div className="w-full flex items-center justify-between gap-[1rem] lg:flex-row flex-col">
-          <Scroll className="lg:w-1/2 lg:h-[60vh]  flex w-full bg-orange-400">
+          <Scroll className="lg:w-1/2 lg:h-[60vh]  flex w-full ">
             <Image
               src="/assets/img/about.jpeg"
               width="1000"
               height="1000"
               alt="about img"
-              className="object-cover rounded"
+              className="object-cover rounded overflow-hidden"
             />
           </Scroll>
           <Scroll className="lg:w-1/2  lg:h-full bg-lighDark rounded flex flex-col lg:p-[3rem]  shadow-lg w-full p-[1.5rem]">

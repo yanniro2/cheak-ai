@@ -66,14 +66,14 @@ const Why = () => {
             </Scroll>
           </Scroll>
           <Scroll className="lg:w-1/2  items-start  flex flex-col justify-between gap-[1rem]">
-            <div className="md:pl-5">
+            <div>
               <Title2
                 title={"Empower Your Vision with Us"}
                 subtitle={"Where Innovation Meets Implementation"}
               />
             </div>
 
-            <Scroll className="grid md:grid-cols-2 gap-3 md:pl-5">
+            <Scroll className="grid md:grid-cols-2 gap-3 ">
               {/* 1 */}
               <Link
                 className="service cursor-pointer hover:bg-lighDark  rounded transition-all ease-linear hover:shadow hover:shadow-primary bg-lighDark relative flex justify-between flex-col p-5 "
