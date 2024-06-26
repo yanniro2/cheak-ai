@@ -32,6 +32,7 @@ export default function Home() {
       {/* <Footer /> */}
       {/* <Loading /> */}
       {/* <Notifications /> */}
+      
     </>
   );
 }

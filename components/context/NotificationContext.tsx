@@ -5,6 +5,11 @@ interface NotificationContextType {
   message: string;
   showMessage: (msg: string) => void;
   hideMessage: () => void;
+  handleClose: () => void;
+  time: number;
+  open: boolean;
+  title: string;
+  handleName: (name: string) => void;
 }
 
 const NotificationContext = createContext<NotificationContextType | undefined>(
@@ -15,20 +20,46 @@ const NotificationProvider: React.FC<{ children: ReactNode }> = ({
   children,
 }) => {
   const [message, setMessage] = useState<string>("");
+  const [open, setOpen] = useState<boolean>(false);
+  const [time, setTime] = useState<number>(5);
+  const [title, setTitle] = useState<string>("");
 
   const showMessage = (msg: string) => {
+    setOpen((open) => !open);
     setMessage(msg);
-    setTimeout(() => {
-      hideMessage();
-    }, 3000); // Hide message after 3 seconds
+    let timeLeft = 5; // Time in seconds
+    const timer = setInterval(() => {
+      timeLeft -= 1;
+      if (timeLeft <= 0) {
+        clearInterval(timer);
+        handleClose();
+      }
+      setTime(() => timeLeft);
+    }, 1000); // Update every second
   };
 
   const hideMessage = () => {
     setMessage("");
   };
+  const handleClose = () => {
+    setOpen(false);
+  };
+  const handleName = (name: string) => {
+    setTitle((title) => name);
+  };
 
   return (
-    <NotificationContext.Provider value={{ message, showMessage, hideMessage }}>
+    <NotificationContext.Provider
+      value={{
+        message,
+        showMessage,
+        hideMessage,
+        handleClose,
+        time,
+        open,
+        title,
+        handleName,
+      }}>
       {children}
     </NotificationContext.Provider>
   );

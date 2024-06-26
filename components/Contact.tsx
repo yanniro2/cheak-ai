@@ -423,14 +423,14 @@ const Contact = () => {
           </div>
         </div>
       </section>
-      {open && (
+      {/* {open && (
         <Notifications
           message={message}
           handleClose={handleClose}
           title="Contact Form"
           time={time}
         />
-      )}
+      )} */}
     </>
   );
 };
