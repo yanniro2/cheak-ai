@@ -121,7 +121,6 @@ const Footer = () => {
                 {contactInformation.phone}
               </Link>
             </div>
-
             <NewsLetter />
           </div>
         </div>
