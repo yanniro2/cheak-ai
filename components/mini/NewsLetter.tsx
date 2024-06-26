@@ -7,7 +7,7 @@ type Props = {};
 
 const NewsLetter = (props: Props) => {
   const [email, setEmail] = useState("");
-  const { showMessage } = useNotification();
+  const { showMessage, handleName } = useNotification();
 
   const handleSubmit = async (
     e: React.FormEvent<HTMLFormElement>,
@@ -17,6 +17,7 @@ const NewsLetter = (props: Props) => {
 
     const form = e.currentTarget;
     const formData = new FormData(form);
+    handleName("Newsletter");
 
     try {
       const response = await fetch("https://formkeep.com/f/cb370d9e61a6", {

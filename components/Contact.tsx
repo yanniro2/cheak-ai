@@ -13,7 +13,7 @@ import {
 } from "react-icons/fa";
 import Scroll from "./animation/Scroll";
 import { ContactDetails } from "@/types";
-import Notifications from "./mini/Notifications";
+import { useNotification } from "./context/NotificationContext";
 
 const Contact = () => {
   const [formValues, setFormValues] = useState({
@@ -27,27 +27,7 @@ const Contact = () => {
   });
 
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
-  const [open, setOpen] = useState<boolean>(false);
-  const [message, setMessage] = useState<string | null>("");
-  const [time, setTime] = useState<number>(5);
-
-  const handleOpen = (message: string | null) => {
-    setOpen(true);
-    setMessage(message);
-    let timeLeft = 10; // Time in seconds
-    const timer = setInterval(() => {
-      timeLeft -= 1;
-      if (timeLeft <= 0) {
-        clearInterval(timer);
-        handleClose();
-      }
-      setTime(() => timeLeft);
-    }, 1000); // Update every second
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-  };
+  const { showMessage, handleName } = useNotification();
 
   const handleChange = (
     e: React.ChangeEvent<
@@ -93,75 +73,6 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-
-    // Validate the entire form
-    const newErrors: { [key: string]: string } = {};
-    Object.entries(formValues).forEach(([fieldName, fieldValue]) => {
-      let errorMessage = "";
-      switch (fieldName) {
-        case "fname":
-          errorMessage =
-            fieldValue.trim() === "" ? "FirstName is required" : "";
-          break;
-        case "lname":
-          errorMessage = fieldValue.trim() === "" ? "LastName is required" : "";
-          break;
-        case "email":
-          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-          errorMessage = emailRegex.test(fieldValue)
-            ? ""
-            : "Please enter a valid email address";
-          break;
-        case "phoneNumber":
-          const phoneRegex =
-            /(?:([+]\d{1,4})[-.\s]?)?(?:[(](\d{1,3})[)][-.\s]?)?(\d{1,4})[-.\s]?(\d{1,4})[-.\s]?(\d{1,9})/g;
-          errorMessage = phoneRegex.test(fieldValue)
-            ? ""
-            : "Please enter a valid phone number";
-          break;
-        default:
-          break;
-      }
-      newErrors[fieldName] = errorMessage;
-    });
-
-    // Update the error state
-    setErrors(newErrors);
-
-    // Submit the form if there are no errors
-    if (Object.values(newErrors).every((error) => error === "")) {
-      console.log("Form submitted:", formValues);
-      try {
-        const response = await fetch("/api/contactUs", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ formValues }),
-        });
-        const data = await response.json();
-        if (response.ok) {
-          handleOpen(data.msg);
-          setFormValues({
-            fname: "",
-            lname: "",
-            companyName: "",
-            email: "",
-            phoneNumber: "",
-            description: "",
-            service: "",
-          });
-        } else {
-          handleOpen(data.msg);
-        }
-      } catch (error) {
-        handleOpen("An error occurred. Please try again later.");
-      }
-    }
-  };
-
   const handleReset = () => {
     setFormValues({
       fname: "",
@@ -173,6 +84,41 @@ const Contact = () => {
       service: "",
     });
     setErrors({});
+  };
+
+  const handleSubmit = async (
+    e: React.FormEvent<HTMLFormElement>,
+    showMessage: (msg: string) => void
+  ) => {
+    e.preventDefault();
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    handleName("Contact Form");
+
+    try {
+      const response = await fetch("https://formkeep.com/f/cb370d9e61a6", {
+        method: "POST",
+        body: formData,
+      });
+
+      if (response.ok) {
+        handleReset(); // Clear the form values
+        showMessage(
+          "Thank you for contacting us. We will get back to you shortly."
+        );
+      } else {
+        console.error("Failed to submit the form:", response.statusText);
+        showMessage(
+          "There was an issue with your submission. Please try again."
+        );
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      showMessage(
+        "An error occurred while submitting the form. Please try again."
+      );
+    }
   };
 
   return (
@@ -248,9 +194,8 @@ const Contact = () => {
                 Add your details
               </Scroll>
               <form
-                // onSubmit={handleSubmit}
+                onSubmit={(e) => handleSubmit(e, showMessage)}
                 className="flex flex-col w-full gap-[1rem]"
-                action="https://formkeep.com/f/cb370d9e61a6"
                 accept-charset="UTF-8"
                 encType="multipart/form-data"
                 method="POST">

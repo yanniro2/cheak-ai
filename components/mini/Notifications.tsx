@@ -4,9 +4,8 @@ import React, { useState } from "react";
 import { IoIosCloseCircle } from "react-icons/io";
 import { useNotification } from "../context/NotificationContext";
 const Notifications: React.FC = () => {
-  const { message, handleClose, time, open, handleName, title } =
-    useNotification();
-  handleName("Newsletter");
+  const { message, handleClose, time, open, title } = useNotification();
+
 
   return (
     <>
