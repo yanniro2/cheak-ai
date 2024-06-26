@@ -10,6 +10,7 @@ import "animate.css";
 import { Metadata } from "next";
 import Loading from "./loading";
 import HeroBanner from "@/components/HeroBanner";
+import Notifications from "@/components/mini/Notifications";
 
 export const metadata: Metadata = {
   title: "Home - Check AI",
@@ -30,6 +31,7 @@ export default function Home() {
       <Contact />
       {/* <Footer /> */}
       {/* <Loading /> */}
+      {/* <Notifications /> */}
     </>
   );
 }

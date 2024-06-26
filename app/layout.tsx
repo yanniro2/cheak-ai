@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import { NotificationProvider } from "@/components/context/NotificationContext";
+import Notifications from "@/components/mini/Notifications";
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -17,7 +19,6 @@ export const metadata: Metadata = {
   keywords: ["AI", "Artificial Intelligence", "Technology", "Contact"],
 };
 
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -25,11 +26,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="font-open scroll-smooth bg-dark text-white relative">
-        <Header />
-        {children}
-        <Footer />
-      </body>
+      <NotificationProvider>
+        <body className="font-open scroll-smooth bg-dark text-white relative">
+          <Header />
+          {children}
+          <Footer />
+          <Notifications />
+        </body>
+      </NotificationProvider>
     </html>
   );
 }
