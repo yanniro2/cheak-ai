@@ -49,7 +49,7 @@ export default function Page({ params }: { params: { slug: string } }) {
   const { whyChooseUs } = data;
 
   const serviceToRender = whyChooseUs.find(
-    (service) => service.url === `/why-choose-us/${params.slug}`
+    (service) => service.url === `/whyChooseUs/${params.slug}`
   );
 
   if (!serviceToRender)
@@ -68,7 +68,7 @@ export default function Page({ params }: { params: { slug: string } }) {
         />
         <Scroll className="w-full">
           <Link
-            href="/why-choose-us"
+            href="/whyChooseUs"
             className="cursor-pointer hover:text-primary underline text transition-all"
             aria-label={"why choose us"}>
             Back
@@ -130,7 +130,7 @@ export default function Page({ params }: { params: { slug: string } }) {
         <NextNavigation
           slug={params.slug}
           data={whyChooseUs}
-          service={"why-choose-us"}
+          service={"whyChooseUs"}
         />
       </div>
     </section>

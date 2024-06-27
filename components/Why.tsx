@@ -10,7 +10,7 @@ const Why = () => {
   return (
     <section
       className="w-screen h-full flex flex-col items-center justify-center drop-shadow shadow"
-      id="why-choose-us">
+      id="whyChooseUs">
       {/* <Scroll> */}
       <div className="container mx-auto p-5 flex items-center h-full flex-col gap-[1rem] md:py-[4rem] pt-[6rem]">
         <Title1 title={"Why Choose Us"} subtitle={"Core Features"} />
@@ -78,7 +78,7 @@ const Why = () => {
               <Link
                 className="service cursor-pointer hover:bg-lighDark  rounded transition-all ease-linear hover:shadow hover:shadow-primary bg-lighDark relative flex justify-between flex-col p-5 "
                 aria-label={"step 1"}
-                href={"/why-choose-us/step-1"}>
+                href={"/whyChooseUs/step-1"}>
                 <div className="flex flex-col">
                   <h2 className="step-h1 ">Why Choose Us</h2>
                   <h3 className="step-h3">step 1</h3>
@@ -96,7 +96,7 @@ const Why = () => {
               <Link
                 className="service cursor-pointer hover:bg-lighDark  rounded transition-all ease-linear hover:shadow hover:shadow-primary bg-lighDark relative flex  flex-col p-5 md:items-end md:justify-end md:text-right text-left"
                 aria-label={"step 2"}
-                href={"/why-choose-us/step-2"}>
+                href={"/whyChooseUs/step-2"}>
                 <div className="flex flex-col md:items-end">
                   <h2 className="step-h1">Enhanced Security</h2>
                   <h3 className="step-h3">step 2</h3>
@@ -113,7 +113,7 @@ const Why = () => {
               <Link
                 className="service cursor-pointer hover:bg-lighDark  rounded transition-all ease-linear hover:shadow hover:shadow-primary bg-lighDark relative flex  flex-col p-5 items-start justify-end text-left"
                 aria-label={"step 3"}
-                href={"/why-choose-us/step-3"}>
+                href={"/whyChooseUs/step-3"}>
                 <div className="flex flex-col">
                   <h2 className="step-h1">Scalability & Flexibility</h2>
                   <h3 className="step-h3">step 3</h3>
@@ -129,7 +129,7 @@ const Why = () => {
               {/* 4 */}
               <Link
                 className="service cursor-pointer   rounded transition-all ease-linear hover:shadow hover:shadow-primary relative    p-5 text-right flex items-end  group md:bg-gradient-to-l from-primary to-lighDark bg-gradient-to-r"
-                href={"/why-choose-us/startNow"}
+                href={"/whyChooseUs/startNow"}
                 aria-label={"start Now"}>
                 <h3 className="text-4xl  font-poppins md:text-right w-full text-white text-left">
                   Start Now!

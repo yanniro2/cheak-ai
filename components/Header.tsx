@@ -110,7 +110,7 @@ const Header: React.FC = () => {
           </ul>
           <div className="hidden lg:flex">
             <Link
-              href="/#why-choose-us"
+              href="/#whyChooseUs"
               className="btn btn-2"
               onClick={toggleMobileMenu}
               aria-label={"get started"}>
@@ -154,7 +154,7 @@ const Header: React.FC = () => {
             <hr className="border-lighDark border w-full" />
             <div className="flex lg:hidden w-full">
               <Link
-                href="/#why-choose-us"
+                href="/#whyChooseUs"
                 className="text-white w-full bg-primary p-3   cursor-pointer  transition-all ease-in-out uppercase font-semibold"
                 onClick={toggleMobileMenu}
                 aria-label={"why choose us"}>

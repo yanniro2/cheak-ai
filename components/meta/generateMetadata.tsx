@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     (service) => service.url === `/benefits/${params.slug}`
   );
   const whyRender = whyData.whyChooseUs.find(
-    (service) => service.url === `/why-choose-us/${params.slug}`
+    (service) => service.url === `/whyChooseUs/${params.slug}`
   );
 
   const service =

@@ -1,7 +1,7 @@
 {
   "whyChooseUs": [
     {
-      "id": "why-choose-us",
+      "id": "whyChooseUs",
       "stepNumber": "step-1",
       "title": "Why Choose Us",
       "subtitle": "Streamlined Processes",
@@ -9,7 +9,7 @@
       "subBrief": "Experience the benefits of streamlined processes. ",
       "icon": "BiCheckCircle",
       "description": "Simplify your workflows and increase efficiency with streamlined processes.",
-      "url": "/why-choose-us/step-1",
+      "url": "/whyChooseUs/step-1",
       "img1": "/assets/img/whyChooseUs/streamlined_processes_1.jpg",
       "img2": "/assets/img/whyChooseUs/streamlined_processes_2.jpg",
       "subsections": [
@@ -44,7 +44,7 @@
       "subBrief": "Stay secure with our robust cybersecurity solutions. ",
       "icon": "BiLock",
       "description": "Protect your digital assets and sensitive information with robust cybersecurity measures.",
-      "url": "/why-choose-us/step-2",
+      "url": "/whyChooseUs/step-2",
       "img1": "/assets/img/whyChooseUs/robust_cybersecurity_1.jpg",
       "img2": "/assets/img/whyChooseUs/robust_cybersecurity_2.jpg",
       "subsections": [
@@ -79,7 +79,7 @@
       "subBrief": "Experience seamless scalability with our flexible cloud integration solutions. ",
       "icon": "BiCloud",
       "description": "Scale your operations seamlessly and adapt to changing business needs with flexible cloud integration.",
-      "url": "/why-choose-us/step-3",
+      "url": "/whyChooseUs/step-3",
       "img1": "/assets/img/whyChooseUs/scalability_flexibility_1.jpg",
       "img2": "/assets/img/whyChooseUs/scalability_flexibility_2.jpg",
       "subsections": [
@@ -114,7 +114,7 @@
       "subBrief": "Take the first step towards a successful transformation with our solutions.",
       "icon": "BiPlayCircle",
       "description": "Experience the benefits of our solutions and start your journey towards success today.",
-      "url": "/why-choose-us/startNow",
+      "url": "/whyChooseUs/startNow",
       "img1": "/assets/img/whyChooseUs/start_now_1.jpg",
       "img2": "/assets/img/whyChooseUs/start_now_2.jpg",
       "subsections": [
