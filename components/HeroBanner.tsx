@@ -109,7 +109,13 @@ function HeroBanner() {
     <div className="flex items-center justify-center" ref={sphereRef}>
       <div className="w-1/2 pb-[1/2]">
         <div className="lg:absolute top-1/2 left-1/2 transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:w-[580px]  lg:h-[580px] w-full h-[50vh] flex items-center justify-center">
-          <svg className="sphere" viewBox="0 0 440 440" stroke="#0f172a">
+          <svg
+            className="sphere"
+            viewBox="0 0 440 440"
+            stroke="#0f172a"
+            width="100%"
+            height="100%"
+            xmlns="http://www.w3.org/2000/svg">
             <defs>
               <linearGradient
                 id="sphereGradient"
