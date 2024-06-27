@@ -36,7 +36,7 @@ const About = () => {
               className="object-cover rounded overflow-hidden"
             />
           </Scroll>
-          <Scroll className="lg:w-1/2  lg:h-full bg-lighDark rounded flex flex-col lg:p-[3rem]  shadow-lg w-full p-[1.5rem]">
+          <Scroll className="lg:w-1/2  lg:h-[60vh] bg-lighDark rounded flex flex-col lg:p-[3rem]  shadow-lg w-full p-[1.5rem]">
             <h3 className="capitalize text-3xl font-poppins text-primary">
               our story
             </h3>
