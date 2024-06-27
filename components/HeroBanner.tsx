@@ -2,8 +2,6 @@
 import React, { useEffect, useRef } from "react";
 import anime from "animejs";
 
-
-
 function HeroBanner() {
   const sphereRef = useRef<HTMLDivElement | null>(null);
 
