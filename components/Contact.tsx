@@ -27,6 +27,7 @@ const Contact = () => {
   });
 
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
+  const [isCheckboxChecked, setIsCheckboxChecked] = useState(false);
   const { showMessage, handleName } = useNotification();
 
   const handleChange = (
@@ -73,6 +74,10 @@ const Contact = () => {
     });
   };
 
+  const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setIsCheckboxChecked(e.target.checked);
+  };
+
   const handleReset = () => {
     setFormValues({
       fname: "",
@@ -84,6 +89,7 @@ const Contact = () => {
       service: "",
     });
     setErrors({});
+    setIsCheckboxChecked(false);
   };
 
   const handleSubmit = async (
@@ -329,7 +335,12 @@ const Contact = () => {
                 </Scroll>
 
                 <Scroll className="box-3">
-                  <input type="checkbox" id="terms" name="terms" />
+                  <input
+                    type="checkbox"
+                    id="terms"
+                    name="terms"
+                    onChange={handleCheckboxChange}
+                  />
                   <label
                     htmlFor="terms"
                     className="text-primary flex gap-1 flex-wrap ">
@@ -352,7 +363,11 @@ const Contact = () => {
                   </label>
                 </Scroll>
                 <div className="flex items-center gap-3">
-                  <button type="submit" className="btn btn-1" title="submitbtn">
+                  <button
+                    type="submit"
+                    className={`${isCheckboxChecked ? "btn btn-1" : "btn"} `}
+                    title="submitbtn"
+                    disabled={!isCheckboxChecked}>
                     Submit
                   </button>
                   <button
@@ -368,14 +383,6 @@ const Contact = () => {
           </div>
         </div>
       </section>
-      {/* {open && (
-        <Notifications
-          message={message}
-          handleClose={handleClose}
-          title="Contact Form"
-          time={time}
-        />
-      )} */}
     </>
   );
 };
