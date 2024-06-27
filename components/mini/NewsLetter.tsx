@@ -51,7 +51,7 @@ const NewsLetter = (props: Props) => {
         <form
           className="flex items-center"
           onSubmit={(e) => handleSubmit(e, showMessage)}
-          accept-charset="UTF-8"
+          acceptCharset="UTF-8"
           encType="multipart/form-data">
           <input
             placeholder="Email Address"

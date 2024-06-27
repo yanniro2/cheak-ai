@@ -202,7 +202,7 @@ const Contact = () => {
               <form
                 onSubmit={(e) => handleSubmit(e, showMessage)}
                 className="flex flex-col w-full gap-[1rem]"
-                accept-charset="UTF-8"
+                acceptCharset="UTF-8"
                 encType="multipart/form-data"
                 method="POST">
                 <Scroll className="box-1">
