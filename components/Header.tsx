@@ -118,9 +118,9 @@ const Header: React.FC = () => {
             </Link>
           </div>
 
-          <div className="lg:hidden ">
+          <div className="lg:hidden text-[1.5rem]">
             <button
-              className={`text-[1.5rem] cursor-pointer hover:text-primary transition-all ${
+              className={` cursor-pointer hover:text-primary transition-all ${
                 isMobileMenuOpen ? "text-orange" : "text-gray-200"
               }`}
               onClick={toggleMobileMenu}
@@ -136,7 +136,7 @@ const Header: React.FC = () => {
                 <Link
                   key={index}
                   href={item.url}
-                  className={` w-full bg-lighDark p-3   cursor-pointer text-[1.4rem] transition-all ease-in-out flex items-center justify-center gap-3 ${
+                  className={` w-full bg-lighDark p-3   cursor-pointer text-[1.2rem] transition-all ease-in-out flex items-center justify-center gap-3 ${
                     (pathName === item.url && pathName !== "/") ||
                     (pathName.startsWith(item.url) && item.url !== "/") ||
                     (pathName === "/" && item.url === "/")
@@ -155,7 +155,7 @@ const Header: React.FC = () => {
             <div className="flex lg:hidden w-full">
               <Link
                 href="/#why-choose-us"
-                className="text-white w-full bg-primary p-3   cursor-pointer text-[1.5rem] transition-all ease-in-out uppercase font-semibold"
+                className="text-white w-full bg-primary p-3   cursor-pointer  transition-all ease-in-out uppercase font-semibold"
                 onClick={toggleMobileMenu}
                 aria-label={"why choose us"}>
                 get started
