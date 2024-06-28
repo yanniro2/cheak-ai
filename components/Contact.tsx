@@ -29,6 +29,7 @@ const Contact = () => {
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
   const [isCheckboxChecked, setIsCheckboxChecked] = useState(false);
   const { showMessage, handleName } = useNotification();
+  const formActionUrl = process.env.NEXT_PUBLIC_FORMKEEP_URL;
 
   const handleChange = (
     e: React.ChangeEvent<
@@ -97,13 +98,20 @@ const Contact = () => {
     showMessage: (msg: string) => void
   ) => {
     e.preventDefault();
+    if (!formActionUrl) {
+      console.error("Formkeep URL is not defined in the environment variables");
+      showMessage(
+        "Form submission URL is not configured. Please contact support."
+      );
+      return;
+    }
 
     const form = e.currentTarget;
     const formData = new FormData(form);
     handleName("Contact Form");
 
     try {
-      const response = await fetch("https://formkeep.com/f/cb370d9e61a6", {
+      const response = await fetch(formActionUrl, {
         method: "POST",
         body: formData,
       });
