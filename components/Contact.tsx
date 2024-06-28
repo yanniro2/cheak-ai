@@ -111,18 +111,18 @@ const Contact = () => {
       if (response.ok) {
         handleReset(); // Clear the form values
         showMessage(
-          "Thank you for contacting us. We will get back to you shortly."
+          "Thank you for contacting us 🎉. We will get back to you shortly.📞"
         );
       } else {
         console.error("Failed to submit the form:", response.statusText);
         showMessage(
-          "There was an issue with your submission. Please try again."
+          "There was an issue with your submission. Please try again.  ⚠️"
         );
       }
     } catch (error) {
       console.error("Error submitting form:", error);
       showMessage(
-        "An error occurred while submitting the form. Please try again."
+        "❌ An error occurred while submitting the form. Please try again. ❌"
       );
     }
   };
