@@ -136,8 +136,8 @@
 }
 
 .input {
-  @apply border border-primary placeholder:text-slate-600 outline-none bg-transparent text-white py-4 px-6 rounded font-poppins font-light w-full  focus:border-secondry
-      focus:invalid:border-pink-500 focus:invalid:ring-pink-500;
+  @apply border border-primary placeholder:text-slate-600 outline-none bg-transparent  py-4 px-6 rounded font-poppins font-light w-full  focus:border-secondry
+      focus:invalid:border-pink-500 focus:invalid:ring-pink-500 bg-dark text-white;
 }
 .input-l {
   @apply border border-primary placeholder:text-slate-600 outline-none bg-transparent text-white py-4 px-6 rounded font-poppins font-light w-full  focus:border-secondry rounded-r-none
