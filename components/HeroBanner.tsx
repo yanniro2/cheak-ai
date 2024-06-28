@@ -44,7 +44,7 @@ function HeroBanner() {
             anime({
               targets: spherePathEls[i],
               stroke: {
-                value: ["#6608e1", "rgba(80,80,80,.35)"],
+                value: ["#8935f8", "rgba(80,80,80,.35)"],
                 duration: 500,
               },
               translateX: [2, -4],
@@ -123,9 +123,9 @@ function HeroBanner() {
                 x2="5%"
                 y1="0%"
                 y2="15%">
-                <stop stopColor="#0f172a" offset="0%" />
-                <stop stopColor="#0f1724" offset="50%" />
-                <stop stopColor="#030014 #0f172a" offset="100%" />
+                <stop stopColor="#6608e1" offset="0%" />
+                <stop stopColor="#160231" offset="50%" />
+                <stop stopColor="#1f0245" offset="100%" />
               </linearGradient>
             </defs>
             <path d="M361.604 361.238c-24.407 24.408-51.119 37.27-59.662 28.727-8.542-8.543 4.319-35.255 28.726-59.663 24.408-24.407 51.12-37.269 59.663-28.726 8.542 8.543-4.319 35.255-28.727 59.662z" />
