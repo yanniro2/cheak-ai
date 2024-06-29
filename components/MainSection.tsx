@@ -75,7 +75,7 @@ const MainSection: React.FC = () => {
           {mainServicesData.mainServices.map((service, index) => (
             <Scroll
               key={index}
-              className="lg:w-[25vw] md:w-[30vw]  w-full  h-full bg-lighDark lg:p-[2rem] rounded cursor-pointer hover:bg-white md:hover:scale-105 lg:m-[1rem] transition-all ease-linear shadow shadow-primary hover:shadow-lg hover:drop-shadow-lg flex flex-col justify-between text-center items-center group overscroll-contain gap-[1rem] lg:gap-0 p-[1rem] lg:hover:scale-105">
+              className="lg:w-[25vw] md:w-[30vw]  w-full  h-full bg-lighDark lg:p-[2rem] rounded cursor-pointer hover:bg-white md:hover:scale-105 lg:m-[1rem] transition-all ease-linear shadow shadow-primary hover:shadow-lg hover:drop-shadow-lg flex flex-col justify-between text-center items-center group overscroll-contain gap-[1rem] lg:gap-0 p-[1rem] lg:hover:scale-105 scroll-bar">
               <div className="icons-1">{renderIcon(service.icon)}</div>
               <h3 className="text-xl font-poppins font-semibold group-hover:text-primary">
                 {service.title}
